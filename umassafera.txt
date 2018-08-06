@@ -1,4 +1,6 @@
 Resolucao da listex 0
 
+Realizando a resolucao do conflito manualmente
 
 Alteracao do Arquivo na origin/master
+
