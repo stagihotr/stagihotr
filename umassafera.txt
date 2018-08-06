@@ -1,1 +1,4 @@
 Resolucao da listex 0
+
+
+Alteracao do Arquivo na origin/master
