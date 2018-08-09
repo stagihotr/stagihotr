@@ -1,3 +1,5 @@
-Primeiro commit
+Primeiro commit alterado
 
-Testando minha branch
+ Testando minha branch (sucesso)
+
+Teste de conflito de merge
