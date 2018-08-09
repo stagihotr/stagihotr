@@ -1,3 +1,2 @@
-primeiro commit da Listex00
-
-Atualizando o arquivo (09/08/2018)
+﻿Atualizando o arquivo (09/08/2018)
+Listex00
