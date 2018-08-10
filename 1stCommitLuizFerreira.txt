@@ -1,2 +1,0 @@
-Primeiro commit via GitBash. V2
-- Conteúdo alterado - 2o Teste
