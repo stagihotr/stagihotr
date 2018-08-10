@@ -1,1 +1,2 @@
 Primeiro Commit Via GitBash
+- Forçando Merge Conflict
