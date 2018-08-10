@@ -1,2 +1,2 @@
 Primeiro Commit Via GitBash
-- Branch Edit
+- Solving Merge Conflict
