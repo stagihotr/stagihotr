@@ -1,2 +1,0 @@
-Primeiro Commit Via GitBash
-- Solving Merge Conflict

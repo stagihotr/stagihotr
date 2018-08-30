@@ -1,7 +1,0 @@
-
-primeiro commit kauezanetti
-
-atualizacao feita na branch master
-
-atualizacao feita na branch_aux
-
