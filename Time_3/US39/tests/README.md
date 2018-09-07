@@ -7,10 +7,10 @@ $> apt install kafkacat
 
 ### Subscriber:
 ```sh
-$> kafkacat -C -b stagihobd.hashtagsource.com -t teste 
+$> kafkacat -C -b 192.168.33.10 -t test
 ```
 
 ### Publisher:
 ```sh
-$> kafkacat -P -b stagihobd.hashtagsource.com -t teste
+$> kafkacat -P -b 192.168.33.10 -t test
 ```

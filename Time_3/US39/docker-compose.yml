@@ -17,7 +17,7 @@ services:
       - zookeeper
     environment:
       - KAFKA_ADVERTISED_HOST_NAME=192.168.33.10 #PRECISA AJUSTAR O IP 
-      - KAFKA_CREATE_TOPICS=test:1:1,exoesqueletoout:1:1,exoesqueletoin:1:1
+      - KAFKA_CREATE_TOPICS=test:1:1
       - KAFKA_ZOOKEEPER_CONNECT=zookeeper:2181
       - KAFKA_AUTO_CREATE_TOPICS_ENABLE=true
       - KAFKA_LOG_RETENTION_BYTES=-1

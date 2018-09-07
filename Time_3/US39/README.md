@@ -7,5 +7,6 @@
 ---
 ```
 docker-compose up -d #executa
+docker-compose log kafka|zookeeper
 docker-compose down #interrompe e remove todos os containers
 ```
