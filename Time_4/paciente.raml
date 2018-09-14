@@ -1,0 +1,49 @@
+#%RAML 1.0
+title: paciente
+version: v 1.1
+baseUri: http://stagiho-tr/api
+
+mediaType: application/json
+types:
+  Paciente:
+    properties:
+      nome: string
+      cpf: string
+      nascimento: date-only
+      telefone: string
+      municipioResidencia: string
+      uf: string
+      tipoLogradouro: string
+      nomeLogradouro: string
+      numero: integer
+      complemento: string
+      bairro: string
+      cep: string
+      observacao: string
+    example:
+      {
+        "nome": "John Doe",
+        "cpf": "123456789-00",
+        "nascimento": "1980-01-01",
+        "telefone": "+5512991234567",
+        "municipioResidencia": "São José dos Campos",
+        "uf": "SP",
+        "tipoLogradouro": "Av",
+        "nomeLogradouro": "Galactica",
+        "numero": 42,
+        "complemento": "casa",
+        "bairro": "Centro",
+        "cep": "12300-000",
+        "observacao": "Lorem ipsum fames euismod libero non, magna orci pharetra ligula."
+      }
+
+/paciente:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  post:
+    body:
+      application/json:
+        type: Paciente

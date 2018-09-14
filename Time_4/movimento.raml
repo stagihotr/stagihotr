@@ -1,0 +1,39 @@
+#%RAML 1.0
+title: movimento
+version: v 1.1
+baseUri: http://stagiho-tr/api
+
+mediaType: application/json
+types:
+    Movimento:
+      properties:
+        pacienteHash: string
+        status:
+          enum:
+            - completo
+            - incompleto
+        movimento:
+          enum:
+            - up
+            - down
+            - right
+            - left
+        datahora: datetime
+      example:
+        {
+          "pacienteHash": "dasdjhskdhefncwe823ndsuhc8330dasdjsds",
+          "status": "completo",
+          "movimento": "up",
+          "datahora": "2018-09-11T13:22:53.108Z"
+        }
+
+/movimento:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  post:
+    body:
+      application/json:
+        type: Movimento
