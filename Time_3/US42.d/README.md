@@ -1,18 +1,21 @@
 # Hyperledger
 
-### Passo 1: provisionar uma VM Ubuntu 16.04 com os prerequisitos do Hyperledger
+### Passo 1 
+Provisionar uma VM Ubuntu 16.04 com os prerequisitos do Hyperledger
 ```bash
 vagrant up
 ```
 
-### Passo 2: Instalando os componentes do Hyperledger Composer e o Hyperledger Fabric
+### Passo 2
+Instalando os componentes do Hyperledger Composer e o Hyperledger Fabric
 ```bash
 vagrant ssh
 cd /hyperledger
 ./install-hyperledger-composer.sh
 ```
 
-## Passo 3: Executar o Hyperledger e criar o PeerAdminCard
+### Passo 3
+Executar o Hyperledger e criar o PeerAdminCard
 ```bash
 cd ~/fabric-dev-servers
 export FABRIC_VERSION=hlfv12
@@ -20,7 +23,8 @@ export FABRIC_VERSION=hlfv12
 ./createPeerAdminCard.sh
 ```
 
-## Passo 4: Criar a Business Network
+### Passo 4
+Criar a Business Network
 ```bash
 cd ~/
 yo hyperledger-composer:businessnetwork
@@ -32,17 +36,22 @@ composer card import --file networkadmin.card
 composer network ping --card admin@tutorial-network
 ```
 
-## Passo 5: Executar o RESTServer
+### Passo 5
+Executar o RESTServer
 ```bash
 composer-rest-server -c admin@tutorial-network -n always -w true
 ```
 
-## Dicas:
-Executar e parar o Hyperledger:
+### Dicas
+Executar o Hyperledger:
 ```bash
 cd ~/fabric-dev-servers
 export FABRIC_VERSION=hlfv12
 ./startFabric.sh
+```
+Parar o Hyperledger:
+```bash
+cd ~/fabric-dev-servers
+export FABRIC_VERSION=hlfv12
 ./stopFabric.sh
 ```
-
