@@ -41,6 +41,7 @@ Executar o RESTServer
 ```bash
 composer-rest-server -c admin@tutorial-network -n always -w true
 ```
+Acessar http://localhost:3000
 
 ### Dicas
 Executar o Hyperledger:
@@ -49,9 +50,16 @@ cd ~/fabric-dev-servers
 export FABRIC_VERSION=hlfv12
 ./startFabric.sh
 ```
+
 Parar o Hyperledger:
 ```bash
 cd ~/fabric-dev-servers
 export FABRIC_VERSION=hlfv12
 ./stopFabric.sh
 ```
+
+Executar o composer-playground:
+```bash
+composer-playground
+```
+Acessar http://localhost:8080
