@@ -23,7 +23,7 @@ sudo npm install -g yo
 sudo npm install -g composer-playground@0.20
 
 # Fix permission
-sudo chown -R vagrant:vagrant .config/
+sudo chown -R vagrant:vagrant /home/vagrant/.config/
 
 # In a directory of your choice (we will assume ~/fabric-dev-servers), get the .tar.gz file that contains the tools to install Hyperledger Fabric:
 mkdir ~/fabric-dev-servers && cd ~/fabric-dev-servers

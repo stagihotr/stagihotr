@@ -18,7 +18,6 @@ cd /hyperledger
 Executar o Hyperledger e criar o PeerAdminCard
 ```bash
 cd ~/fabric-dev-servers
-export FABRIC_VERSION=hlfv12
 ./startFabric.sh
 ./createPeerAdminCard.sh
 ```
@@ -41,20 +40,18 @@ Executar o RESTServer
 ```bash
 composer-rest-server -c admin@tutorial-network -n always -w true
 ```
-Acessar http://localhost:3000
+Acessar http://192.168.33.11:3000 << alterar conforme o IP do seu ambiente
 
 ### Dicas
 Executar o Hyperledger:
 ```bash
 cd ~/fabric-dev-servers
-export FABRIC_VERSION=hlfv12
 ./startFabric.sh
 ```
 
 Parar o Hyperledger:
 ```bash
 cd ~/fabric-dev-servers
-export FABRIC_VERSION=hlfv12
 ./stopFabric.sh
 ```
 
@@ -62,4 +59,4 @@ Executar o composer-playground:
 ```bash
 composer-playground
 ```
-Acessar http://localhost:8080
+Acessar http://192.168.33.11:8080 << alterar conforme o IP do seu ambiente
