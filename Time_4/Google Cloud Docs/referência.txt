@@ -1,0 +1,4 @@
+https://cloud.google.com/compute/pricing
+
+
+Lembrete:  A google disponibiliza 1 ano gratuito com 300 créditos para ser utilizado de maneira livre sem custos adicionais. 
