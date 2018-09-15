@@ -1,0 +1,99 @@
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Paciente business network definition.
+ */
+namespace stagihotr.paciente
+
+/*
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ * http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+
+/**
+ * Paciente  e Movimento business network definition.
+ */
+namespace stagihotr.paciente
+
+asset PacienteAsset identified by assetId {
+  o String assetId
+  --> PacienteParticipant owner
+  o String value
+}
+
+participant PacienteParticipant identified by pacienteId {
+  o String pacienteId
+  o String nome
+  o String cpf
+  o String data_nascimento
+  o String telefone
+  o String municipio
+  o String uf
+  o String logradouro
+  o String numero
+  o String complemento
+  o String bairro
+  o String cep
+  o String observacao
+}
+
+transaction PacienteTransaction {
+  --> PacienteAsset asset
+  o String newValue
+}
+
+event PacienteEvent {
+  --> PacienteAsset asset
+  o String oldValue
+  o String newValue
+}
+
+
+/****************MOVIMENTO *********************/
+
+asset MovimentoAsset identified by assetId {
+  o String assetId
+  --> MovimentoParticipant owner
+  o String value
+}
+
+participant MovimentoParticipant identified by movimentoId {
+  o String movimentoId
+  o String pacienteHash
+  o String status
+  o String movimento
+  o DateTime data
+  o String observacao
+}
+
+transaction MovimentoTransaction {
+  --> MovimentoAsset asset
+  o String newValue
+}
+
+event MovimentoEvent {
+  --> MovimentoAsset asset
+  o String oldValue
+  o String newValue
+}
