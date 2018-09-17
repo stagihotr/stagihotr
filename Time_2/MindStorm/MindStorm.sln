@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.27428.2043
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MindStorm", "MindStorm\MindStorm.csproj", "{527ABE14-0FB0-484B-9D59-CE6297777AD5}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTestMindStorm", "UnitTestMindStorm\UnitTestMindStorm.csproj", "{22597322-485C-4D17-8887-0C43B49408AD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{527ABE14-0FB0-484B-9D59-CE6297777AD5}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{527ABE14-0FB0-484B-9D59-CE6297777AD5}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{527ABE14-0FB0-484B-9D59-CE6297777AD5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{22597322-485C-4D17-8887-0C43B49408AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{22597322-485C-4D17-8887-0C43B49408AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{22597322-485C-4D17-8887-0C43B49408AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{22597322-485C-4D17-8887-0C43B49408AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
