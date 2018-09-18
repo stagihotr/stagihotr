@@ -1,0 +1,1 @@
+{"$class":"stagihotr.paciente.MovimentoParticipant","movimentoId":"string","pacienteHash":"string","status":"string","movimento":"string","data": "2018-09-18T03:51:30.773Z","observacao":"string"}
