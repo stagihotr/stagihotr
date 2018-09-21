@@ -1,0 +1,20 @@
+{
+  "name": "Time01_US3",
+  "version": "1.0.0",
+  "description": "US describing Kakfa Usage with NodeJS and TypeScript",
+  "main": "app.ts",
+  "author": "Edizon Basseto",
+  "license": "MIT",
+  "dependencies": {
+    "@types/node": "^10.10.1",
+    "kafka-node": "^3.0.1",
+    "reflect-metadata": "^0.1.12",
+    "typescript": "^3.0.3"
+  },
+  "scripts": {
+    "start": "node -r ts-node/register -r reflect-metadata/Reflect index.ts"
+  },
+  "devDependencies": {
+    "ts-node": "^7.0.1"
+  }
+}
