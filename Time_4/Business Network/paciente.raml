@@ -1,0 +1,114 @@
+#%RAML 1.0
+title: paciente
+version: v 1.2
+baseUri: http://35.232.70.182:3000/explorer/
+mediaType: application/json
+
+types:
+  PacienteAsset:
+    properties:
+      assetId: string
+      owner: PacienteParticipant
+      value: string
+    example:
+      {
+        "$class": "stagihotr.paciente.PacienteAsset",
+        "assetId": "7345",
+        "owner": "resource:stagihotr.paciente.PacienteParticipant#854",
+        "value": "test"
+      }
+
+  PacienteParticipant:
+    properties:
+      pacienteId: string
+      nome: string
+      cpf: string
+      data_nascimento: date-only
+      telefone: string
+      municipio: string
+      uf: string
+      logradouro: string
+      numero: string
+      complemento: string
+      bairro: string
+      cep: string
+      observacao: string
+    example:
+      {
+        "pacienteId": "42423",
+        "nome": "John Doe",
+        "cpf": "123456789-00",
+        "data_nascimento": "1980-01-01",
+        "telefone": "+5512991234567",
+        "municipio": "São José dos Campos",
+        "uf": "SP",
+        "logradouro": "Galactica",
+        "numero": "42",
+        "complemento": "casa",
+        "bairro": "Centro",
+        "cep": "12300-000",
+        "observacao": "Lorem ipsum fames euismod libero non, magna orci pharetra ligula."
+      }
+
+  PacienteTransaction:
+    properties:
+      asset: PacienteAsset
+      newValue: string
+    example:
+      {
+        "$class": "stagihotr.paciente.PacienteTransaction",
+        "asset": "resource:stagihotr.paciente.PacienteAsset#7835",
+        "newValue": "test"
+      }
+
+  PacienteEvent:
+    properties:
+      asset: PacienteAsset
+      oldValue: string
+      newValue: string
+
+/pacienteasset:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+
+  post:
+    body:
+      application/json:
+        type: PacienteAsset
+
+/pacienteparticipant:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  post:
+    body:
+      application/json:
+        type: PacienteParticipant
+
+/pacientetransaction:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+
+  post:
+    body:
+      application/json:
+        type: PacienteParticipant
+
+/pacienteevent:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  post:
+    body:
+      application/json:
+        type: PacienteEvent
