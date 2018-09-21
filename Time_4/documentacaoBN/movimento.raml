@@ -1,0 +1,110 @@
+#%RAML 1.0
+title: movimento
+version: v 1.2
+baseUri: http://35.232.70.182:3000/explorer/
+mediaType: application/json
+
+types:
+  MovimentoAsset:
+    properties:
+      assetId: string
+      owner: MovimentoParticipant
+      value: string
+    example:
+      {
+        "$class": "stagihotr.paciente.MovimentoAsset",
+        "assetId": "8277",
+        "owner": "resource:stagihotr.paciente.MovimentoParticipant#369",
+        "value": "test"
+      }
+
+  MovimentoParticipant:
+    properties:
+      movimentoId: string
+      pacienteHash: string
+      status:
+        enum:
+          - done
+          - fail
+      movimento:
+        enum:
+          - up
+          - down
+          - right
+          - left
+          - foward
+          - back
+      data: datetime
+      observacao: string
+    example:
+      {
+        "$class": "stagihotr.paciente.MovimentoParticipant",
+        "movimentoId": "369",
+        "pacienteHash": "d41d8cd98f00b204e9800998ecf8427e",
+        "status": "done",
+        "movimento": "up",
+        "data": "2018-09-20T02:09:25.064Z",
+        "observacao": "test"
+      }
+
+  MovimentoTransaction:
+    properties:
+      asset: MovimentoAsset
+      newValue: string
+    example:
+      {
+        "$class": "stagihotr.paciente.MovimentoTransaction",
+        "asset": "resource:stagihotr.paciente.MovimentoAsset#8277",
+        "newValue": "test"
+      }
+
+  MovimentoEvent:
+    properties:
+      asset: MovimentoAsset
+      oldValue: string
+      newValue: string
+
+/movimentoasset:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  post:
+    body:
+      application/json:
+        type: MovimentoAsset
+
+
+/movimentoparticipant:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  post:
+    body:
+      application/json:
+        type: MovimentoParticipant
+
+/movimentotransaction:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  post:
+    body:
+      application/json:
+        type: MovimentoTransaction
+
+/movimentoevent:
+  get:
+    responses:
+      200:
+        body:
+          application/json:
+  post:
+    body:
+      application/json:
+        type: MovimentoEvent
