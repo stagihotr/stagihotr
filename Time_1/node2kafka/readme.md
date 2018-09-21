@@ -1,8 +1,8 @@
-#KAKFA MESSAGE PRODUCER
+# KAKFA MESSAGE PRODUCER
 
 This is a simple Node JS + Typescript example on how to send messages to Kakfa.
 
-##How to Run
+## How to Run
  - Install NodeJS - https://nodejs.org/en/download/
  - Install yarn: npm install -g yarn
  - Install typescript: npm install -g typescript
