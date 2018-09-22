@@ -1,0 +1,34 @@
+﻿[16/09/2018 22:20:47 Informational] ------ Descoberta de teste iniciada ------
+[16/09/2018 22:20:54 Warning] Não há nenhum teste disponível em C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\MindStorm\MindStorm.csproj. Verifique se os detectores e os executores de testes estão registrados e se as configurações de versão da plataforma e da estrutura estão corretas e tente novamente.
+[16/09/2018 22:20:54 Informational] ========== Descoberta de teste concluída: 0 encontrados (0:00:06,502558) ==========
+[16/09/2018 22:35:22 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:35:22 Warning] Não foi possível localizar o arquivo C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\UnitTestMindStorm\bin\Debug\UnitTestMindStorm.dll.
+[16/09/2018 22:35:22 Warning] Nenhuma das fontes especificadas 'C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\UnitTestMindStorm\bin\Debug\UnitTestMindStorm.dll' é válida. Corrija os erros/avisos acima e tente novamente. 
+[16/09/2018 22:35:23 Informational] ========== Execução de teste concluída: 0 executados (0:00:01,4900772) ==========
+[16/09/2018 22:35:23 Informational] ------ Descoberta de teste iniciada ------
+[16/09/2018 22:35:25 Warning] Não há nenhum teste disponível em C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\MindStorm\MindStorm.csproj C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\UnitTestMindStorm\UnitTestMindStorm.csproj. Verifique se os detectores e os executores de testes estão registrados e se as configurações de versão da plataforma e da estrutura estão corretas e tente novamente.
+[16/09/2018 22:35:25 Informational] ========== Descoberta de teste concluída: 0 encontrados (0:00:01,5278947) ==========
+[16/09/2018 22:37:02 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:37:07 Informational] ========== Execução de teste concluída: 1 executados (0:00:05,7917359) ==========
+[16/09/2018 22:38:01 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:38:02 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,6149774) ==========
+[16/09/2018 22:38:52 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:38:53 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,4825769) ==========
+[16/09/2018 22:40:32 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:40:34 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,513587) ==========
+[16/09/2018 22:41:26 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:41:28 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,8219598) ==========
+[16/09/2018 22:42:51 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:42:53 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,5915596) ==========
+[16/09/2018 22:44:02 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:44:03 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,5912735) ==========
+[16/09/2018 22:44:46 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:44:48 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,736297) ==========
+[16/09/2018 22:45:37 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:45:39 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,6263068) ==========
+[16/09/2018 22:47:28 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:47:30 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,6051066) ==========
+[16/09/2018 22:48:30 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:48:31 Informational] ========== Execução de teste concluída: 1 executados (0:00:01,593813) ==========
+[16/09/2018 22:54:47 Informational] ------ Execução de teste iniciada ------
+[16/09/2018 22:54:55 Informational] ========== Execução de teste concluída: 11 executados (0:00:08,6362971) ==========
