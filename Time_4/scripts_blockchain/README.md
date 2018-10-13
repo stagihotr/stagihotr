@@ -13,3 +13,18 @@ Para visualizar o manual de execução do script:
 ```sh
 python3 app.py -h
 ```
+
+Exemplos de utilização:
+```sh
+### AJUDA
+python3 app.py -h
+
+### CADASTRAR PACIENTES
+python3 app.py -op 1 -in /home/gustavo/Documentos/Estudo/stagihotr/datasets/pacientes.csv
+
+### CADASTRAR MOVIMENTOS DE LEVANTAR
+python3 app.py -op 3 -in /home/gustavo/Documentos/Estudo/stagihotr/datasets/movimento_levantar.csv
+
+### LISTAR MOVIMENTOS DE LEVANTAR
+python3 app.py -op 7 -in /home/gustavo/Documentos/Estudo/stagihotr/datasets/levantar_hashs.csv -out /home/gustavo/Documentos/Estudo/stagihotr/datasets/movimentos_get.csv
+```
