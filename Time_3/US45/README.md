@@ -3,9 +3,9 @@
 Esse passo a passo é válido para uma imagem Raspbian.
 
 Pré-Requisitos:
-Gradle => 4.5
-Java 8
-Extender a memória SWAP do sistema
+Gradle => 4.5; 
+Java 8; 
+Estender a memória SWAP do sistema;
 
 ### Passo 1
 Baixar o gradle para instalação e build do kafka
