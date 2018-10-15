@@ -24,7 +24,7 @@ if __name__ == "__main__":
             },
             5: {
                 "msg": "Listagem do paciente pelo ID selecionado!",
-                "func": ""
+                "func": pacientes.obter_pelo_id
             },
             6: {
                 "msg": "Listagem dos movimentos de sentar do paciente selecionado!",

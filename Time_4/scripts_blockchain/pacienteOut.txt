@@ -1,0 +1,1 @@
+{'$class': 'stagihotr.paciente.PacienteParticipant', 'pacienteId': '123', 'nome': 'Gustavo Gomides', 'cpf': '12345678911', 'data_nascimento': '02/02/1960', 'telefone': '(11)9999-9999', 'municipio': 'SJC', 'uf': 'SP', 'logradouro': 'Rua Teste', 'numero': '124', 'complemento': '-', 'bairro': 'Bairro 1', 'cep': '12231-000', 'observacao': '-'}

@@ -1,4 +1,7 @@
+from typing import TextIO
+
 import utils.helpers as helpers
+import json
 
 
 def cadastrar(nome_arquivo, _):
@@ -34,5 +37,18 @@ def listar(nome_arquivo):
     pass
 
 
-def obter_pelo_id(nome_arquivo):
-    pass
+def obter_pelo_id(id, arquivo_final):
+    if not arquivo_final:
+        raise ValueError("FILE_OUT obrigatório")
+    with open(id, 'r') as f:
+        pacienteId = f.readline()
+    print("Id buscado: " + pacienteId)
+    url = 'stagihotr.paciente.PacienteParticipant/' + pacienteId
+    status, response = helpers.enviar_req(url)
+    if status:
+        file_out: TextIO = open(arquivo_final, 'w')
+        file_out.write(str(response))
+        file_out.close()
+        print("Pesquisa concluida!")
+    else:
+        print("Erro ao buscar Id do Paciente!")
