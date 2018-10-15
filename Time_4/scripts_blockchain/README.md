@@ -4,9 +4,10 @@ Script para a inserção e recuperação de informações no blockchain.
 
 Antes de executar o script é necessário ter o python3 e pip3 instalados.
 
-Além disso é necessário instalar as bibliotecas:
+Além disso é necessário instalar algumas bibliotecas:
 ```sh
-sudo pip3 install -r requirements.txt
+chmod +x install.sh
+./install.sh
 ``` 
 
 Para visualizar o manual de execução do script:

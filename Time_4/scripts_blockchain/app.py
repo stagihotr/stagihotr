@@ -1,6 +1,7 @@
 import utils.movimento_levantar as levantar
 import utils.pacientes as pacientes
 import utils.parse_args as parse_args
+from database import db
 
 if __name__ == "__main__":
     try:
@@ -43,7 +44,7 @@ if __name__ == "__main__":
             op = options[option]
             print("\n***** {}".format(op['msg']))
             if callable(op['func']):
-                op['func'](filename_in, filename_out)
+                op['func'](filename_in, filename_out, db)
             else:
                 print("Metodo nao implementado!")
         else:

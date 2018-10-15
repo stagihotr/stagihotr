@@ -1,7 +1,8 @@
 import utils.helpers as helpers
+import time
 
 
-def cadastrar(nome_arquivo, _):
+def cadastrar(nome_arquivo, _, db):
     pacientes_csv = helpers.ler_arquivo(nome_arquivo)
     if pacientes_csv._values.any():
         for item in pacientes_csv._values:
@@ -24,10 +25,12 @@ def cadastrar(nome_arquivo, _):
             url = 'stagihotr.paciente.PacienteParticipant'
             status, response = helpers.enviar_req(url, paciente)
             if status:
+                helpers.insert_db("pacientes", paciente, db)
                 print("Paciente {} cadastrado com sucesso!".format(pacienteId))
             else:
                 print(response)
                 print("Erro ao cadastrar paciente {}!".format(pacienteId))
+            time.sleep(1)
 
 
 def listar(nome_arquivo):

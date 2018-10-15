@@ -2,6 +2,7 @@ import os
 
 import pandas as pd
 import requests
+from datetime import datetime
 
 
 def ler_arquivo(nome_arquivo):
@@ -25,3 +26,21 @@ def enviar_req(url, data=None):
     if r and r.status_code in (200, 201):
         return True, r.json()
     return False, r.json()
+
+
+def insert_db(measurement, data, db):
+    try:
+        body = [
+            {
+                "measurement": measurement,
+                "tags": {
+                    "user": "stagihotr"
+                },
+                "time": str(datetime.now()),
+                "fields": data
+            }
+        ]
+        db.write_points(body)
+    except Exception as e:
+        print("Erro ao inserir {} no banco:".format(measurement))
+        print(str(e))

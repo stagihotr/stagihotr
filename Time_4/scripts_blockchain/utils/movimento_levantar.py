@@ -1,7 +1,8 @@
 import utils.helpers as helpers
+import time
 
 
-def cadastrar(nome_arquivo, _):
+def cadastrar(nome_arquivo, _, db):
     moviments_csv = helpers.ler_arquivo(nome_arquivo)
     if moviments_csv._values.any():
         for item in moviments_csv._values:
@@ -17,13 +18,15 @@ def cadastrar(nome_arquivo, _):
             url = 'stagihotr.paciente.MovimentoParticipant'
             status, response = helpers.enviar_req(url, movimento)
             if status:
+                helpers.insert_db("movimentos", movimento, db)
                 print("Movimento {} cadastrado com sucesso!".format(movimentoId))
             else:
                 print(response)
                 print("Erro ao cadastrar movimento {}!".format(movimentoId))
+            time.sleep(1)
 
 
-def obter_pelo_hash(nome_arquivo, arquivo_final):
+def obter_pelo_hash(nome_arquivo, arquivo_final, _):
     if not arquivo_final:
         raise ValueError("FILE_OUT obrigatório")
     hashs = helpers.ler_arquivo(nome_arquivo)
