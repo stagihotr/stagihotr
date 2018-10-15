@@ -59,8 +59,7 @@ Deixe as duas janelas abertas e o kafka estará rodando
 ### Passo 5
 Fazer a criação de um tópico
 ```bash
-sudo bin/kafka-topics.sh --create --zookeeper (localhost/seuIP):2181 
---replication-factor 1 --partitions 1 --topic (NomeDoTopico)
+sudo bin/kafka-topics.sh --create --zookeeper (localhost/seuIP):2181 --replication-factor 1 --partitions 1 --topic (NomeDoTopico)
 ```
 
 ### Passo 6
@@ -69,13 +68,11 @@ próprio kafka
 
 Produtor
 ```bash
-sudo bin/kafka-console-producer.sh --broker-list (localhost/seuIP):9092 
---topic (NomeDoTopico)
+sudo bin/kafka-console-producer.sh --broker-list (localhost/seuIP):9092 --topic (NomeDoTopico)
 ```
 Consumidor
 ```bash
-sudo bin/kafka-console-consumer.sh --bootstrap-server 
-(localhost/seuIP):9092 --topic (NomeDoTopico) --from-beginning
+sudo bin/kafka-console-consumer.sh --bootstrap-server (localhost/seuIP):9092 --topic (NomeDoTopico) --from-beginning
 ```
 
 Para criar o Produtor/Consumidor utilizando o Kafkacat
