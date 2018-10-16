@@ -14,7 +14,7 @@ sudo curl -s "https://get.sdkman.io" | bash
 ```
 Faz logout e login novamente, e então:
 ```bash
-sudo sdk install gradle 4.10.2
+sdk install gradle 4.10.2
 ```
 
 ### Passo 2
