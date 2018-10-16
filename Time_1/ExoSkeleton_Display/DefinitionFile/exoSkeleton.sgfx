@@ -1,0 +1,205 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?dom version="19.0" ?>
+
+<specification>
+    <IDE>
+        <project path="DefinitionFile.etp"/>
+        <ratio horizontal="1" vertical="1"/>
+    </IDE>
+    <symbology>
+        <dimension height="768" width="768"/>
+    </symbology>
+    <A661 library_version="1" supp_version="6">
+        <intprop name="ApplicationId">1</intprop>
+    </A661>
+    <children>
+        <A661Layer name="a661_layer" oid="7729b32b-e166-4903-b022-6b0ff9bf33a1">
+            <IDE>
+                <ratio horizontal="20" vertical="20"/>
+            </IDE>
+            <model>
+                <intprop name="LayerId">1</intprop>
+                <intprop name="ContextNumber">0</intprop>
+                <intprop name="Width">15360</intprop>
+                <intprop name="Height">15360</intprop>
+            </model>
+            <runtime>
+                <connect msg_id="A661_UA_CONTEXT_NUMBER" name="a661_layer_A661_UA_CONTEXT_NUMBER"/>
+                <connect msg_id="A661_REQ_LAYER_ACTIVE" name="a661_layer_A661_REQ_LAYER_ACTIVE"/>
+                <connect msg_id="A661_REQ_LAYER_INACTIVE" name="a661_layer_A661_REQ_LAYER_INACTIVE"/>
+                <connect msg_id="A661_REQ_LAYER_VISIBLE" name="a661_layer_A661_REQ_LAYER_VISIBLE"/>
+            </runtime>
+            <events/>
+            <children>
+                <widget name="Label" oid="8d7d8e5d-cf35-4d61-a33d-42cdd0d71733" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">1</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1340</intprop>
+                        <intprop name="PosY">14060</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">LabelString</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="Label_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="Label_A661_STRING"/>
+                        <connect msg_id="A661_POS_XY" name="Label_A661_POS_XY"/>
+                        <connect msg_id="A661_POS_X" name="Label_A661_POS_X"/>
+                        <connect msg_id="A661_POS_Y" name="Label_A661_POS_Y"/>
+                        <connect msg_id="A661_STYLE_SET" name="Label_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ORIENTATION" name="Label_A661_ORIENTATION"/>
+                        <connect msg_id="A661_COLOR_INDEX" name="Label_A661_COLOR_INDEX"/>
+                        <connect msg_id="A661_FONT" name="Label_A661_FONT"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Label_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Label_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <children/>
+                </widget>
+                <widget name="Label" oid="3833f874-481d-4a08-88a2-b5a60e32011e" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">2</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1320</intprop>
+                        <intprop name="PosY">13240</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">LabelString</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="Label_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="Label_A661_STRING"/>
+                        <connect msg_id="A661_POS_XY" name="Label_A661_POS_XY"/>
+                        <connect msg_id="A661_POS_X" name="Label_A661_POS_X"/>
+                        <connect msg_id="A661_POS_Y" name="Label_A661_POS_Y"/>
+                        <connect msg_id="A661_STYLE_SET" name="Label_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ORIENTATION" name="Label_A661_ORIENTATION"/>
+                        <connect msg_id="A661_COLOR_INDEX" name="Label_A661_COLOR_INDEX"/>
+                        <connect msg_id="A661_FONT" name="Label_A661_FONT"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Label_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Label_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <children/>
+                </widget>
+                <widget name="Label" oid="b35282ff-9854-4df9-aab5-d2e33c559789" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">3</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1360</intprop>
+                        <intprop name="PosY">12360</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">LabelString</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="Label_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="Label_A661_STRING"/>
+                        <connect msg_id="A661_POS_XY" name="Label_A661_POS_XY"/>
+                        <connect msg_id="A661_POS_X" name="Label_A661_POS_X"/>
+                        <connect msg_id="A661_POS_Y" name="Label_A661_POS_Y"/>
+                        <connect msg_id="A661_STYLE_SET" name="Label_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ORIENTATION" name="Label_A661_ORIENTATION"/>
+                        <connect msg_id="A661_COLOR_INDEX" name="Label_A661_COLOR_INDEX"/>
+                        <connect msg_id="A661_FONT" name="Label_A661_FONT"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Label_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Label_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <children/>
+                </widget>
+                <widget name="Label" oid="55a14e30-4175-432a-bdbb-674b8990f2a5" type="Label">
+                    <model>
+                        <intprop name="WidgetIdent">4</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1400</intprop>
+                        <intprop name="PosY">11360</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="RotationAngle">0</intprop>
+                        <intprop name="StyleSet">1</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="MotionAllowed">A661_TRUE</enumprop>
+                        <intprop name="Font">0</intprop>
+                        <intprop name="ColorIndex">1</intprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">LabelString</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="Label_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="Label_A661_STRING"/>
+                        <connect msg_id="A661_POS_XY" name="Label_A661_POS_XY"/>
+                        <connect msg_id="A661_POS_X" name="Label_A661_POS_X"/>
+                        <connect msg_id="A661_POS_Y" name="Label_A661_POS_Y"/>
+                        <connect msg_id="A661_STYLE_SET" name="Label_A661_STYLE_SET"/>
+                        <connect msg_id="A661_ORIENTATION" name="Label_A661_ORIENTATION"/>
+                        <connect msg_id="A661_COLOR_INDEX" name="Label_A661_COLOR_INDEX"/>
+                        <connect msg_id="A661_FONT" name="Label_A661_FONT"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="Label_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="Label_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <children/>
+                </widget>
+                <widget name="PictureAnimated" oid="2e47008f-fab7-4ecd-8912-7af258845640" type="PictureAnimated">
+                    <model>
+                        <intprop name="WidgetIdent">5</intprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">9880</intprop>
+                        <intprop name="PosY">10880</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">4000</intprop>
+                        <intprop name="StyleSet">0</intprop>
+                        <intprop name="NumberOfPictures">7</intprop>
+                        <intprop name="IndexOfFrequency">10</intprop>
+                        <enumprop name="LoopFlag">A661_TRUE</enumprop>
+                        <enumprop name="AnimationFlag">A661_TRUE</enumprop>
+                        <arrayprop name="PictureArray">
+                            <intprop name="1">1</intprop>
+                            <intprop name="2">2</intprop>
+                            <intprop name="3">3</intprop>
+                            <intprop name="4">4</intprop>
+                            <intprop name="5">5</intprop>
+                            <intprop name="6">6</intprop>
+                            <intprop name="7">7</intprop>
+                        </arrayprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="PictureAnimated_A661_VISIBLE"/>
+                        <connect msg_id="A661_ANIMATION_FLAG" name="PictureAnimated_A661_ANIMATION_FLAG"/>
+                        <connect msg_id="A661_STYLE_SET" name="PictureAnimated_A661_STYLE_SET"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="PictureAnimated_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="PictureAnimated_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <children/>
+                </widget>
+            </children>
+        </A661Layer>
+    </children>
+</specification>
+
+<!-- crc32 : 3136636937 -->
+
