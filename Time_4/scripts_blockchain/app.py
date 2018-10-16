@@ -1,4 +1,4 @@
-import utils.movimento_levantar as levantar
+import utils.movimentos as movimentos
 import utils.pacientes as pacientes
 import utils.parse_args as parse_args
 from database import db
@@ -8,32 +8,34 @@ if __name__ == "__main__":
         parser = parse_args.create_parser()
         options = {
             1: {
-                "msg": "Cadastro de pacientes selecionado!",
+                "msg": "Cadastro de pacientes",
                 "func": pacientes.cadastrar
             },
             2: {
-                "msg": "Cadastro do movimento de sentar selecionado!",
-                "func": ""
+                "msg": "Cadastro do movimento de sentar",
+                "func": movimentos.cadastrar
             },
             3: {
-                "msg": "Cadastro do movimento de levantar selecionado!",
-                "func": levantar.cadastrar
+                "msg": "Cadastro do movimento de levantar",
+                "func": movimentos.cadastrar
             },
             4: {
-                "msg": "Listagem de todos os pacientes selecionado!",
+                "msg": "Listagem de todos os pacientes",
                 "func": ""
             },
             5: {
-                "msg": "Listagem do paciente pelo ID selecionado!",
+                "msg": "Listagem do paciente pelo ID",
                 "func": ""
             },
             6: {
-                "msg": "Listagem dos movimentos de sentar do paciente selecionado!",
-                "func": ""
+                "msg": "Listagem dos movimentos de sentar do paciente",
+                "func": movimentos.obter_pelo_hash,
+                "mov": "sentar,down"
             },
             7: {
-                "msg": "Listagem dos movimentos de levantar do paciente selecionado!",
-                "func": levantar.obter_pelo_hash
+                "msg": "Listagem dos movimentos de levantar do paciente",
+                "func": movimentos.obter_pelo_hash,
+                "mov": "levantar,up"
             }
         }
         option = int(parser.option)
@@ -42,9 +44,13 @@ if __name__ == "__main__":
 
         if option in options:
             op = options[option]
-            print("\n***** {}".format(op['msg']))
+            print("\n***** {} {}!".format(op['msg'], "selecionado"))
             if callable(op['func']):
-                op['func'](filename_in, filename_out, db)
+                mov = [None, None]
+                if 'mov' in op:
+                    mov = op['mov'].split(',')
+                op['func'](filename_in, filename_out, db, mov[0], mov[1])
+                print("\n***** {} {}!".format(op['msg'], "concluído"))
             else:
                 print("Metodo nao implementado!")
         else:

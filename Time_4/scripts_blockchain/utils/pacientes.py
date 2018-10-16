@@ -2,7 +2,7 @@ import utils.helpers as helpers
 import time
 
 
-def cadastrar(nome_arquivo, _, db):
+def cadastrar(nome_arquivo, _, db, __, ___):
     pacientes_csv = helpers.ler_arquivo(nome_arquivo)
     if pacientes_csv._values.any():
         for item in pacientes_csv._values:

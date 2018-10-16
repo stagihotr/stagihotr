@@ -2,7 +2,7 @@ import utils.helpers as helpers
 import time
 
 
-def cadastrar(nome_arquivo, _, db):
+def cadastrar(nome_arquivo, _, db, __, ___):
     moviments_csv = helpers.ler_arquivo(nome_arquivo)
     if moviments_csv._values.any():
         for item in moviments_csv._values:
@@ -26,7 +26,7 @@ def cadastrar(nome_arquivo, _, db):
             time.sleep(1)
 
 
-def obter_pelo_hash(nome_arquivo, arquivo_final, _):
+def obter_pelo_hash(nome_arquivo, arquivo_final, _, movimento1, movimento2):
     if not arquivo_final:
         raise ValueError("FILE_OUT obrigatório")
     hashs = helpers.ler_arquivo(nome_arquivo)
@@ -35,7 +35,7 @@ def obter_pelo_hash(nome_arquivo, arquivo_final, _):
         status, response = helpers.enviar_req(url)
         if status:
             response = [
-                x for x in response if x['movimento'].lower() == 'levantar' or x['movimento'].lower() == 'up']
+                x for x in response if x['movimento'].strip().lower() == movimento1.strip().lower() or x['movimento'].strip().lower() == movimento2.strip().lower()]
             dados = "movimentoId, pacienteHash, status, movimento, data, observacao\n"
             for item in hashs._values:
                 movimentos = [x for x in response if x['pacienteHash'] == item]
@@ -46,4 +46,4 @@ def obter_pelo_hash(nome_arquivo, arquivo_final, _):
             file_out.write(dados)
             file_out.close()
         else:
-            print("Erro ao listar movimentos de levantar!")
+            print("Erro ao listar movimentos de {}!".format(movimento1))
