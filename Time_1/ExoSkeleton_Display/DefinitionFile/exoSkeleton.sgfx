@@ -5,7 +5,7 @@
 <specification>
     <IDE>
         <project path="DefinitionFile.etp"/>
-        <ratio horizontal="1" vertical="1"/>
+        <ratio horizontal="20" vertical="20"/>
     </IDE>
     <symbology>
         <dimension height="768" width="768"/>
@@ -164,7 +164,7 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="PictureAnimated" oid="2e47008f-fab7-4ecd-8912-7af258845640" type="PictureAnimated">
+                <widget name="paWalking" oid="2e47008f-fab7-4ecd-8912-7af258845640" type="PictureAnimated">
                     <model>
                         <intprop name="WidgetIdent">5</intprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
@@ -196,10 +196,54 @@
                     </runtime>
                     <children/>
                 </widget>
+                <widget name="pbWalk" oid="bc318fb4-8421-4fd5-ad51-f2452feb9f06" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">6</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">800</intprop>
+                        <intprop name="PosY">10000</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Walk</stringprop>
+                    </model>
+                    <runtime/>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="pbWalk_A661_EVT_SELECTION"/>
+                    </events>
+                    <children/>
+                </widget>
+                <widget name="pbStop" oid="63046b30-1e1d-46a4-89d1-c91ba7fcc8f1" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">7</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">760</intprop>
+                        <intprop name="PosY">8980</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Stop</stringprop>
+                    </model>
+                    <runtime/>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="pbStop_A661_EVT_SELECTION"/>
+                    </events>
+                    <children/>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 3136636937 -->
+<!-- crc32 : 2376527736 -->
 

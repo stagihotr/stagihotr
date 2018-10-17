@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MappingFile>
+	 	<operatorMappings>
+		<OperatorMapping name="Operator" oid="!ed/1ade7/E3/3060/5bc68cbf2a51">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="6" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbWalk">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="walkButton" type="bool" oid="!ed/1adee/E3/3060/5bc68cd111b3" instancepath="Operator/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbStop">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="walkStop" type="bool" oid="!ed/1adf4/E3/3060/5bc68cd13c82" instancepath="Operator/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Output1" type="bool" oid="!ed/1ae36/E3/3060/5bc68e61f42" instancepath="Operator/" subelement=".Emit"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ANIMATION_FLAG" WidgetType="PictureAnimated" WidgetName="paWalking">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Output1" type="bool" oid="!ed/1ae36/E3/3060/5bc68e61f42" instancepath="Operator/" subelement=".Value"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="AnimationFlag" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ANIMATION_FLAG" WidgetType="PictureAnimated" WidgetName="paWalking">
+							<A661Data>
+								<DataField value="AnimationFlag"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+	</operatorMappings>
+</MappingFile>

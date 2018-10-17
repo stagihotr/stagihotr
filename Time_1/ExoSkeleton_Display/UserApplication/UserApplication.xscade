@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Type name="BoolMsg">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="Emit">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/a6f7/E3/3060/5bc6790839b0"/>
+							</pragmas>
+						</Field>
+						<Field name="Value">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/a700/E3/3060/5bc6791d5809"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/a6f6/E3/3060/5bc678ec5fbe"/>
+			</pragmas>
+		</Type>
+		<Constant name="TotalSteps">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/beaf/E3/3060/5bc6864241d1"/>
+			</pragmas>
+		</Constant>
+		<Constant name="stepped">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="float32"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="0.0"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/beb8/E3/3060/5bc686a67ce9"/>
+			</pragmas>
+		</Constant>
+		<Type name="inputNumberType">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="Emit">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/bee9/E3/3060/5bc6898660ea"/>
+							</pragmas>
+						</Field>
+						<Field name="value">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="uint64"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/beea/E3/3060/5bc6898d6e8c"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/bee8/E3/3060/5bc68953f45"/>
+			</pragmas>
+		</Type>
+	</declarations>
+</File>
