@@ -34,6 +34,9 @@
 			</definition>
 			<pragmas>
 				<ed:Type oid="!ed/a6f6/E3/3060/5bc678ec5fbe"/>
+				<kcg:Pragma>
+					doc &quot;Remark_1&quot; {Description = &quot;essa eh uma anotacao 1&quot;}
+				</kcg:Pragma>
 			</pragmas>
 		</Type>
 		<Constant name="TotalSteps">
@@ -101,5 +104,106 @@
 				<ed:Type oid="!ed/bee8/E3/3060/5bc68953f45"/>
 			</pragmas>
 		</Type>
+		<Type name="T_String">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<IdExpression>
+							<path>
+								<ConstVarRef name="MD5_SIZE"/>
+							</path>
+						</IdExpression>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/6277/79A/3A68/5bc7f5615acc"/>
+			</pragmas>
+		</Type>
+		<Constant name="MD5_SIZE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_uChar"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<ConstValue value="32"/>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/7af7/79A/3A68/5bc7fcf23517"/>
+			</pragmas>
+		</Constant>
+		<Type name="T_uChar">
+			<definition>
+				<NamedType>
+					<type>
+						<TypeRef name="uint16"/>
+					</type>
+				</NamedType>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/7b01/79A/3A68/5bc7fd4e4ac3"/>
+			</pragmas>
+		</Type>
+		<Constant name="TEXTO_TESTE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['F', 'A', 'B', 'I', 'O', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'F'"/>
+						<ConstValue value="'A'"/>
+						<ConstValue value="'B'"/>
+						<ConstValue value="'I'"/>
+						<ConstValue value="'O'"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+						<ConstValue value="' '"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/7bac/79A/3A68/5bc7ffef72e0"/>
+			</pragmas>
+		</Constant>
 	</declarations>
 </File>

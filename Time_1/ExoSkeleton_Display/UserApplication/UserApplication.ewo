@@ -38,7 +38,7 @@
 
 [STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
 
-"E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="Simulation" 
+"E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
@@ -50,6 +50,7 @@
 
 [STUDIO\TOOLS\CONFIGURATIONS\Import/Export]
 
+"E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 

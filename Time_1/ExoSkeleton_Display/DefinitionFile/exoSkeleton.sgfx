@@ -176,7 +176,7 @@
                         <intprop name="NumberOfPictures">7</intprop>
                         <intprop name="IndexOfFrequency">10</intprop>
                         <enumprop name="LoopFlag">A661_TRUE</enumprop>
-                        <enumprop name="AnimationFlag">A661_TRUE</enumprop>
+                        <enumprop name="AnimationFlag">A661_FALSE</enumprop>
                         <arrayprop name="PictureArray">
                             <intprop name="1">1</intprop>
                             <intprop name="2">2</intprop>
@@ -240,10 +240,84 @@
                     </events>
                     <children/>
                 </widget>
+                <widget name="EditBoxNumeric" oid="56d97e33-8b8d-456e-b747-7cdae14e12f6" type="EditBoxNumeric">
+                    <model>
+                        <intprop name="WidgetIdent">8</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4700</intprop>
+                        <intprop name="PosY">9940</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <floatprop name="Value">1.0</floatprop>
+                        <floatprop name="TicsCoarse">10.0</floatprop>
+                        <floatprop name="TicsFine">0.1</floatprop>
+                        <floatprop name="MinValue">1.0</floatprop>
+                        <floatprop name="MaxValue">9.0</floatprop>
+                        <intprop name="LegendAreaSizeX">800</intprop>
+                        <intprop name="StartCursorPosByte">32</intprop>
+                        <intprop name="MaxFormatStringLength">16</intprop>
+                        <intprop name="MaxLegendStringLength">16</intprop>
+                        <enumprop name="LegendPosition">A661_RIGHT</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <enumprop name="LegendRemoved">A661_FALSE</enumprop>
+                        <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
+                        <enumprop name="CyclicFlag">A661_FALSE</enumprop>
+                        <stringprop name="FormatString">+___</stringprop>
+                        <stringprop name="LegendString">LD</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="EditBoxNumeric_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="EditBoxNumeric_A661_VISIBLE"/>
+                        <connect msg_id="A661_ENTRY_VALID" name="EditBoxNumeric_A661_ENTRY_VALID"/>
+                        <connect msg_id="A661_VALUE" name="EditBoxNumeric_A661_VALUE"/>
+                        <connect msg_id="A661_MINMAX_VALUES" name="EditBoxNumeric_A661_MINMAX_VALUES"/>
+                        <connect msg_id="A661_TICS_COARSE" name="EditBoxNumeric_A661_TICS_COARSE"/>
+                        <connect msg_id="A661_TICS_FINE" name="EditBoxNumeric_A661_TICS_FINE"/>
+                        <connect msg_id="A661_CURSOR_POS_BYTE" name="EditBoxNumeric_A661_CURSOR_POS_BYTE"/>
+                        <connect msg_id="A661_STYLE_SET" name="EditBoxNumeric_A661_STYLE_SET"/>
+                        <connect msg_id="A661_STRING" name="EditBoxNumeric_A661_STRING"/>
+                        <connect msg_id="A661_FORMAT_STRING" name="EditBoxNumeric_A661_FORMAT_STRING"/>
+                        <connect msg_id="A661_LEGEND_POSITION" name="EditBoxNumeric_A661_LEGEND_POSITION"/>
+                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="EditBoxNumeric_A661_NEXT_FOCUSED_WIDGET"/>
+                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="EditBoxNumeric_A661_AUTO_FOCUS_MOTION"/>
+                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="EditBoxNumeric_A661_REQ_FOCUS_ON_WIDGET"/>
+                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="EditBoxNumeric_A661_REQ_CURSOR_ON_WIDGET"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_STRING_CHANGE_ABORTED" name="EditBoxNumeric_A661_EVT_STRING_CHANGE_ABORTED"/>
+                        <connect msg_id="A661_EVT_STRING_CHANGE" name="EditBoxNumeric_A661_EVT_STRING_CHANGE"/>
+                        <connect msg_id="A661_EVT_STRING_CONFIRMED" name="EditBoxNumeric_A661_EVT_STRING_CONFIRMED"/>
+                        <connect msg_id="A661_EVT_EDITBOX_OPENED" name="EditBoxNumeric_A661_EVT_EDITBOX_OPENED"/>
+                    </events>
+                    <children/>
+                </widget>
+                <widget name="Picture" oid="f2c2898e-3c8d-44c2-9d16-9a8d11c324f3" type="Picture">
+                    <model>
+                        <intprop name="WidgetIdent">9</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">9840</intprop>
+                        <intprop name="PosY">7180</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">4000</intprop>
+                        <intprop name="StyleSet">0</intprop>
+                        <intprop name="PictureReference">1</intprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_VISIBLE" name="Picture_A661_VISIBLE"/>
+                        <connect msg_id="A661_PICTURE_REFERENCE" name="Picture_A661_PICTURE_REFERENCE"/>
+                    </runtime>
+                    <children/>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 2376527736 -->
+<!-- crc32 : 1721660805 -->
 
