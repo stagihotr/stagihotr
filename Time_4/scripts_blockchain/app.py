@@ -21,7 +21,7 @@ if __name__ == "__main__":
             },
             4: {
                 "msg": "Listagem de todos os pacientes",
-                "func": ""
+                "func": pacientes.listar
             },
             5: {
                 "msg": "Listagem do paciente pelo ID",

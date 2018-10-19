@@ -33,8 +33,34 @@ def cadastrar(nome_arquivo, _, db, __, ___):
             time.sleep(1)
 
 
-def listar(nome_arquivo):
-    pass
+def listar(_, arquivo_final, __, ___, ____):
+    if not arquivo_final:
+        raise ValueError("FILE_OUT obrigatório")
+    url = 'stagihotr.paciente.PacienteParticipant'
+    status, response = helpers.enviar_req(url)
+    if status:
+        dados = "pacienteId, nome, cpf, data_nascimento, telefone, municipio, uf, logradouro, numero, complemento, bairro, cep, observacao\n"
+        for item in response:
+            dados += ','.join([
+                item["pacienteId"],
+                item["nome"],
+                item["cpf"],
+                item["data_nascimento"],
+                item["telefone"],
+                item["municipio"],
+                item["uf"],
+                item["logradouro"],
+                item["numero"],
+                item["complemento"],
+                item["bairro"],
+                item["cep"],
+                item["observacao"]
+            ]) + "\n"
+        file_out = open(arquivo_final, 'w')
+        file_out.write(dados)
+        file_out.close()
+    else:
+        print("Erro ao listar pacientes!")
 
 
 def obter_pelo_id(nome_arquivo):
