@@ -31,7 +31,9 @@
 				</Variable>
 			</outputs>
 			<pragmas>
-				<ed:Operator oid="!ed/7acc/79A/3A68/5bc7fae677d1"/>
+				<ed:Operator oid="!ed/7acc/79A/3A68/5bc7fae677d1" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>Bibloteca em C de codificacao MD5</comment>
+				</ed:Operator>
 			</pragmas>
 		</Operator>
 	</declarations>

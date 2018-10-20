@@ -637,6 +637,7 @@
 			</data>
 			<pragmas>
 				<ed:Operator oid="!ed/665f/4CFF/FC/5bcb783d374b" xmlns="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5">
+					<comment>Gerador de Protocolo</comment>
 					<diagrams>
 						<NetDiagram name="Protocol_1" landscape="true" format="A4 (210 297)" oid="!ed/6660/4CFF/FC/5bcb783d7c5a">
 							<presentationElements>

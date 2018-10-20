@@ -60,6 +60,6 @@ BEGIN
     Remark ::= {
         {"!ed/1ade7/E3/3060/5bc68cbf2a51", "Remark_1","Operador 1m desenvolvimento" , T }}
     Graphical ::= {
-        {"!ed/1ae14/E3/3060/5bc68ce65d74", "Graphical_1",T , T , T , "RELATIVE" , 2 , -4.173228 , 60.826772 , "exemplo de comentario" , T }}
+        {"!ed/1ae14/E3/3060/5bc68ce65d74", "Graphical_1",T , T , T , "RELATIVE" , 2 , -4.173228 , 60.826771 , "exemplo de comentario" , T }}
 END
 

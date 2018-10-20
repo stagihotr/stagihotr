@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="130" defaultConfiguration="24">
+<Project id="1" oid_count="134" defaultConfiguration="24">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -365,7 +365,7 @@
 			<configuration>14</configuration>
 		</Prop>
 		<Prop id="105" name="@GENERATOR:ROOTNODE">
-			<value>Operator</value>
+			<value>Main</value>
 			<configuration>14</configuration>
 		</Prop>
 		<Prop id="106" name="@GENERATOR:EXPAND_MODE">
@@ -380,8 +380,8 @@
 			<value></value>
 			<configuration>14</configuration>
 		</Prop>
-		<Prop id="112" name="@GENERATOR:ROOTNODE">
-			<value>Operator</value>
+		<Prop id="132" name="@GENERATOR:ROOTNODE">
+			<value>Main</value>
 			<configuration>24</configuration>
 		</Prop>
 	</props>
@@ -400,12 +400,12 @@
 			<elements>
 				<Folder id="13" extensions="xscade;scade" name="Separate Files"/>
 				<FileRef id="97" persistAs="UserApplication.xscade"/>
-				<FileRef id="111" persistAs="Operator.xscade"/>
 				<FileRef id="118" persistAs="SendKafka.xscade"/>
 				<FileRef id="120" persistAs="CheckMd5.xscade"/>
 				<FileRef id="126" persistAs="ToggleWalking.xscade"/>
-				<FileRef id="128" persistAs="teste.xscade"/>
 				<FileRef id="130" persistAs="Protocol.xscade"/>
+				<FileRef id="131" persistAs="Main.xscade"/>
+				<FileRef id="134" persistAs="Walk.xscade"/>
 			</elements>
 		</Folder>
 		<FileRef id="93" persistAs="..\DefinitionFile\DefinitionFile.etp"/>

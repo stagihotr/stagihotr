@@ -39,36 +39,6 @@
 				</kcg:Pragma>
 			</pragmas>
 		</Type>
-		<Constant name="TotalSteps">
-			<type>
-				<NamedType>
-					<type>
-						<TypeRef name="float32"/>
-					</type>
-				</NamedType>
-			</type>
-			<value>
-				<ConstValue value="0.0"/>
-			</value>
-			<pragmas>
-				<ed:Constant oid="!ed/beaf/E3/3060/5bc6864241d1"/>
-			</pragmas>
-		</Constant>
-		<Constant name="stepped">
-			<type>
-				<NamedType>
-					<type>
-						<TypeRef name="float32"/>
-					</type>
-				</NamedType>
-			</type>
-			<value>
-				<ConstValue value="0.0"/>
-			</value>
-			<pragmas>
-				<ed:Constant oid="!ed/beb8/E3/3060/5bc686a67ce9"/>
-			</pragmas>
-		</Constant>
 		<Type name="inputNumberType">
 			<definition>
 				<Struct>
@@ -104,30 +74,7 @@
 				<ed:Type oid="!ed/bee8/E3/3060/5bc68953f45"/>
 			</pragmas>
 		</Type>
-		<Type name="T_String">
-			<definition>
-				<Table>
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="char"/>
-							</type>
-						</NamedType>
-					</type>
-					<size>
-						<IdExpression>
-							<path>
-								<ConstVarRef name="MD5_SIZE"/>
-							</path>
-						</IdExpression>
-					</size>
-				</Table>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/6277/79A/3A68/5bc7f5615acc"/>
-			</pragmas>
-		</Type>
-		<Constant name="MD5_SIZE">
+		<Constant name="STR_SIZE">
 			<type>
 				<NamedType>
 					<type>
@@ -154,100 +101,6 @@
 				<ed:Type oid="!ed/7b01/79A/3A68/5bc7fd4e4ac3"/>
 			</pragmas>
 		</Type>
-		<Constant name="TEXTO_TESTE">
-			<type>
-				<NamedType>
-					<type>
-						<TypeRef name="T_String"/>
-					</type>
-				</NamedType>
-			</type>
-			<value>
-				<!-- ['F', 'A', 'B', 'I', 'O', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
-				<DataArrayOp>
-					<data>
-						<ConstValue value="'F'"/>
-						<ConstValue value="'A'"/>
-						<ConstValue value="'B'"/>
-						<ConstValue value="'I'"/>
-						<ConstValue value="'O'"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-					</data>
-				</DataArrayOp>
-			</value>
-			<pragmas>
-				<ed:Constant oid="!ed/7bac/79A/3A68/5bc7ffef72e0"/>
-			</pragmas>
-		</Constant>
 		<Type name="T_String_06">
 			<definition>
 				<Table>
@@ -535,10 +388,10 @@
 				</NamedType>
 			</type>
 			<value>
-				<!-- [' ', ' '] -->
+				<!-- ['0', ' '] -->
 				<DataArrayOp>
 					<data>
-						<ConstValue value="' '"/>
+						<ConstValue value="'0'"/>
 						<ConstValue value="' '"/>
 					</data>
 				</DataArrayOp>
@@ -581,7 +434,7 @@
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
+						<ConstValue value="'0'"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -607,10 +460,10 @@
 				</NamedType>
 			</type>
 			<value>
-				<!-- [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '] -->
+				<!-- ['0', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '] -->
 				<DataArrayOp>
 					<data>
-						<ConstValue value="' '"/>
+						<ConstValue value="'0'"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -655,10 +508,10 @@
 				</NamedType>
 			</type>
 			<value>
-				<!-- [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
+				<!-- ['0', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
 				<DataArrayOp>
 					<data>
-						<ConstValue value="' '"/>
+						<ConstValue value="'0'"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -814,76 +667,6 @@
 			</definition>
 			<pragmas>
 				<ed:Type oid="!ed/67f9/4CFF/FC/5bcb82e57b56"/>
-			</pragmas>
-		</Type>
-		<Type name="Type15">
-			<definition>
-				<Struct>
-					<fields>
-						<Field name="value">
-							<type>
-								<NamedType>
-									<type>
-										<TypeRef name="float64"/>
-									</type>
-								</NamedType>
-							</type>
-							<pragmas>
-								<ed:Field oid="!ed/93db/4CFF/FC/5bcb89315490"/>
-							</pragmas>
-						</Field>
-					</fields>
-				</Struct>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/93da/4CFF/FC/5bcb89183543"/>
-			</pragmas>
-		</Type>
-		<Type name="Type16">
-			<definition>
-				<Struct>
-					<fields>
-						<Field name="Notify">
-							<type>
-								<NamedType>
-									<type>
-										<TypeRef name="bool"/>
-									</type>
-								</NamedType>
-							</type>
-							<pragmas>
-								<ed:Field oid="!ed/93fd/4CFF/FC/5bcb8a053575"/>
-							</pragmas>
-						</Field>
-						<Field name="evtString">
-							<type>
-								<NamedType>
-									<type>
-										<TypeRef name="T_String_10"/>
-									</type>
-								</NamedType>
-							</type>
-							<pragmas>
-								<ed:Field oid="!ed/9407/4CFF/FC/5bcb8a2295c"/>
-							</pragmas>
-						</Field>
-					</fields>
-				</Struct>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/93fc/4CFF/FC/5bcb89ff6749"/>
-			</pragmas>
-		</Type>
-		<Type name="Type17">
-			<definition>
-				<NamedType>
-					<type>
-						<TypeRef name="T_String_10"/>
-					</type>
-				</NamedType>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/9434/4CFF/FC/5bcb8b1f530d"/>
 			</pragmas>
 		</Type>
 	</declarations>

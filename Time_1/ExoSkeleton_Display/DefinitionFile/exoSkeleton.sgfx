@@ -37,8 +37,8 @@
                         <intprop name="WidgetIdent">1</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1340</intprop>
-                        <intprop name="PosY">14060</intprop>
+                        <intprop name="PosX">1280</intprop>
+                        <intprop name="PosY">4300</intprop>
                         <intprop name="SizeX">8920</intprop>
                         <intprop name="SizeY">900</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -61,8 +61,8 @@
                         <intprop name="WidgetIdent">2</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1320</intprop>
-                        <intprop name="PosY">13240</intprop>
+                        <intprop name="PosX">1260</intprop>
+                        <intprop name="PosY">3480</intprop>
                         <intprop name="SizeX">8740</intprop>
                         <intprop name="SizeY">780</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -85,8 +85,8 @@
                         <intprop name="WidgetIdent">3</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1360</intprop>
-                        <intprop name="PosY">12360</intprop>
+                        <intprop name="PosX">1240</intprop>
+                        <intprop name="PosY">2700</intprop>
                         <intprop name="SizeX">8840</intprop>
                         <intprop name="SizeY">740</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -109,8 +109,8 @@
                         <intprop name="WidgetIdent">4</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1400</intprop>
-                        <intprop name="PosY">11360</intprop>
+                        <intprop name="PosX">1260</intprop>
+                        <intprop name="PosY">1940</intprop>
                         <intprop name="SizeX">8800</intprop>
                         <intprop name="SizeY">700</intprop>
                         <intprop name="RotationAngle">0</intprop>
@@ -132,8 +132,8 @@
                     <model>
                         <intprop name="WidgetIdent">5</intprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">9880</intprop>
-                        <intprop name="PosY">10880</intprop>
+                        <intprop name="PosX">2680</intprop>
+                        <intprop name="PosY">11060</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">4000</intprop>
                         <intprop name="StyleSet">0</intprop>
@@ -152,11 +152,8 @@
                         </arrayprop>
                     </model>
                     <runtime>
-                        <connect msg_id="A661_VISIBLE" name="PictureAnimated_A661_VISIBLE"/>
-                        <connect msg_id="A661_ANIMATION_FLAG" name="PictureAnimated_A661_ANIMATION_FLAG"/>
-                        <connect msg_id="A661_STYLE_SET" name="PictureAnimated_A661_STYLE_SET"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="PictureAnimated_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="PictureAnimated_A661_REQ_CURSOR_ON_WIDGET"/>
+                        <connect msg_id="A661_VISIBLE" name="paWalking_A661_VISIBLE"/>
+                        <connect msg_id="A661_ANIMATION_FLAG" name="paWalking_A661_ANIMATION_FLAG"/>
                     </runtime>
                     <children/>
                 </widget>
@@ -165,8 +162,8 @@
                         <intprop name="WidgetIdent">6</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">800</intprop>
-                        <intprop name="PosY">10000</intprop>
+                        <intprop name="PosX">1300</intprop>
+                        <intprop name="PosY">8740</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -176,7 +173,10 @@
                         <enumprop name="Alignment">A661_LEFT</enumprop>
                         <stringprop name="LabelString">Walk</stringprop>
                     </model>
-                    <runtime/>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="pbWalk_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="pbWalk_A661_VISIBLE"/>
+                    </runtime>
                     <events>
                         <connect msg_id="A661_EVT_SELECTION" name="pbWalk_A661_EVT_SELECTION"/>
                     </events>
@@ -187,8 +187,8 @@
                         <intprop name="WidgetIdent">7</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">760</intprop>
-                        <intprop name="PosY">8980</intprop>
+                        <intprop name="PosX">1280</intprop>
+                        <intprop name="PosY">6060</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">800</intprop>
                         <intprop name="StyleSet">110</intprop>
@@ -204,15 +204,15 @@
                     </events>
                     <children/>
                 </widget>
-                <widget name="EditBoxNumeric" oid="56d97e33-8b8d-456e-b747-7cdae14e12f6" type="EditBoxNumeric">
+                <widget name="Velocity" oid="56d97e33-8b8d-456e-b747-7cdae14e12f6" type="EditBoxNumeric">
                     <model>
                         <intprop name="WidgetIdent">8</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
                         <intprop name="PosX">4700</intprop>
                         <intprop name="PosY">9940</intprop>
-                        <intprop name="SizeX">3000</intprop>
-                        <intprop name="SizeY">800</intprop>
+                        <intprop name="SizeX">6820</intprop>
+                        <intprop name="SizeY">780</intprop>
                         <intprop name="StyleSet">110</intprop>
                         <intprop name="NextFocusedWidget">0</intprop>
                         <floatprop name="Value">5.0</floatprop>
@@ -220,7 +220,7 @@
                         <floatprop name="TicsFine">0.1</floatprop>
                         <floatprop name="MinValue">1.0</floatprop>
                         <floatprop name="MaxValue">9.0</floatprop>
-                        <intprop name="LegendAreaSizeX">800</intprop>
+                        <intprop name="LegendAreaSizeX">5000</intprop>
                         <intprop name="StartCursorPosByte">32</intprop>
                         <intprop name="MaxFormatStringLength">16</intprop>
                         <intprop name="MaxLegendStringLength">16</intprop>
@@ -231,32 +231,17 @@
                         <enumprop name="LegendRemoved">A661_FALSE</enumprop>
                         <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
                         <enumprop name="CyclicFlag">A661_FALSE</enumprop>
-                        <stringprop name="FormatString">+___</stringprop>
-                        <stringprop name="LegendString">LD</stringprop>
+                        <stringprop name="FormatString">_</stringprop>
+                        <stringprop name="LegendString">Velocity</stringprop>
                     </model>
                     <runtime>
                         <connect msg_id="A661_ENABLE" name="EditBoxNumeric_A661_ENABLE"/>
                         <connect msg_id="A661_VISIBLE" name="EditBoxNumeric_A661_VISIBLE"/>
-                        <connect msg_id="A661_ENTRY_VALID" name="EditBoxNumeric_A661_ENTRY_VALID"/>
                         <connect msg_id="A661_VALUE" name="EditBoxNumeric_A661_VALUE"/>
-                        <connect msg_id="A661_MINMAX_VALUES" name="EditBoxNumeric_A661_MINMAX_VALUES"/>
-                        <connect msg_id="A661_TICS_COARSE" name="EditBoxNumeric_A661_TICS_COARSE"/>
-                        <connect msg_id="A661_TICS_FINE" name="EditBoxNumeric_A661_TICS_FINE"/>
-                        <connect msg_id="A661_CURSOR_POS_BYTE" name="EditBoxNumeric_A661_CURSOR_POS_BYTE"/>
-                        <connect msg_id="A661_STYLE_SET" name="EditBoxNumeric_A661_STYLE_SET"/>
-                        <connect msg_id="A661_STRING" name="EditBoxNumeric_A661_STRING"/>
-                        <connect msg_id="A661_FORMAT_STRING" name="EditBoxNumeric_A661_FORMAT_STRING"/>
-                        <connect msg_id="A661_LEGEND_POSITION" name="EditBoxNumeric_A661_LEGEND_POSITION"/>
-                        <connect msg_id="A661_NEXT_FOCUSED_WIDGET" name="EditBoxNumeric_A661_NEXT_FOCUSED_WIDGET"/>
-                        <connect msg_id="A661_AUTO_FOCUS_MOTION" name="EditBoxNumeric_A661_AUTO_FOCUS_MOTION"/>
-                        <connect msg_id="A661_REQ_FOCUS_ON_WIDGET" name="EditBoxNumeric_A661_REQ_FOCUS_ON_WIDGET"/>
-                        <connect msg_id="A661_REQ_CURSOR_ON_WIDGET" name="EditBoxNumeric_A661_REQ_CURSOR_ON_WIDGET"/>
                     </runtime>
                     <events>
-                        <connect msg_id="A661_EVT_STRING_CHANGE_ABORTED" name="EditBoxNumeric_A661_EVT_STRING_CHANGE_ABORTED"/>
                         <connect msg_id="A661_EVT_STRING_CHANGE" name="EditBoxNumeric_A661_EVT_STRING_CHANGE"/>
                         <connect msg_id="A661_EVT_STRING_CONFIRMED" name="EditBoxNumeric_A661_EVT_STRING_CONFIRMED"/>
-                        <connect msg_id="A661_EVT_EDITBOX_OPENED" name="EditBoxNumeric_A661_EVT_EDITBOX_OPENED"/>
                     </events>
                     <children/>
                 </widget>
@@ -265,8 +250,8 @@
                         <intprop name="WidgetIdent">9</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">9840</intprop>
-                        <intprop name="PosY">7180</intprop>
+                        <intprop name="PosX">9080</intprop>
+                        <intprop name="PosY">11060</intprop>
                         <intprop name="SizeX">3000</intprop>
                         <intprop name="SizeY">4000</intprop>
                         <intprop name="StyleSet">0</intprop>
@@ -278,10 +263,77 @@
                     </runtime>
                     <children/>
                 </widget>
+                <widget name="Steps" oid="077df41b-f771-4dd5-bdfd-0a5dcef74137" type="EditBoxNumeric">
+                    <model>
+                        <intprop name="WidgetIdent">10</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4700</intprop>
+                        <intprop name="PosY">8760</intprop>
+                        <intprop name="SizeX">6820</intprop>
+                        <intprop name="SizeY">840</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <floatprop name="Value">5.0</floatprop>
+                        <floatprop name="TicsCoarse">10.0</floatprop>
+                        <floatprop name="TicsFine">0.1</floatprop>
+                        <floatprop name="MinValue">1.0</floatprop>
+                        <floatprop name="MaxValue">9.0</floatprop>
+                        <intprop name="LegendAreaSizeX">5000</intprop>
+                        <intprop name="StartCursorPosByte">32</intprop>
+                        <intprop name="MaxFormatStringLength">16</intprop>
+                        <intprop name="MaxLegendStringLength">16</intprop>
+                        <enumprop name="LegendPosition">A661_RIGHT</enumprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="ReportAllChanges">A661_EDB_CHANGE_CONFIRMED</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <enumprop name="LegendRemoved">A661_FALSE</enumprop>
+                        <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
+                        <enumprop name="CyclicFlag">A661_FALSE</enumprop>
+                        <stringprop name="FormatString">_</stringprop>
+                        <stringprop name="LegendString">Steps</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="EditBoxNumeric_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="EditBoxNumeric_A661_VISIBLE"/>
+                        <connect msg_id="A661_VALUE" name="EditBoxNumeric_A661_VALUE"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_STRING_CHANGE" name="EditBoxNumeric_A661_EVT_STRING_CHANGE"/>
+                        <connect msg_id="A661_EVT_STRING_CONFIRMED" name="EditBoxNumeric_A661_EVT_STRING_CONFIRMED"/>
+                    </events>
+                    <children/>
+                </widget>
+                <widget name="pbSit" oid="ed497a21-afdc-404b-b827-b9b5cba40444" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">11</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1260</intprop>
+                        <intprop name="PosY">7360</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Sit</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="pbSit_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="pbSit_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="pbSit_A661_STRING"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="pbStop_A661_EVT_SELECTION"/>
+                    </events>
+                    <children/>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 3033309132 -->
+<!-- crc32 : 377614857 -->
 
