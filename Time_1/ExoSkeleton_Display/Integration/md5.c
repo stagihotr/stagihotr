@@ -130,18 +130,60 @@ unsigned *md5( const char *msg, int mlen)
     return h;
 }    
 
-void checkMd5(T_String *Send, T_String *Output, int temp)
+char *removeFirstChar(char *ref, int finalSize){
+    char subbuff[finalSize];
+    memcpy(subbuff, &ref[1], finalSize );
+    subbuff[finalSize] = '\0';
+    strcpy(ref, subbuff);
+    //return subbuff;
+}
+
+
+void checkMd5(char *Send, char *Output)
 {
-    const char *msg = "The quick brown fox jumps over the lazy dog.";
-
-    //printf("Sistema de Controle de Estoque");
-    //printf(*msg);
-    //*Output = *Send;
-    //char d= *md5(*Send, strlen(*Send));
-
-    // copia a variavel de origem para a destino
-    memcpy(*Output, *Send, strlen(*Send) +1);
-
-    temp = strlen(*Send);
+    char *msg = "The quick brown fox jumped over the lazy dog's back";
     
+    //char *msg;
+
+    //Output2[0] = '\0';
+    //memcpy(msg, *Send, strlen(*Send));
+
+   //strcpy(msg, Send);
+
+//strncpy(msg, Send, strlen(Send));
+
+    //Converte texto em codigo Md5 em Hex
+    unsigned *tmpHexMd5 = md5(msg, strlen(msg));
+
+
+    char tmpStrMd5[33];
+    WBunion u;
+    int j,k;
+    for (j=0;j<4; j++){
+        u.w = tmpHexMd5[j];
+        for (k=0;k<4;k++) {
+
+	    //tranforma codigo Hexadecimal para texto. 
+	    // ref: https://stackoverflow.com/questions/1745726/how-to-store-printf-into-a-variable
+	    char *buf;
+	    size_t sz;
+	    sz = snprintf(NULL, 0, "%02x", u.b[k]);
+	    buf = (char *)malloc(sz + 1); /* make sure you check for != NULL in real code */
+	    snprintf(buf, sz+1, "%02x", u.b[k]);
+
+	    //Concatena os resultados
+	    strcat(tmpStrMd5, buf);//
+	}
+    }
+    
+    //Remove o H do inicio do Vetor
+    char subbuff[32];
+    memcpy(subbuff, &tmpStrMd5[1], 32 );
+    subbuff[32] = '\0';
+
+    //copia a variavel de origem para a destino
+    //memcpy(*Output, "teste", strlen("teste"));
+    //strcpy(*Output, d);
+    strcpy(Output, subbuff);
+
 }

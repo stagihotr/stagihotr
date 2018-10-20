@@ -12,7 +12,7 @@
 						</A661_NOTIFY_WIDGET_EVENT>
 					</output>
 					<inputs>
-						<Variable name="walkButton" type="bool" oid="!ed/1adee/E3/3060/5bc68cd111b3" instancepath="Operator/"/>
+						<Variable name="walkStart" type="bool" oid="!ed/1adee/E3/3060/5bc68cd111b3" instancepath="Operator/"/>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -61,11 +61,21 @@
 								<Emit/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="OutMD5" type="T_String" oid="!ed/7af1/79A/3A68/5bc7fc435258" instancepath="Operator/"/>
+						<Variable name="OutMD5" type="T_String_32" oid="!ed/7af1/79A/3A68/5bc7fc435258" instancepath="Operator/"/>
 					</output>
 					<inputs>
 						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="1" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
@@ -85,6 +95,52 @@
 								<DataField value="String_size"/>
 							</A661Data>
 						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutProtocolo" type="T_String_75" oid="!ed/681e/4CFF/FC/5bcb84382909" instancepath="Operator/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="OutComando" type="T_String_09" oid="!ed/6825/4CFF/FC/5bcb84381bc7" instancepath="Operator/"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumeric" WidgetName="EditBoxNumeric">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="walkSteps" type="T_String_10" oid="!ed/93ec/4CFF/FC/5bcb89783b28" instancepath="Operator/"/>
 					</inputs>
 				</MappingItem>
 			</mappingItems>

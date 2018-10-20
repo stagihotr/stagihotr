@@ -1,0 +1,6 @@
+*** Type Error (ERR_100): Type mismatch
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\252\checker_file.scade, line 935, character 22
+  at path Protocol/_L14=
+ This expression has type char^43
+ but should have type char^32
+ (input flow mismatch)
