@@ -1,6 +1,5 @@
-*** Type Error (ERR_100): Type mismatch
-  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\252\checker_file.scade, line 935, character 22
-  at path Protocol/_L14=
- This expression has type char^43
- but should have type char^32
- (input flow mismatch)
+*** Type Warning (WAR_151): Internal state expected
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14036\checker_file.scade, line 685, character 0
+  at path Protocol/
+ Node Protocol has no internal state
+ (it should probably be declared as a function)

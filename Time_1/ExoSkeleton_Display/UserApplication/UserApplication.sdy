@@ -29,7 +29,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="Output1" type="bool" oid="!ed/2255e/E3/3060/5bc68f7b326e" instancepath="Main/" subelement=".Emit"/>
+						<Variable name="OutAnimation" type="bool" oid="!ed/2255e/E3/3060/5bc68f7b326e" instancepath="Main/" subelement=".Emit"/>
 					</output>
 					<inputs>
 						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ANIMATION_FLAG" WidgetType="PictureAnimated" WidgetName="paWalking">
@@ -41,7 +41,7 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="Output1" type="bool" oid="!ed/2255e/E3/3060/5bc68f7b326e" instancepath="Main/" subelement=".Value"/>
+						<Variable name="OutAnimation" type="bool" oid="!ed/2255e/E3/3060/5bc68f7b326e" instancepath="Main/" subelement=".Value"/>
 					</output>
 					<inputs>
 						<A661_CMD_SET_PARAMETER name="AnimationFlag" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ANIMATION_FLAG" WidgetType="PictureAnimated" WidgetName="paWalking">
@@ -53,94 +53,138 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="Emit2DF" type="bool" oid="!ed/7b29/79A/3A68/5bc7fdd152f6" instancepath="Main/"/>
-					</output>
-					<inputs>
-						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="1" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<Emit/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<Emit/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<Emit/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
-						<Variable name="OutMD5" type="T_String_32" oid="!ed/7af1/79A/3A68/5bc7fc435258" instancepath="Main/"/>
-					</output>
-					<inputs>
-						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="1" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<DataField value="LabelString"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
-						<Variable name="OutStrSize" type="uint16" oid="!ed/7b86/79A/3A68/5bc7ff2d704e" instancepath="Main/"/>
-					</output>
-					<inputs>
-						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="1" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<DataField value="String_size"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<DataField value="String_size"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<DataField value="String_size"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
-						<Variable name="OutProtocolo" type="T_String_75" oid="!ed/681e/4CFF/FC/5bcb84382909" instancepath="Main/"/>
-					</output>
-					<inputs>
-						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<DataField value="LabelString"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
-						<Variable name="OutComando" type="T_String_09" oid="!ed/6825/4CFF/FC/5bcb84381bc7" instancepath="Main/"/>
-					</output>
-					<inputs>
-						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label">
-							<A661Data>
-								<DataField value="LabelString"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
-						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="8" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumeric" WidgetName="EditBoxNumeric">
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="10" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumeric" WidgetName="Steps">
 							<A661Data>
 								<DataField value="EvtString"/>
 							</A661Data>
 						</A661_NOTIFY_WIDGET_EVENT>
 					</output>
 					<inputs>
-						<Variable name="walkSteps" type="T_String_10" oid="!ed/93ec/4CFF/FC/5bcb89783b28" instancepath="Main/"/>
+						<Variable name="walkSteps" type="T_String_03" oid="!ed/93ec/4CFF/FC/5bcb89783b28" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumeric" WidgetName="Velocity">
+							<A661Data>
+								<DataField value="EvtString"/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="walkMagitude" type="T_String_01" oid="!ed/6e17/2285/E8C/5bcce90e54ee" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+			</mappingItems>
+		</OperatorMapping>
+		<OperatorMapping name="_Main" oid="!ed/6843/1ACB/10D4/5bcc827f17f6">
+			<mappingItems>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutMD5" type="uint16" oid="!ed/6868/1ACB/10D4/5bcc8d453e15" instancepath="_Main/" subelement=".string_size"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label4">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutMD5" type="bool" oid="!ed/6868/1ACB/10D4/5bcc8d453e15" instancepath="_Main/" subelement=".Emit2DF"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label4">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutMD5" type="T_String_32" oid="!ed/6868/1ACB/10D4/5bcc8d453e15" instancepath="_Main/" subelement=".value"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="4" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label4">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutProtocol" type="bool" oid="!ed/686f/1ACB/10D4/5bcc8d4546aa" instancepath="_Main/" subelement=".Emit2DF"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label3">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutProtocol" type="uint16" oid="!ed/686f/1ACB/10D4/5bcc8d4546aa" instancepath="_Main/" subelement=".string_size"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label3">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutProtocol" type="T_String_75" oid="!ed/686f/1ACB/10D4/5bcc8d4546aa" instancepath="_Main/" subelement=".value"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="3" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label3">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutCMD" type="bool" oid="!ed/6876/1ACB/10D4/5bcc8d456492" instancepath="_Main/" subelement=".Emit2DF"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label2">
+							<A661Data>
+								<Emit/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutCMD" type="T_String_09" oid="!ed/6876/1ACB/10D4/5bcc8d456492" instancepath="_Main/" subelement=".value"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="LabelString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label2">
+							<A661Data>
+								<DataField value="LabelString"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<Variable name="Out_Protocol_OutCMD" type="uint16" oid="!ed/6876/1ACB/10D4/5bcc8d456492" instancepath="_Main/" subelement=".string_size"/>
+					</output>
+					<inputs>
+						<A661_CMD_SET_PARAMETER name="String_size" type="ushort" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="2" ParameterIdent="A661_STRING" WidgetType="Label" WidgetName="Label2">
+							<A661Data>
+								<DataField value="String_size"/>
+							</A661Data>
+						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
 			</mappingItems>

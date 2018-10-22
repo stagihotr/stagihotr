@@ -39,68 +39,6 @@
 				</kcg:Pragma>
 			</pragmas>
 		</Type>
-		<Type name="inputNumberType">
-			<definition>
-				<Struct>
-					<fields>
-						<Field name="Emit">
-							<type>
-								<NamedType>
-									<type>
-										<TypeRef name="bool"/>
-									</type>
-								</NamedType>
-							</type>
-							<pragmas>
-								<ed:Field oid="!ed/bee9/E3/3060/5bc6898660ea"/>
-							</pragmas>
-						</Field>
-						<Field name="value">
-							<type>
-								<NamedType>
-									<type>
-										<TypeRef name="uint64"/>
-									</type>
-								</NamedType>
-							</type>
-							<pragmas>
-								<ed:Field oid="!ed/beea/E3/3060/5bc6898d6e8c"/>
-							</pragmas>
-						</Field>
-					</fields>
-				</Struct>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/bee8/E3/3060/5bc68953f45"/>
-			</pragmas>
-		</Type>
-		<Constant name="STR_SIZE">
-			<type>
-				<NamedType>
-					<type>
-						<TypeRef name="T_uChar"/>
-					</type>
-				</NamedType>
-			</type>
-			<value>
-				<ConstValue value="75"/>
-			</value>
-			<pragmas>
-				<ed:Constant oid="!ed/7af7/79A/3A68/5bc7fcf23517"/>
-			</pragmas>
-		</Constant>
-		<Type name="T_uChar">
-			<definition>
-				<NamedType>
-					<type>
-						<TypeRef name="uint16"/>
-					</type>
-				</NamedType>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/7b01/79A/3A68/5bc7fd4e4ac3"/>
-			</pragmas>
-		</Type>
 		<Type name="T_String_06">
 			<definition>
 				<Table>
@@ -667,6 +605,182 @@
 			</definition>
 			<pragmas>
 				<ed:Type oid="!ed/67f9/4CFF/FC/5bcb82e57b56"/>
+			</pragmas>
+		</Type>
+		<Type name="S_ToLabel_75">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="Emit2DF">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/667b/1ACB/10D4/5bcc79175879"/>
+							</pragmas>
+						</Field>
+						<Field name="string_size">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="uint16"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/667c/1ACB/10D4/5bcc791b6daa"/>
+							</pragmas>
+						</Field>
+						<Field name="value">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="T_String_75"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/667a/1ACB/10D4/5bcc79134adc"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/6679/1ACB/10D4/5bcc78f233d3"/>
+			</pragmas>
+		</Type>
+		<Type name="S_ToLabel_32">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="Emit2DF">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/6764/1ACB/10D4/5bcc7eeb7a7f"/>
+							</pragmas>
+						</Field>
+						<Field name="string_size">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="uint16"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/6765/1ACB/10D4/5bcc7eeb7308"/>
+							</pragmas>
+						</Field>
+						<Field name="value">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="T_String_32"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/6766/1ACB/10D4/5bcc7eeb5a64"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/6763/1ACB/10D4/5bcc7eeb161f"/>
+			</pragmas>
+		</Type>
+		<Type name="S_ToLabel_09">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="Emit2DF">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/67c8/1ACB/10D4/5bcc7ff6770c"/>
+							</pragmas>
+						</Field>
+						<Field name="string_size">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="uint16"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/67c9/1ACB/10D4/5bcc7ff65221"/>
+							</pragmas>
+						</Field>
+						<Field name="value">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="T_String_09"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/67ca/1ACB/10D4/5bcc7ff62a06"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/67c7/1ACB/10D4/5bcc7ff615bc"/>
+			</pragmas>
+		</Type>
+		<Type name="T_ImageReference">
+			<definition>
+				<Struct>
+					<fields>
+						<Field name="Emit2DF">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="bool"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/6bbc/6053/36D4/5bcd1c237453"/>
+							</pragmas>
+						</Field>
+						<Field name="Reference">
+							<type>
+								<NamedType>
+									<type>
+										<TypeRef name="uint16"/>
+									</type>
+								</NamedType>
+							</type>
+							<pragmas>
+								<ed:Field oid="!ed/6bc5/6053/36D4/5bcd1c3f1759"/>
+							</pragmas>
+						</Field>
+					</fields>
+				</Struct>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/6bb1/6053/36D4/5bcd1bdf663d"/>
 			</pragmas>
 		</Type>
 	</declarations>
