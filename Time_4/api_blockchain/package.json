@@ -1,0 +1,20 @@
+{
+  "name": "api-stagihotr-blockchain",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./src/main.js"
+  },
+  "dependencies": {
+    "axios": "^0.18.0",
+    "compression": "^1.7.3",
+    "cookie-parser": "~1.4.3",
+    "cors": "^2.8.4",
+    "debug": "~2.6.9",
+    "express": "^4.16.4",
+    "express-validator": "^5.3.0",
+    "http-errors": "~1.6.2",
+    "influx": "^5.0.7",
+    "morgan": "~1.9.0"
+  }
+}
