@@ -1,4 +1,12 @@
 *** Post-namespace Warning (WAR_508): Unused flow
-  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 1570, character 0
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\checker_file.scade, line 2591, character 0
+  at path Transition/InSteps/
+ The input variable InSteps is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\checker_file.scade, line 1482, character 0
   at path Main/SM1:Runned:_L7/
  The local variable _L7 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\checker_file.scade, line 500, character 0
+  at path Main/varDoneSitting/
+ The local variable varDoneSitting is never used
