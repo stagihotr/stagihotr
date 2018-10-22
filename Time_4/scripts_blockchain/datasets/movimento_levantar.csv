@@ -1,0 +1,4 @@
+movimentoId, pacienteHash, status, movimento, data, observacao
+111, 5ac671ab1d364330a6394252e74ec36f, done, levantar, 2018-10-13T13:21, primeira vez
+222, 5ac671ab1d364330a6394252e74ec36f, done, levantar, 2018-10-13T13:21, segundo movimento
+333, 5ac671ab1d364330a6394252e74ec36f, done, levantar, 2018-10-13T14:03, terceira vez

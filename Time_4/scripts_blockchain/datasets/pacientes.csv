@@ -1,0 +1,2 @@
+pacienteId, nome, cpf, data_nascimento, telefone, municipio, uf, logradouro, numero, complemento, bairro, cep, observacao
+789, TESTE aAB, 12345678911, 02/02/1960, (11)9999-9999, SJC, SP, Rua Teste, 124, -, Bairro 1, 12231-000, -
