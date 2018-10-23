@@ -29,30 +29,6 @@
 				</MappingItem>
 				<MappingItem>
 					<output>
-						<Variable name="OutAnimation" type="bool" oid="!ed/2255e/E3/3060/5bc68f7b326e" instancepath="Main/" subelement=".Emit"/>
-					</output>
-					<inputs>
-						<A661_CMD_SET_PARAMETER name="Emit" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ANIMATION_FLAG" WidgetType="PictureAnimated" WidgetName="paWalking">
-							<A661Data>
-								<Emit/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
-						<Variable name="OutAnimation" type="bool" oid="!ed/2255e/E3/3060/5bc68f7b326e" instancepath="Main/" subelement=".Value"/>
-					</output>
-					<inputs>
-						<A661_CMD_SET_PARAMETER name="AnimationFlag" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="5" ParameterIdent="A661_ANIMATION_FLAG" WidgetType="PictureAnimated" WidgetName="paWalking">
-							<A661Data>
-								<DataField value="AnimationFlag"/>
-							</A661Data>
-						</A661_CMD_SET_PARAMETER>
-					</inputs>
-				</MappingItem>
-				<MappingItem>
-					<output>
 						<A661_NOTIFY_WIDGET_EVENT name="EvtString" type="str" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="10" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumeric" WidgetName="Steps">
 							<A661Data>
 								<DataField value="EvtString"/>

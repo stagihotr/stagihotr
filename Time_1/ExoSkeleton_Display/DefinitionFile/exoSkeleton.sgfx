@@ -128,35 +128,6 @@
                     </runtime>
                     <children/>
                 </widget>
-                <widget name="paWalking" oid="2e47008f-fab7-4ecd-8912-7af258845640" type="PictureAnimated">
-                    <model>
-                        <intprop name="WidgetIdent">5</intprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">2680</intprop>
-                        <intprop name="PosY">11060</intprop>
-                        <intprop name="SizeX">3000</intprop>
-                        <intprop name="SizeY">4000</intprop>
-                        <intprop name="StyleSet">0</intprop>
-                        <intprop name="NumberOfPictures">7</intprop>
-                        <intprop name="IndexOfFrequency">10</intprop>
-                        <enumprop name="LoopFlag">A661_TRUE</enumprop>
-                        <enumprop name="AnimationFlag">A661_FALSE</enumprop>
-                        <arrayprop name="PictureArray">
-                            <intprop name="1">1</intprop>
-                            <intprop name="2">2</intprop>
-                            <intprop name="3">3</intprop>
-                            <intprop name="4">4</intprop>
-                            <intprop name="5">5</intprop>
-                            <intprop name="6">6</intprop>
-                            <intprop name="7">7</intprop>
-                        </arrayprop>
-                    </model>
-                    <runtime>
-                        <connect msg_id="A661_VISIBLE" name="paWalking_A661_VISIBLE"/>
-                        <connect msg_id="A661_ANIMATION_FLAG" name="paWalking_A661_ANIMATION_FLAG"/>
-                    </runtime>
-                    <children/>
-                </widget>
                 <widget name="pStatic" oid="f2c2898e-3c8d-44c2-9d16-9a8d11c324f3" type="Picture">
                     <model>
                         <intprop name="WidgetIdent">9</intprop>
@@ -164,7 +135,7 @@
                         <enumprop name="Visible">A661_TRUE</enumprop>
                         <intprop name="PosX">9080</intprop>
                         <intprop name="PosY">11060</intprop>
-                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeX">4000</intprop>
                         <intprop name="SizeY">4000</intprop>
                         <intprop name="StyleSet">0</intprop>
                         <intprop name="PictureReference">1</intprop>
@@ -359,10 +330,25 @@
                     </events>
                     <children/>
                 </widget>
+                <widget name="Picture" oid="0ad3495f-7ae3-489c-8404-7415077c217d" type="Picture">
+                    <model>
+                        <intprop name="WidgetIdent">13</intprop>
+                        <enumprop name="Anonymous">A661_FALSE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">1860</intprop>
+                        <intprop name="PosY">12140</intprop>
+                        <intprop name="SizeX">4000</intprop>
+                        <intprop name="SizeY">2000</intprop>
+                        <intprop name="StyleSet">0</intprop>
+                        <intprop name="PictureReference">40</intprop>
+                    </model>
+                    <runtime/>
+                    <children/>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 3534267607 -->
+<!-- crc32 : 1724259855 -->
 
