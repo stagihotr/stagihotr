@@ -333,10 +333,36 @@
                     </events>
                     <children/>
                 </widget>
+                <widget name="pbRaise" oid="c2de450e-8f8a-43a3-be3a-24a9f7d1f732" type="PushButton">
+                    <model>
+                        <intprop name="WidgetIdent">12</intprop>
+                        <enumprop name="Enable">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <intprop name="PosX">4500</intprop>
+                        <intprop name="PosY">7380</intprop>
+                        <intprop name="SizeX">3000</intprop>
+                        <intprop name="SizeY">800</intprop>
+                        <intprop name="StyleSet">110</intprop>
+                        <intprop name="NextFocusedWidget">0</intprop>
+                        <intprop name="MaxStringLength">32</intprop>
+                        <enumprop name="AutomaticFocusMotion">A661_FALSE</enumprop>
+                        <enumprop name="Alignment">A661_LEFT</enumprop>
+                        <stringprop name="LabelString">Raise</stringprop>
+                    </model>
+                    <runtime>
+                        <connect msg_id="A661_ENABLE" name="pbRaise_A661_ENABLE"/>
+                        <connect msg_id="A661_VISIBLE" name="pbRaise_A661_VISIBLE"/>
+                        <connect msg_id="A661_STRING" name="pbRaise_A661_STRING"/>
+                    </runtime>
+                    <events>
+                        <connect msg_id="A661_EVT_SELECTION" name="pbStop_A661_EVT_SELECTION"/>
+                    </events>
+                    <children/>
+                </widget>
             </children>
         </A661Layer>
     </children>
 </specification>
 
-<!-- crc32 : 580680513 -->
+<!-- crc32 : 3534267607 -->
 

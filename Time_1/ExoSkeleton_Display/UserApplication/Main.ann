@@ -53,6 +53,38 @@ BEGIN
             	 NT_LEFT_LABEL "Propagate to generated code" }
     } } }
 
+    Graphical_not_inC ::= SEQUENCE OF { SEQUENCE {
+    annot_object OID,
+    name STRING,
+        note_graphical_information {
+            NT_INCRUSTABLE BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_PERMANENT BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_MODIFY BOOLEAN
+            {
+            	 NT_DEFAULT_VALUE T },
+            NT_LOCATION STRING
+            {
+            	 NT_DEFAULT_VALUE "RELATIVE" },
+            NT_FONT INTEGER
+            {
+            	 NT_DEFAULT_VALUE 2 },
+            NT_POS_X REAL
+            {
+            	 NT_DEFAULT_VALUE -1 },
+            NT_POS_Y REAL
+            {
+            	 NT_DEFAULT_VALUE -1 }
+        },
+        information {
+            Text TEXT
+            {
+            	 NT_INCRUSTABLE T }
+    } } }
+
 END
 
 Notes-Values { Esterel-Technologies }  DEFINITIONS ::=
@@ -61,5 +93,7 @@ BEGIN
         {"!ed/1ade7/E3/3060/5bc68cbf2a51", "Remark_1","Operador 1m desenvolvimento" , T }}
     Graphical ::= {
         {"!ed/1ae14/E3/3060/5bc68ce65d74", "Graphical_1",T , T , T , "RELATIVE" , 2 , -4.173228 , 60.826771 , "exemplo de comentario" , T }}
+    Graphical_not_inC ::= {
+        {"!ed/6b18/6053/36D4/5bcd150d332", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -245.000000 , -30.000000 , "Definicao Incial de variaveis de Mudanca de Estado" }}
 END
 

@@ -111,6 +111,18 @@
 						<Variable name="sitStart" type="bool" oid="!ed/7ee5/210F/38A4/5bcd2fa94142" instancepath="Main/"/>
 					</inputs>
 				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="12" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbRaise">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="raiseStart" type="bool" oid="!ed/9c08/210F/38A4/5bce794d6e47" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
 			</mappingItems>
 		</OperatorMapping>
 		<OperatorMapping name="_Main" oid="!ed/6843/1ACB/10D4/5bcc827f17f6">

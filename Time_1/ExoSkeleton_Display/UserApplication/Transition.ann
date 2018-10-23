@@ -37,6 +37,6 @@ END
 Notes-Values { Esterel-Technologies }  DEFINITIONS ::=
 BEGIN
     Graphical_not_inC ::= {
-        {"!ed/820a/210F/38A4/5bcd30fb7362", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , 71.653543 , -8.346457 , "Referencia de comparacao de velocidade." }}
+        {"!ed/8206/210F/38A4/5bcd30fb43d7", "Graphical_not_inC_1",T , T , T , "RELATIVE" , 2 , -44.173228 , -19.173228 , "Referencia de comparaca de velocidade" }}
 END
 
