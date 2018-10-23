@@ -1,13 +1,17 @@
 *** Post-namespace Warning (WAR_508): Unused flow
-  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 2968, character 0
-  at path Transition/InSteps/
- The input variable InSteps is never used
-*** Post-namespace Warning (WAR_508): Unused flow
-  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 1698, character 0
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 1878, character 0
   at path Main/SM1:Runned:_L7/
  The local variable _L7 is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 716, character 0
+  at path Main/currentStatus/
+ The local variable currentStatus is never used
+*** Post-namespace Warning (WAR_508): Unused flow
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 720, character 0
+  at path Main/currentCommand/
+ The local variable currentCommand is never used
 *** Type Warning (WAR_151): Internal state expected
-  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 3204, character 0
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 3384, character 0
   at path DisplayView/
  Node DisplayView has no internal state
  (it should probably be declared as a function)

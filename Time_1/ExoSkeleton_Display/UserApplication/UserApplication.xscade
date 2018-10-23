@@ -234,7 +234,7 @@
 				<ed:Constant oid="!ed/655a/4CFF/FC/5bcb74926fbc"/>
 			</pragmas>
 		</Constant>
-		<Constant name="P_CMD">
+		<Constant name="P_CMD_UP">
 			<type>
 				<NamedType>
 					<type>
@@ -275,7 +275,7 @@
 				<ed:Constant oid="!ed/658b/4CFF/FC/5bcb75bc350a"/>
 			</pragmas>
 		</Constant>
-		<Constant name="P_CMD_PLUS">
+		<Constant name="P_PLUS">
 			<type>
 				<NamedType>
 					<type>
@@ -317,7 +317,7 @@
 				<ed:Constant oid="!ed/65c2/4CFF/FC/5bcb764c5939"/>
 			</pragmas>
 		</Constant>
-		<Constant name="P_STATUS">
+		<Constant name="P_STATUS_DN">
 			<type>
 				<NamedType>
 					<type>
@@ -326,11 +326,11 @@
 				</NamedType>
 			</type>
 			<value>
-				<!-- ['0', ' '] -->
+				<!-- ['D', 'N'] -->
 				<DataArrayOp>
 					<data>
-						<ConstValue value="'0'"/>
-						<ConstValue value="' '"/>
+						<ConstValue value="'D'"/>
+						<ConstValue value="'N'"/>
 					</data>
 				</DataArrayOp>
 			</value>
@@ -783,5 +783,152 @@
 				<ed:Type oid="!ed/6bb1/6053/36D4/5bcd1bdf663d"/>
 			</pragmas>
 		</Type>
+		<Constant name="P_CMD_SI">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_02"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['S', 'I'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'S'"/>
+						<ConstValue value="'I'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/b2fb/210F/38A4/5bce7fea11a6"/>
+			</pragmas>
+		</Constant>
+		<Constant name="P_CMD_FW">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_02"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['F', 'W'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'F'"/>
+						<ConstValue value="'W'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/b312/210F/38A4/5bce7feb3a35"/>
+			</pragmas>
+		</Constant>
+		<Constant name="P_CMD_BW">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_02"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['B', 'W'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'B'"/>
+						<ConstValue value="'W'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/b329/210F/38A4/5bce7feb7842"/>
+			</pragmas>
+		</Constant>
+		<Constant name="P_STATUS_FL">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_02"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['F', 'L'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'F'"/>
+						<ConstValue value="'L'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/b358/210F/38A4/5bce807a54c2"/>
+			</pragmas>
+		</Constant>
+		<Constant name="P_STATUS_RN">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_02"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['R', 'N'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'R'"/>
+						<ConstValue value="'N'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/b36f/210F/38A4/5bce807b5b2b"/>
+			</pragmas>
+		</Constant>
+		<Constant name="P_STATUS_WT">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_02"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['W', 'T'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'W'"/>
+						<ConstValue value="'T'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/b386/210F/38A4/5bce807b7b59"/>
+			</pragmas>
+		</Constant>
+		<Constant name="P_CMD">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_02"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['0', '0'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'0'"/>
+						<ConstValue value="'0'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/b3f3/210F/38A4/5bce81b02012"/>
+			</pragmas>
+		</Constant>
 	</declarations>
 </File>

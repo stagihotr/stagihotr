@@ -684,7 +684,7 @@
 						<ed:Equation oid="!ed/66e8/4CFF/FC/5bcb79f14e45"/>
 					</pragmas>
 				</Equation>
-				<!-- _L8 = P_CMD; -->
+				<!-- _L8 = P_CMD_UP; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L8"/>
@@ -692,7 +692,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="P_CMD"/>
+								<ConstVarRef name="P_CMD_UP"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -716,7 +716,7 @@
 						<ed:Equation oid="!ed/6731/4CFF/FC/5bcb7c194a7d"/>
 					</pragmas>
 				</Equation>
-				<!-- _L10 = P_CMD_PLUS; -->
+				<!-- _L10 = P_PLUS; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L10"/>
@@ -724,7 +724,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="P_CMD_PLUS"/>
+								<ConstVarRef name="P_PLUS"/>
 							</path>
 						</IdExpression>
 					</right>
@@ -748,7 +748,7 @@
 						<ed:Equation oid="!ed/673d/4CFF/FC/5bcb7c832036"/>
 					</pragmas>
 				</Equation>
-				<!-- _L12 = P_STATUS; -->
+				<!-- _L12 = P_STATUS_DN; -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L12"/>
@@ -756,7 +756,7 @@
 					<right>
 						<IdExpression>
 							<path>
-								<ConstVarRef name="P_STATUS"/>
+								<ConstVarRef name="P_STATUS_DN"/>
 							</path>
 						</IdExpression>
 					</right>

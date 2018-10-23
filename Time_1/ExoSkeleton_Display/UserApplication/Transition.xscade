@@ -15,18 +15,6 @@
 						<ed:Variable oid="!ed/8256/210F/38A4/5bcd314d7966"/>
 					</pragmas>
 				</Variable>
-				<Variable name="InSteps">
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="int32"/>
-							</type>
-						</NamedType>
-					</type>
-					<pragmas>
-						<ed:Variable oid="!ed/8262/210F/38A4/5bcd316740b8"/>
-					</pragmas>
-				</Variable>
 				<Variable name="InStartImage">
 					<type>
 						<NamedType>
