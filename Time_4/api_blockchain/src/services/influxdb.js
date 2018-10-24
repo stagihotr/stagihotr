@@ -1,3 +1,6 @@
+// sudo docker run -d -p 8084:8083 influxdb
+// influx -host 35.192.171.187 -username user_stagihotr -password 1234567890 -database stagihotr
+
 const Influx = require('influx'),
     host = '35.192.171.187',
     port = 8086,
@@ -12,9 +15,8 @@ async function salvar_influx(measurement, data) {
     return influx.writePoints([
         {
             measurement: measurement,
-            tags: { "user": "stagihotr" },
             fields: data,
-            timestamp: Math.floor(Date.now() / 1000),
+            timestamp: new Date().getTime(),
         }
     ], {
             database: db_name
