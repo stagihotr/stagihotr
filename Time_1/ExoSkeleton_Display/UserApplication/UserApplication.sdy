@@ -36,7 +36,7 @@
 						</A661_NOTIFY_WIDGET_EVENT>
 					</output>
 					<inputs>
-						<Variable name="walkSteps" type="T_String_03" oid="!ed/93ec/4CFF/FC/5bcb89783b28" instancepath="Main/"/>
+						<Variable name="walkSteps" type="T_String_01" oid="!ed/93ec/4CFF/FC/5bcb89783b28" instancepath="Main/"/>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -48,7 +48,7 @@
 						</A661_NOTIFY_WIDGET_EVENT>
 					</output>
 					<inputs>
-						<Variable name="walkMagitude" type="T_String_01" oid="!ed/6e17/2285/E8C/5bcce90e54ee" instancepath="Main/"/>
+						<Variable name="walkMagnitude" type="T_String_01" oid="!ed/6e17/2285/E8C/5bcce90e54ee" instancepath="Main/"/>
 					</inputs>
 				</MappingItem>
 				<MappingItem>
@@ -97,6 +97,30 @@
 					</output>
 					<inputs>
 						<Variable name="raiseStart" type="bool" oid="!ed/9c08/210F/38A4/5bce794d6e47" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="10" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumeric" WidgetName="Steps">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="StepsNotification" type="bool" oid="!ed/806a/F84/DCC/5bcfd18d2872" instancepath="Main/"/>
+					</inputs>
+				</MappingItem>
+				<MappingItem>
+					<output>
+						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="11" ParameterIdent="A661_EVT_STRING_CONFIRMED" WidgetType="EditBoxNumeric" WidgetName="Velocity">
+							<A661Data>
+								<Notify/>
+							</A661Data>
+						</A661_NOTIFY_WIDGET_EVENT>
+					</output>
+					<inputs>
+						<Variable name="MagnitudeNotification" type="bool" oid="!ed/806b/F84/DCC/5bcfd1924de1" instancepath="Main/"/>
 					</inputs>
 				</MappingItem>
 			</mappingItems>

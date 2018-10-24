@@ -233,7 +233,7 @@
                         <intprop name="SizeY">840</intprop>
                         <intprop name="StyleSet">110</intprop>
                         <intprop name="NextFocusedWidget">0</intprop>
-                        <floatprop name="Value">5.0</floatprop>
+                        <floatprop name="Value">1.0</floatprop>
                         <floatprop name="TicsCoarse">10.0</floatprop>
                         <floatprop name="TicsFine">0.1</floatprop>
                         <floatprop name="MinValue">1.0</floatprop>
@@ -248,7 +248,7 @@
                         <enumprop name="Alignment">A661_LEFT</enumprop>
                         <enumprop name="LegendRemoved">A661_FALSE</enumprop>
                         <enumprop name="NumericKeyFlag">A661_TRUE</enumprop>
-                        <enumprop name="CyclicFlag">A661_FALSE</enumprop>
+                        <enumprop name="CyclicFlag">A661_TRUE</enumprop>
                         <stringprop name="FormatString">_</stringprop>
                         <stringprop name="LegendString">Steps</stringprop>
                     </model>
@@ -260,6 +260,7 @@
                     <events>
                         <connect msg_id="A661_EVT_STRING_CHANGE" name="Steps_A661_EVT_STRING_CHANGE"/>
                         <connect msg_id="A661_EVT_STRING_CONFIRMED" name="Steps_A661_EVT_STRING_CONFIRMED"/>
+                        <connect msg_id="A661_EVT_EDITBOX_OPENED" name="Steps_A661_EVT_EDITBOX_OPENED"/>
                     </events>
                     <children/>
                 </widget>
@@ -274,7 +275,7 @@
                         <intprop name="SizeY">780</intprop>
                         <intprop name="StyleSet">110</intprop>
                         <intprop name="NextFocusedWidget">0</intprop>
-                        <floatprop name="Value">5.0</floatprop>
+                        <floatprop name="Value">9.0</floatprop>
                         <floatprop name="TicsCoarse">10.0</floatprop>
                         <floatprop name="TicsFine">0.1</floatprop>
                         <floatprop name="MinValue">1.0</floatprop>
@@ -301,6 +302,7 @@
                     <events>
                         <connect msg_id="A661_EVT_STRING_CHANGE" name="Velocity_A661_EVT_STRING_CHANGE"/>
                         <connect msg_id="A661_EVT_STRING_CONFIRMED" name="Velocity_A661_EVT_STRING_CONFIRMED"/>
+                        <connect msg_id="A661_EVT_EDITBOX_OPENED" name="Velocity_A661_EVT_EDITBOX_OPENED"/>
                     </events>
                     <children/>
                 </widget>
@@ -350,5 +352,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1724259855 -->
+<!-- crc32 : 1931174119 -->
 

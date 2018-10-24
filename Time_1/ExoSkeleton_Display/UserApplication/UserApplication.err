@@ -1,5 +1,5 @@
 *** Type Warning (WAR_151): Internal state expected
-  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\14500\Main.scade, line 3556, character 0
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\3532\Main.scade, line 3966, character 0
   at path DisplayView/
  Node DisplayView has no internal state
  (it should probably be declared as a function)
