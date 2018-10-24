@@ -372,7 +372,7 @@
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
-						<ConstValue value="'0'"/>
+						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -928,6 +928,26 @@
 			</value>
 			<pragmas>
 				<ed:Constant oid="!ed/b3f3/210F/38A4/5bce81b02012"/>
+			</pragmas>
+		</Constant>
+		<Constant name="_END_STRING">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_01"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['\x00'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'\x00'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/6aae/6EA2/2D5C/5bd0f80652a0"/>
 			</pragmas>
 		</Constant>
 	</declarations>

@@ -5,11 +5,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-//#include "kcg_types.h"
+#include "kcg_types.h"
 
 
-void convert2Int(char *Send, int *Value )
+//void convert2Int(char *Send, int *Value )
+kcg_int32 convert2Int(/* Send/ */ T_String_02 *Send) 
 {
-    int xpto = strtol(Send, NULL, 10);
-    Value = xpto;
+    int temp = strtol(Send, NULL, 10);
+    return temp;
 }

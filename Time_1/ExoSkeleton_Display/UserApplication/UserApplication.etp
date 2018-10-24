@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="159" defaultConfiguration="24">
+<Project id="1" oid_count="161" defaultConfiguration="24">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -411,7 +411,7 @@
 				<FileRef id="146" persistAs="Transition.xscade"/>
 				<FileRef id="148" persistAs="DisplayView.xscade"/>
 				<FileRef id="153" persistAs="convert2Int.xscade"/>
-				<FileRef id="158" persistAs="ComandsComplements.xscade"/>
+				<FileRef id="161" persistAs="Read_InputNumber.xscade"/>
 			</elements>
 		</Folder>
 		<FileRef id="93" persistAs="..\DefinitionFile\DefinitionFile.etp"/>
