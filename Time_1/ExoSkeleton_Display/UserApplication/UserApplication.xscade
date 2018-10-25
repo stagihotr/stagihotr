@@ -275,28 +275,6 @@
 				<ed:Constant oid="!ed/658b/4CFF/FC/5bcb75bc350a"/>
 			</pragmas>
 		</Constant>
-		<Constant name="P_PLUS">
-			<type>
-				<NamedType>
-					<type>
-						<TypeRef name="T_String_03"/>
-					</type>
-				</NamedType>
-			</type>
-			<value>
-				<!-- [' ', '1', '0'] -->
-				<DataArrayOp>
-					<data>
-						<ConstValue value="' '"/>
-						<ConstValue value="'1'"/>
-						<ConstValue value="'0'"/>
-					</data>
-				</DataArrayOp>
-			</value>
-			<pragmas>
-				<ed:Constant oid="!ed/65a2/4CFF/FC/5bcb762d6036"/>
-			</pragmas>
-		</Constant>
 		<Constant name="P_RESERVED">
 			<type>
 				<NamedType>
@@ -956,17 +934,12 @@
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="T_String_01"/>
+						<TypeRef name="int32"/>
 					</type>
 				</NamedType>
 			</type>
 			<value>
-				<!-- ['9'] -->
-				<DataArrayOp>
-					<data>
-						<ConstValue value="'9'"/>
-					</data>
-				</DataArrayOp>
+				<ConstValue value="9"/>
 			</value>
 			<pragmas>
 				<ed:Constant oid="!ed/6db7/6D6C/24DC/5bd112fd4990"/>
@@ -976,19 +949,12 @@
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="T_String_03"/>
+						<TypeRef name="int32"/>
 					</type>
 				</NamedType>
 			</type>
 			<value>
-				<!-- [' ', '0', '1'] -->
-				<DataArrayOp>
-					<data>
-						<ConstValue value="' '"/>
-						<ConstValue value="'0'"/>
-						<ConstValue value="'1'"/>
-					</data>
-				</DataArrayOp>
+				<ConstValue value="1"/>
 			</value>
 			<pragmas>
 				<ed:Constant oid="!ed/6dde/6D6C/24DC/5bd113376847"/>

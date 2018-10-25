@@ -145,7 +145,7 @@ void checkMd5(char *Send, char *Output)
     //Converte texto em codigo Md5 em Hex
     unsigned *tmpHexMd5 = md5(Send, strlen(Send));
 
-    char tmpStrMd5[33];
+    char tmpStrMd5[32];
     WBunion u;
     int j,k;
     for (j=0;j<4; j++){
@@ -165,6 +165,7 @@ void checkMd5(char *Send, char *Output)
 	}
     }
     
+    /*$
     //Remove o H do inicio do Vetor
     char subbuff[32];
     memcpy(subbuff, &tmpStrMd5[1], 32 );
@@ -172,5 +173,8 @@ void checkMd5(char *Send, char *Output)
 
     //copia a variavel de origem para a destino
     strcpy(Output, subbuff);
+    $*/
+
+    strcpy(Output, tmpStrMd5);
 
 }

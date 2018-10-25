@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="161" defaultConfiguration="24">
+<Project id="1" oid_count="167" defaultConfiguration="24">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -412,6 +412,8 @@
 				<FileRef id="153" persistAs="convert2Int.xscade"/>
 				<FileRef id="161" persistAs="Read_InputNumber.xscade"/>
 				<FileRef id="148" persistAs="DisplayView.xscade"/>
+				<FileRef id="165" persistAs="convert2Char_1.xscade"/>
+				<FileRef id="167" persistAs="convert2Char_3.xscade"/>
 			</elements>
 		</Folder>
 		<FileRef id="93" persistAs="..\DefinitionFile\DefinitionFile.etp"/>
@@ -449,6 +451,8 @@
 						</Prop>
 						<Prop id="156" name="@SCADE:IMPORTED_NODES">
 							<value>convert2Int</value>
+							<value>convert2Char_1</value>
+							<value>convert2Char_3</value>
 						</Prop>
 					</props>
 				</FileRef>

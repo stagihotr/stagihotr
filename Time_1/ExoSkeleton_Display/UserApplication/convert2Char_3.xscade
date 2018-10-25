@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<File xmlns="http://www.esterel-technologies.com/ns/scade/6" xmlns:ed="http://www.esterel-technologies.com/ns/scade/pragmas/editor/5" xmlns:kcg="http://www.esterel-technologies.com/ns/scade/pragmas/codegen/3">
+	<declarations>
+		<Operator kind="function" external="imported" name="convert2Char_3">
+			<inputs>
+				<Variable name="Send">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="int32"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/6c1b/6B5E/4264/5bd136926b57"/>
+					</pragmas>
+				</Variable>
+			</inputs>
+			<outputs>
+				<Variable name="Output">
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="T_String_03"/>
+							</type>
+						</NamedType>
+					</type>
+					<pragmas>
+						<ed:Variable oid="!ed/6c1a/6B5E/4264/5bd13692e06"/>
+					</pragmas>
+				</Variable>
+			</outputs>
+			<pragmas>
+				<ed:Operator oid="!ed/6c19/6B5E/4264/5bd1369256aa"/>
+			</pragmas>
+		</Operator>
+	</declarations>
+</File>
