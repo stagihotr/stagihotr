@@ -1,5 +1,6 @@
 // Baseado na RosettaCode.org
 // https://rosettacode.org/wiki/MD5#C
+// Adpatado para o Scade por Fabio Kfouri
 
 #include <stdlib.h>
 #include <stdio.h>
@@ -141,20 +142,8 @@ char *removeFirstChar(char *ref, int finalSize){
 
 void checkMd5(char *Send, char *Output)
 {
-    char *msg = "The quick brown fox jumped over the lazy dog's back";
-    
-    //char *msg;
-
-    //Output2[0] = '\0';
-    //memcpy(msg, *Send, strlen(*Send));
-
-   //strcpy(msg, Send);
-
-//strncpy(msg, Send, strlen(Send));
-
     //Converte texto em codigo Md5 em Hex
-    unsigned *tmpHexMd5 = md5(msg, strlen(msg));
-
+    unsigned *tmpHexMd5 = md5(Send, strlen(Send));
 
     char tmpStrMd5[33];
     WBunion u;
@@ -182,8 +171,6 @@ void checkMd5(char *Send, char *Output)
     subbuff[32] = '\0';
 
     //copia a variavel de origem para a destino
-    //memcpy(*Output, "teste", strlen("teste"));
-    //strcpy(*Output, d);
     strcpy(Output, subbuff);
 
 }

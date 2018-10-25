@@ -37,10 +37,10 @@
                         <intprop name="WidgetIdent">1</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1000</intprop>
-                        <intprop name="PosY">4300</intprop>
-                        <intprop name="SizeX">14000</intprop>
-                        <intprop name="SizeY">500</intprop>
+                        <intprop name="PosX">500</intprop>
+                        <intprop name="PosY">4500</intprop>
+                        <intprop name="SizeX">14500</intprop>
+                        <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
                         <intprop name="StyleSet">1</intprop>
                         <intprop name="MaxStringLength">32</intprop>
@@ -61,10 +61,10 @@
                         <intprop name="WidgetIdent">2</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1000</intprop>
-                        <intprop name="PosY">3480</intprop>
-                        <intprop name="SizeX">14000</intprop>
-                        <intprop name="SizeY">500</intprop>
+                        <intprop name="PosX">500</intprop>
+                        <intprop name="PosY">3500</intprop>
+                        <intprop name="SizeX">14500</intprop>
+                        <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
                         <intprop name="StyleSet">1</intprop>
                         <intprop name="MaxStringLength">32</intprop>
@@ -85,10 +85,10 @@
                         <intprop name="WidgetIdent">3</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1000</intprop>
-                        <intprop name="PosY">2700</intprop>
-                        <intprop name="SizeX">14000</intprop>
-                        <intprop name="SizeY">500</intprop>
+                        <intprop name="PosX">500</intprop>
+                        <intprop name="PosY">2500</intprop>
+                        <intprop name="SizeX">14500</intprop>
+                        <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
                         <intprop name="StyleSet">1</intprop>
                         <intprop name="MaxStringLength">32</intprop>
@@ -109,10 +109,10 @@
                         <intprop name="WidgetIdent">4</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
                         <enumprop name="Visible">A661_TRUE</enumprop>
-                        <intprop name="PosX">1000</intprop>
-                        <intprop name="PosY">1800</intprop>
-                        <intprop name="SizeX">14000</intprop>
-                        <intprop name="SizeY">500</intprop>
+                        <intprop name="PosX">500</intprop>
+                        <intprop name="PosY">1500</intprop>
+                        <intprop name="SizeX">14500</intprop>
+                        <intprop name="SizeY">800</intprop>
                         <intprop name="RotationAngle">0</intprop>
                         <intprop name="StyleSet">1</intprop>
                         <intprop name="MaxStringLength">32</intprop>
@@ -175,7 +175,7 @@
                     <model>
                         <intprop name="WidgetIdent">7</intprop>
                         <enumprop name="Enable">A661_TRUE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_FALSE</enumprop>
                         <intprop name="PosX">1280</intprop>
                         <intprop name="PosY">6060</intprop>
                         <intprop name="SizeX">3000</intprop>
@@ -352,5 +352,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 1931174119 -->
+<!-- crc32 : 3149665458 -->
 

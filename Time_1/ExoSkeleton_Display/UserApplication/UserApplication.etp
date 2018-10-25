@@ -409,9 +409,9 @@
 				<FileRef id="141" persistAs="Switch.xscade"/>
 				<FileRef id="142" persistAs="MovingCycle.xscade"/>
 				<FileRef id="146" persistAs="Transition.xscade"/>
-				<FileRef id="148" persistAs="DisplayView.xscade"/>
 				<FileRef id="153" persistAs="convert2Int.xscade"/>
 				<FileRef id="161" persistAs="Read_InputNumber.xscade"/>
+				<FileRef id="148" persistAs="DisplayView.xscade"/>
 			</elements>
 		</Folder>
 		<FileRef id="93" persistAs="..\DefinitionFile\DefinitionFile.etp"/>

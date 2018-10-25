@@ -7,7 +7,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="S_ToLabel_32"/>
+								<TypeRef name="S_ToLabel_33"/>
 							</type>
 						</NamedType>
 					</type>
@@ -19,7 +19,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="S_ToLabel_75"/>
+								<TypeRef name="S_ToLabel_76"/>
 							</type>
 						</NamedType>
 					</type>
@@ -31,7 +31,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="S_ToLabel_09"/>
+								<TypeRef name="S_ToLabel_10"/>
 							</type>
 						</NamedType>
 					</type>
@@ -45,7 +45,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="S_ToLabel_09"/>
+								<TypeRef name="S_ToLabel_10"/>
 							</type>
 						</NamedType>
 					</type>
@@ -57,7 +57,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="S_ToLabel_32"/>
+								<TypeRef name="S_ToLabel_33"/>
 							</type>
 						</NamedType>
 					</type>
@@ -69,7 +69,7 @@
 					<type>
 						<NamedType>
 							<type>
-								<TypeRef name="S_ToLabel_75"/>
+								<TypeRef name="S_ToLabel_76"/>
 							</type>
 						</NamedType>
 					</type>
@@ -79,7 +79,7 @@
 				</Variable>
 			</locals>
 			<data>
-				<!-- _L1, _L2, _L3 = Protocol(); -->
+				<!-- _L1, _L2, _L3 = Protocol(_null, _null, _null, _null); -->
 				<Equation>
 					<lefts>
 						<VariableRef name="_L1"/>
@@ -87,7 +87,7 @@
 						<VariableRef name="_L3"/>
 					</lefts>
 					<right>
-						<!-- Protocol() -->
+						<!-- Protocol(_null, _null, _null, _null) -->
 						<CallExpression>
 							<operator>
 								<OpCall name="1">
@@ -96,6 +96,28 @@
 									</operator>
 								</OpCall>
 							</operator>
+							<callParameters>
+								<IdExpression>
+									<path>
+										<NullRef/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<NullRef/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<NullRef/>
+									</path>
+								</IdExpression>
+								<IdExpression>
+									<path>
+										<NullRef/>
+									</path>
+								</IdExpression>
+							</callParameters>
 						</CallExpression>
 					</right>
 					<pragmas>

@@ -77,7 +77,7 @@
 				<ed:Type oid="!ed/63ba/4CFF/FC/5bcb71b9635c"/>
 			</pragmas>
 		</Type>
-		<Type name="T_String_75">
+		<Type name="T_String_76">
 			<definition>
 				<Table>
 					<type>
@@ -88,7 +88,7 @@
 						</NamedType>
 					</type>
 					<size>
-						<ConstValue value="75"/>
+						<ConstValue value="76"/>
 					</size>
 				</Table>
 			</definition>
@@ -342,7 +342,7 @@
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="T_String_32"/>
+						<TypeRef name="T_String_33"/>
 					</type>
 				</NamedType>
 			</type>
@@ -350,6 +350,7 @@
 				<!-- [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ... -->
 				<DataArrayOp>
 					<data>
+						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -398,19 +399,19 @@
 				</NamedType>
 			</type>
 			<value>
-				<!-- ['0', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '] -->
+				<!-- ['1', '2', '3', '4', '0', '0', '4', '3', '1', '8'] -->
 				<DataArrayOp>
 					<data>
+						<ConstValue value="'1'"/>
+						<ConstValue value="'2'"/>
+						<ConstValue value="'3'"/>
+						<ConstValue value="'4'"/>
 						<ConstValue value="'0'"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
-						<ConstValue value="' '"/>
+						<ConstValue value="'0'"/>
+						<ConstValue value="'4'"/>
+						<ConstValue value="'3'"/>
+						<ConstValue value="'1'"/>
+						<ConstValue value="'8'"/>
 					</data>
 				</DataArrayOp>
 			</value>
@@ -418,30 +419,11 @@
 				<ed:Constant oid="!ed/6619/4CFF/FC/5bcb77ac1f1f"/>
 			</pragmas>
 		</Constant>
-		<Type name="T_String_10">
-			<definition>
-				<Table>
-					<type>
-						<NamedType>
-							<type>
-								<TypeRef name="char"/>
-							</type>
-						</NamedType>
-					</type>
-					<size>
-						<ConstValue value="10"/>
-					</size>
-				</Table>
-			</definition>
-			<pragmas>
-				<ed:Type oid="!ed/6627/4CFF/FC/5bcb77b377db"/>
-			</pragmas>
-		</Type>
 		<Constant name="P_TOTAL">
 			<type>
 				<NamedType>
 					<type>
-						<TypeRef name="T_String_75"/>
+						<TypeRef name="T_String_76"/>
 					</type>
 				</NamedType>
 			</type>
@@ -450,6 +432,7 @@
 				<DataArrayOp>
 					<data>
 						<ConstValue value="'0'"/>
+						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
 						<ConstValue value="' '"/>
@@ -550,7 +533,7 @@
 				<ed:Type oid="!ed/66b5/4CFF/FC/5bcb79547b5"/>
 			</pragmas>
 		</Type>
-		<Type name="T_String_32">
+		<Type name="T_String_33">
 			<definition>
 				<Table>
 					<type>
@@ -561,7 +544,7 @@
 						</NamedType>
 					</type>
 					<size>
-						<ConstValue value="32"/>
+						<ConstValue value="33"/>
 					</size>
 				</Table>
 			</definition>
@@ -588,7 +571,7 @@
 				<ed:Type oid="!ed/6798/4CFF/FC/5bcb80316f05"/>
 			</pragmas>
 		</Type>
-		<Type name="T_String_09">
+		<Type name="T_String_10">
 			<definition>
 				<Table>
 					<type>
@@ -599,7 +582,7 @@
 						</NamedType>
 					</type>
 					<size>
-						<ConstValue value="9"/>
+						<ConstValue value="10"/>
 					</size>
 				</Table>
 			</definition>
@@ -607,7 +590,7 @@
 				<ed:Type oid="!ed/67f9/4CFF/FC/5bcb82e57b56"/>
 			</pragmas>
 		</Type>
-		<Type name="S_ToLabel_75">
+		<Type name="S_ToLabel_76">
 			<definition>
 				<Struct>
 					<fields>
@@ -639,7 +622,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="T_String_75"/>
+										<TypeRef name="T_String_76"/>
 									</type>
 								</NamedType>
 							</type>
@@ -654,7 +637,7 @@
 				<ed:Type oid="!ed/6679/1ACB/10D4/5bcc78f233d3"/>
 			</pragmas>
 		</Type>
-		<Type name="S_ToLabel_32">
+		<Type name="S_ToLabel_33">
 			<definition>
 				<Struct>
 					<fields>
@@ -686,7 +669,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="T_String_32"/>
+										<TypeRef name="T_String_33"/>
 									</type>
 								</NamedType>
 							</type>
@@ -701,7 +684,7 @@
 				<ed:Type oid="!ed/6763/1ACB/10D4/5bcc7eeb161f"/>
 			</pragmas>
 		</Type>
-		<Type name="S_ToLabel_09">
+		<Type name="S_ToLabel_10">
 			<definition>
 				<Struct>
 					<fields>
@@ -733,7 +716,7 @@
 							<type>
 								<NamedType>
 									<type>
-										<TypeRef name="T_String_09"/>
+										<TypeRef name="T_String_10"/>
 									</type>
 								</NamedType>
 							</type>
@@ -948,6 +931,67 @@
 			</value>
 			<pragmas>
 				<ed:Constant oid="!ed/6aae/6EA2/2D5C/5bd0f80652a0"/>
+			</pragmas>
+		</Constant>
+		<Type name="T_String_32">
+			<definition>
+				<Table>
+					<type>
+						<NamedType>
+							<type>
+								<TypeRef name="char"/>
+							</type>
+						</NamedType>
+					</type>
+					<size>
+						<ConstValue value="32"/>
+					</size>
+				</Table>
+			</definition>
+			<pragmas>
+				<ed:Type oid="!ed/6b6e/6D6C/24DC/5bd10b326dab"/>
+			</pragmas>
+		</Type>
+		<Constant name="DEFAULT_MAGNITUDE">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_01"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- ['9'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="'9'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/6db7/6D6C/24DC/5bd112fd4990"/>
+			</pragmas>
+		</Constant>
+		<Constant name="DEFAULT_STEPS">
+			<type>
+				<NamedType>
+					<type>
+						<TypeRef name="T_String_03"/>
+					</type>
+				</NamedType>
+			</type>
+			<value>
+				<!-- [' ', '0', '1'] -->
+				<DataArrayOp>
+					<data>
+						<ConstValue value="' '"/>
+						<ConstValue value="'0'"/>
+						<ConstValue value="'1'"/>
+					</data>
+				</DataArrayOp>
+			</value>
+			<pragmas>
+				<ed:Constant oid="!ed/6dde/6D6C/24DC/5bd113376847"/>
 			</pragmas>
 		</Constant>
 	</declarations>
