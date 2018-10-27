@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="167" defaultConfiguration="24">
+<Project id="1" oid_count="171" defaultConfiguration="24">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -400,7 +400,6 @@
 			<elements>
 				<Folder id="13" extensions="xscade;scade" name="Separate Files"/>
 				<FileRef id="97" persistAs="UserApplication.xscade"/>
-				<FileRef id="118" persistAs="SendKafka.xscade"/>
 				<FileRef id="120" persistAs="CheckMd5.xscade"/>
 				<FileRef id="126" persistAs="ToggleWalking.xscade"/>
 				<FileRef id="130" persistAs="Protocol.xscade"/>
@@ -414,6 +413,7 @@
 				<FileRef id="148" persistAs="DisplayView.xscade"/>
 				<FileRef id="165" persistAs="convert2Char_1.xscade"/>
 				<FileRef id="167" persistAs="convert2Char_3.xscade"/>
+				<FileRef id="171" persistAs="send2Kafka.xscade"/>
 			</elements>
 		</Folder>
 		<FileRef id="93" persistAs="..\DefinitionFile\DefinitionFile.etp"/>
@@ -424,16 +424,6 @@
 		</Folder>
 		<Folder id="114" extensions="c;adb;ada" name="External Code">
 			<elements>
-				<FileRef id="115" persistAs="..\Integration\msg.c">
-					<props>
-						<Prop id="116" name="@SIMULATOR:FILEKIND">
-							<value>CS</value>
-						</Prop>
-						<Prop id="117" name="@SCADE:IMPORTED_NODES">
-							<value>SendKafka</value>
-						</Prop>
-					</props>
-				</FileRef>
 				<FileRef id="121" persistAs="..\Integration\md5.c">
 					<props>
 						<Prop id="122" name="@SIMULATOR:FILEKIND">
@@ -453,6 +443,16 @@
 							<value>convert2Int</value>
 							<value>convert2Char_1</value>
 							<value>convert2Char_3</value>
+						</Prop>
+					</props>
+				</FileRef>
+				<FileRef id="168" persistAs="..\Integration\send2Kafka.c">
+					<props>
+						<Prop id="169" name="@SIMULATOR:FILEKIND">
+							<value>CS</value>
+						</Prop>
+						<Prop id="170" name="@SCADE:IMPORTED_NODES">
+							<value>send2Kafka</value>
 						</Prop>
 					</props>
 				</FileRef>

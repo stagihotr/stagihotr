@@ -1,7 +1,7 @@
 // Autor: Kfouri baseado no codigo de Marcelo Paiva
 // Data: 26/10/2018
 // Objetivo: Integracao do CDS SCADE R18 com o Kafka, topico: erlun
-
+g
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>

@@ -7,7 +7,8 @@ from kafka import KafkaProducer, KafkaClient, SimpleProducer
 import socket
 
 KAFKA_TOPIC = 'erlun'
-KAFKA_BROKERS = '192.168.100.100:9091,192.168.100.10:9092,192.168.100.10:9093' # see step 1
+KAFKA_BROKERS = '192.168.100.100:9091' # see step 1
+
 
 producer = KafkaProducer(bootstrap_servers=KAFKA_BROKERS)
 
