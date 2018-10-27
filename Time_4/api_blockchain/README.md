@@ -8,8 +8,8 @@ Para rodar a API você possui duas opções:
 
 Caso escolha via docker:
 ```sh
-sudo docker pull gustavogomides/api-stagihotr-blockchain:0.1
-sudo docker run -d -p 3007:3007 api-stagihotr-blockchain:0.1
+sudo docker pull gustavogomides/api-stagihotr-blockchain:0.2
+sudo docker run -d -p 3007:3007 api-stagihotr-blockchain:0.2
 ```
 
 Caso escolha via npm:

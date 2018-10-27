@@ -15,7 +15,7 @@ async function cadastrar_paciente(req, res) {
                 console.log("** RESPOSTA COM SUCESSO DO BLOCKCHAIN")
                 console.log("*** ENVIANDO AO INFLUXDB")
                 req.body.pacienteId = Number(req.body.pacienteId)
-                await influx.salvar_influx("pacientes", req.body)
+                await influx.salvar_influx("paciente", req.body)
                 console.log("**** RESPOSTA COM SUCESSO DO INFLUXDB")
             }
             res.status(201);
