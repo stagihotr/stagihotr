@@ -30,13 +30,32 @@ if __name__ == "__main__":
             6: {
                 "msg": "Listagem dos movimentos de sentar do paciente",
                 "func": movimentos.obter_pelo_hash,
-                "mov": "sentar,down"
+                "mov": movimentos.opcoes_sentar
             },
             7: {
                 "msg": "Listagem dos movimentos de levantar do paciente",
                 "func": movimentos.obter_pelo_hash,
-                "mov": "levantar,up"
+                "mov": movimentos.opcoes_levantar
+            },
+            8: {
+                "msg": "Cadastro do movimento de andar",
+                "func": movimentos.cadastrar
+            },
+            9: {
+                "msg": "Cadastro do movimento de voltar",
+                "func": movimentos.cadastrar
+            },
+            10: {
+                "msg": "Listagem dos movimentos de andar do paciente",
+                "func": movimentos.obter_pelo_hash,
+                "mov": movimentos.opcoes_andar
+            },
+            11: {
+                "msg": "Listagem dos movimentos de voltar do paciente",
+                "func": movimentos.obter_pelo_hash,
+                "mov": movimentos.opcoes_voltar
             }
+
         }
         option = int(parser.option)
         filename_in = parser.file_in
@@ -47,9 +66,9 @@ if __name__ == "__main__":
             print("\n***** {} {}!".format(op['msg'], "selecionado"))
             if callable(op['func']):
                 mov = [None, None]
-                if 'mov' in op:
-                    mov = op['mov'].split(',')
-                op['func'](filename_in, filename_out, db, mov[0], mov[1])
+                if op.get('mov'):
+                    mov = op['mov']
+                op['func'](filename_in, filename_out, db, mov)
                 print("\n***** {} {}!".format(op['msg'], "concluído"))
             else:
                 print("Metodo nao implementado!")
