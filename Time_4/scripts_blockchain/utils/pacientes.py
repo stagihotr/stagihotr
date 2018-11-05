@@ -2,7 +2,7 @@ import utils.helpers as helpers
 import time
 
 
-def cadastrar(nome_arquivo, _, db, __, ___):
+def cadastrar(nome_arquivo, _, db, __):
     pacientes_csv = helpers.ler_arquivo(nome_arquivo)
     if pacientes_csv._values.any():
         for item in pacientes_csv._values:
@@ -25,7 +25,7 @@ def cadastrar(nome_arquivo, _, db, __, ___):
             url = 'stagihotr.paciente.PacienteParticipant'
             status, response = helpers.enviar_req(url, paciente)
             if status:
-                helpers.insert_db("pacientes", paciente, db)
+                helpers.insert_db("paciente", paciente, db)
                 print("Paciente {} cadastrado com sucesso!".format(pacienteId))
             else:
                 print(response)
@@ -33,7 +33,7 @@ def cadastrar(nome_arquivo, _, db, __, ___):
             time.sleep(1)
 
 
-def listar(_, arquivo_final, __, ___, ____):
+def listar(_, arquivo_final, __, ___):
     if not arquivo_final:
         raise ValueError("FILE_OUT obrigatório")
     url = 'stagihotr.paciente.PacienteParticipant'
@@ -63,7 +63,7 @@ def listar(_, arquivo_final, __, ___, ____):
         print("Erro ao listar pacientes!")
 
 
-def obter_pelo_id(nome_arquivo, arquivo_final, _, movimento1, movimento2):
+def obter_pelo_id(nome_arquivo, arquivo_final, _, __):
     if not arquivo_final:
         raise ValueError("FILE_OUT obrigatório")
     with open(nome_arquivo, 'r') as f:

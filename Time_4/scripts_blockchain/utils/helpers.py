@@ -33,9 +33,6 @@ def insert_db(measurement, data, db):
         body = [
             {
                 "measurement": measurement,
-                "tags": {
-                    "user": "stagihotr"
-                },
                 "time": str(datetime.now()),
                 "fields": data
             }

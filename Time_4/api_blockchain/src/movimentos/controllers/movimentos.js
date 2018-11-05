@@ -9,18 +9,59 @@ async function cadastrar_movimento(req, res) {
             res.status(errors.status || 500);
             res.json({ message: errors, success: false })
         } else {
+            levantar = "1"
+            sentar = "2"
+            andar = "3"
+            voltar = "4"
+
             movimentos = {
-                "levantar": "1",
-                "sentar": "2",
-                "andar": "3",
-                "voltar": "4"
+                "levantar": levantar,
+                "up": levantar,
+                "get_up": levantar,
+                "get up": levantar,
+                "bring_up": levantar,
+                "bring up": levantar,
+                "rise": levantar,
+
+                "sentar": sentar,
+                "down": sentar,
+                "sit": sentar,
+
+                "andar": andar,
+                "walk": andar,
+                "go": andar,
+
+                "voltar": voltar,
+                "return": voltar,
+                "back": voltar,
+                "come_back": voltar,
+                "come back": voltar
             }
+
+            nao_concluido = "0"
+            concluido = "1"
             st = {
-                "nao concluido": "0",
-                "concluido": "1"
+                "nao_concluido": nao_concluido,
+                "nao concluido": nao_concluido,
+                "not completed": nao_concluido,
+                "not_ok": nao_concluido,
+                "not": nao_concluido,
+                "false": nao_concluido,
+                "not_done": nao_concluido,
+                "not done": nao_concluido,
+                "0": nao_concluido,
+
+                "concluido": concluido,
+                "completed": concluido,
+                "ok": concluido,
+                "true": concluido,
+                "done": concluido,
+                "1": concluido
             }
-            const movimento = movimentos[req.body.movimento]
-            const status = st[req.body.status]
+
+            const movimento = movimentos[req.body.movimento.toLowerCase()]
+            const status = st[req.body.status.toLowerCase()]
+
             if (!movimento) {
                 res.status(400);
                 res.json({ message: "Movimento não encontrado!", success: false })
