@@ -20,9 +20,8 @@ consumer.on('message', function (message) {
   //testa se o comando enviado eh valido
   if(command.validate() == 0) {
   	console.log('comando validado');
-    console.log(command.getHeader());
-    console.log(command.getTopic());
-    console.log(command.getType());
+
+  	//TO-DO - TO BE CONTINUE
   }
 
 });
