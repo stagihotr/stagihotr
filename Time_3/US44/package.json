@@ -1,0 +1,14 @@
+{
+  "name": "us44",
+  "version": "1.0.0",
+  "description": "Implementação da US44 do projeto STAGIHO-TR",
+  "main": "us44.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "kafka-node": "^3.0.1"
+  }
+}
