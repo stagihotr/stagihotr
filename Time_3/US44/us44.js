@@ -6,7 +6,6 @@
 var kafka = require('kafka-node');
 var Command = require('./src/command.js')
 
-
 const client = new kafka.Client(process.env.KAFKA || 'localhost'); 
 const consumer = new kafka.Consumer(client, [{ topic: 'CDS', fromOffset: -1}]);
 
@@ -18,6 +17,12 @@ consumer.on('message', function (message) {
 
   var command = new Command(message.value);
 
-  console.log(command.validate());
-     
+  //testa se o comando enviado eh valido
+  if(command.validate() == 0) {
+  	console.log('comando validado');
+    console.log(command.getHeader());
+    console.log(command.getTopic());
+    console.log(command.getType());
+  }
+
 });
