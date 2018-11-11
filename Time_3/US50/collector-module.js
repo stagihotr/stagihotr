@@ -6,7 +6,8 @@ const request = require('request-promise');
 
 function run_collector(i) {
     
-        isOnline({
+        setTimeout(function() {
+            isOnline({
             // Break on 5 seconds
             timeout: 5000,
             // v4 or v6
@@ -70,26 +71,31 @@ function run_collector(i) {
                                     
                                 }).then(function (body) {
                                     console.log(body);
-                                    //run_collector(i++);
+                                    run_collector(i++);
 
                                 }).catch(function (err) {
                                     console.log(err);
                                 });
                 
                             }).catch(function (err) {
+                                run_collector(i++);
                                 console.log(err);
                             });    
                 
                 
-                        }//if
-                        }//if
+                            }//if
+                        } else {
+                            throw new Error('Rerun');
+                        }
                 
                     }).catch(function (err) {
-                        console.log(err);
+                        run_collector(i++);
+                        //console.log(err);
                     });
                 
                 }).catch(() => {
                     console.log("No internet");
+                    run_collector(i++);
                 });
 
 
@@ -98,14 +104,13 @@ function run_collector(i) {
 
                 
             }else{
-                
                 console.log("problems...problems...");
                 
             }
 
             
         });
-    
+    }, 2500);
  
 }
 
