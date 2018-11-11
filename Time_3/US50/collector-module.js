@@ -1,4 +1,4 @@
-const isOnline = require('is-online');
+//const isOnline = require('is-online');
 const internetAvailable = require("internet-available");
 const request = require('request-promise');
  
@@ -7,13 +7,13 @@ const request = require('request-promise');
 function run_collector(i) {
     
         setTimeout(function() {
-            isOnline({
+/*            isOnline({
             // Break on 5 seconds
             timeout: 5000,
             // v4 or v6
             version: "v4"
         }).then(online => {
-            if(online){
+            if(online){*/
                 //verificar servidor kafka disponível?
                 //verificar endpoint Blockchain disponivel?
                 ///////////////////////////////
@@ -103,13 +103,13 @@ function run_collector(i) {
 
 
                 
-            }else{
+/*            }else{
                 console.log("problems...problems...");
                 
             }
 
             
-        });
+        });*/
     }, 2500);
  
 }
