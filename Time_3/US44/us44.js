@@ -3,25 +3,7 @@
 
 'use strict'
 
-var kafka = require('kafka-node');
-var Command = require('./src/command.js')
+var Controller = require('./src/controller.js');
 
-const client = new kafka.Client(process.env.KAFKA || 'localhost'); 
-const consumer = new kafka.Consumer(client, [{ topic: 'CDS', fromOffset: -1}]);
-
-consumer.on('error', function (err) {
-  console.log(err);
-})
-
-consumer.on('message', function (message) {
-
-  var command = new Command(message.value);
-
-  //testa se o comando enviado eh valido
-  if(command.validate() == 0) {
-  	console.log('comando validado');
-
-  	//TO-DO - TO BE CONTINUE
-  }
-
-});
+var controller = new Controller();
+controller.cds('x', 'y');
