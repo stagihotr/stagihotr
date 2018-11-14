@@ -32,6 +32,13 @@ module.exports = function(app, db, jsonParser){
         });
     });
 
+    app.get('/api/movements_by_1', function(req,res){
+	console.log("SELECT " + fields.join(", ") + " FROM movements");
+	db.get("SELECT " + fields.join(", ") + " FROM movements", function(err,rows){
+	    res.json(rows);
+	});
+    });
+
     //Api/movements/pacient/{pacient}/
     app.get('/api/movements/pacient/:pacient', function(req, res){
         console.log("SELECT " + fields.join(", ") + " FROM movements WHERE pacient=?;");
@@ -120,7 +127,7 @@ module.exports = function(app, db, jsonParser){
                             return console.log(err.message);
                           }
                           // get the row(s) droped id
-                        return res.json("A row has been droped with rowid "+ this.lastID
+                        return res.json("A row has been droped with rowid "+ req.params.id
                         +" || Row(s) droped: "+this.changes);
                   
                         

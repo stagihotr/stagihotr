@@ -28,6 +28,10 @@ def create_parser():
         5 = Listar Paciente pelo ID e salvar em CSV
         6 = Listar Movimentos de Sentar de um Paciente e salvar em CSV
         7 = Listar Movimentos de Levantar de um Paciente e salvar em CSV
+        8 = Cadastrar Movimento de Andar        
+        9 = Cadastrar Movimento de Voltar        
+        10 = Listar Movimentos de Andar de um Paciente e salvar em CSV
+        11 = Listar Movimentos de Voltar de um Paciente e salvar em CSV
     '''
 
     file_in = '''Path absoluto do arquivo .csv para a leitura dos dados ou hash de pacientes'''
