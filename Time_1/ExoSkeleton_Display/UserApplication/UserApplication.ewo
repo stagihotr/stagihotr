@@ -39,17 +39,21 @@
 [STUDIO\TOOLS\CONFIGURATIONS\Code Generator]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="Simulation" 
+"E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="Simulation" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="HTML" 
+"E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="HTML" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Synchronization]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Import/Export]
 
+"E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
@@ -68,14 +72,16 @@
 [STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\DiffAnalyzer]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 
 [STUDIO\Workspace]
 
-"ActiveProject"="E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp" 
+"ActiveProject"="E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp" 
 
 [SCADE\Editor\Shortcut]
 
@@ -98,4 +104,4 @@
 
 [STUDIO\TOOLS\CONFIGURATIONS\Import/Export]
 
-"E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 

@@ -104,10 +104,6 @@
 			<value>win64</value>
 			<configuration>24</configuration>
 		</Prop>
-		<Prop id="37" name="@REPORTER:SCRIPT">
-			<value>Reporter/ScadeReport.tcl</value>
-			<configuration>36</configuration>
-		</Prop>
 		<Prop id="38" name="@REPORTER:RotateLandscape">
 			<value>true</value>
 			<configuration>36</configuration>
@@ -384,6 +380,10 @@
 			<value>Main</value>
 			<configuration>24</configuration>
 		</Prop>
+		<Prop id="37" name="@REPORTER:SCRIPT">
+			<value>Reporter/ScadeReport.tcl</value>
+			<configuration>36</configuration>
+		</Prop>
 	</props>
 	<roots>
 		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries">
@@ -401,11 +401,8 @@
 				<Folder id="13" extensions="xscade;scade" name="Separate Files"/>
 				<FileRef id="97" persistAs="UserApplication.xscade"/>
 				<FileRef id="120" persistAs="CheckMd5.xscade"/>
-				<FileRef id="126" persistAs="ToggleWalking.xscade"/>
 				<FileRef id="130" persistAs="Protocol.xscade"/>
 				<FileRef id="131" persistAs="Main.xscade"/>
-				<FileRef id="136" persistAs="_Main.xscade"/>
-				<FileRef id="141" persistAs="Switch.xscade"/>
 				<FileRef id="142" persistAs="MovingCycle.xscade"/>
 				<FileRef id="146" persistAs="Transition.xscade"/>
 				<FileRef id="153" persistAs="convert2Int.xscade"/>
