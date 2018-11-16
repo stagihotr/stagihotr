@@ -1,0 +1,1 @@
+path %path%;d:\Python\Python37;d:\Python\Python37\scripts
