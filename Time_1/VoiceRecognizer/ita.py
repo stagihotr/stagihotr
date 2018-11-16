@@ -55,7 +55,7 @@ def speechToText():
 def interpretarTexto(text_ref):
     word_collection = text_ref.split(' ') #str(t.lower).split(' ')
 
-    cmd_dict ={"avance":"FW", "avancar":"FW", "ande" : "FW", "andar":"FW", "caminhe" :"FW", "caminhar": "FW",
+    cmd_dict ={"avance":"FW", "avancar":"FW", "ande" : "FW", "andar":"FW", "caminhe" :"FW", "caminhar": "FW", "casas":"FW", "casa":"FW",
                "sente":"SI", "sentar":"SI","abaixe":"SI", "abaixar":"SI",
                "levante":"UP","levantar":"UP","levante-se":"UP","levanta-se":"UP"}
 
@@ -138,7 +138,7 @@ def protocol(resp):
 
 
 if __name__ == "__main__":
-    text_ref = getText()
+    text_ref = speechToText()
     #text_ref = "avance 5 passos velocidade 2"
     #text_ref = "sentar"
     resp = interpretarTexto(text_ref)
@@ -147,7 +147,3 @@ if __name__ == "__main__":
     print (prot)
 
 
-
-
-
-#print(r.recognize_google(audio, language='pt-BR', show_all=True))
