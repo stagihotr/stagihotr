@@ -1,41 +1,31 @@
 'use strict'
 
-var kafka = require('kafka-node');
-var client = new kafka.Client(process.env.KAFKA || 'localhost');
+const kafka = require("kafka-node");
+const client = new kafka.Client(process.env.KAFKA || "localhost");
 
-class Controller {
-  
-  cds(cds, exo) {
-    var Command = require('./command.js')
-    var consumer = new kafka.Consumer(client, [{ topic: cds, fromOffset: -1}]);
+process.on("SIGINT", function() {
+  client.close(function() {
+    process.exit();
+  });
+});
 
-    consumer.on('message', function (message) {
-      var command = new Command(message.value);
+exports.cds = (cds, exo) => {
+  const Command = require("./command.js");
+  const consumer = new kafka.Consumer(client, [{ topic: cds, fromOffset: -1}]);
+  const producer = require("./producer.js");
 
-      //testa se o comando enviado eh valido
-      if(command.validate() == 0) {
-        console.log('comando validado');
+  consumer.on("message", function (message) {
+    const command = new Command(message.value);
 
-        var producer = new kafka.Producer(client);
+    //testa se o comando enviado eh valido
+    if(command.validate() == 0) {
+      console.log("comando validado");
 
-        var payload = [{
-          topic: exo,
-          messages: command.getType()
-        }];    
+      procucer.send(exo, "teste");
+    }
+  });
 
-        producer.send(payload, function (err, data) {
-          if (err) {
-            console.log(err);
-          }
-        });
-
-      }
-    });
-
-    consumer.on('error', function (err) {
-      console.log(err);
-    });
-  }
+  consumer.on("error", function (err) {
+    console.log(err);
+  });
 }
-
-module.exports = Controller;
