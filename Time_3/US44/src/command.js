@@ -1,6 +1,6 @@
 'use strict'
 
-const protocol = require('./protocol.js');
+const protocol = require("./protocol.js");
 
 class Command {
 
@@ -27,8 +27,8 @@ class Command {
         console.log("md5: " + content_validation);
 
         //Rodar MD5 na parte 1
-        var crypto = require('crypto');
-        var md5 = crypto.createHash('md5').update(data).digest('hex');
+        var crypto = require("crypto");
+        var md5 = crypto.createHash("md5").update(data).digest("hex");
 
         console.log("checksum: " + md5);
         

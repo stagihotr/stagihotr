@@ -3,7 +3,6 @@
 
 'use strict'
 
-var Controller = require('./src/controller.js');
+var controller = require("./src/controller.js");
 
-var controller = new Controller();
-controller.cds('x', 'y');
+controller.cds("TS1IN", "TS2IN");
