@@ -4,7 +4,7 @@ r = sr.Recognizer()
 
 #print(sr.Microphone.list_microphone_names())
 mic = sr.Microphone()
-
+mic = sr.Microphone()
 
 #mic = sr.Microphone()
 
