@@ -138,8 +138,8 @@ def protocol(resp):
 
 
 if __name__ == "__main__":
-    #text_ref = getText()
-    text_ref = "avance 5 passos velocidade 2"
+    text_ref = getText()
+    #text_ref = "avance 5 passos velocidade 2"
     #text_ref = "sentar"
     resp = interpretarTexto(text_ref)
     print (resp)
