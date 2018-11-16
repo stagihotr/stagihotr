@@ -13,7 +13,7 @@ with mic as source:
     print("Dê um comando!\n")
     audio = r.listen(source)
 
-print("Comando em processamento.\n")
+print("Comando em processamento.\n ")
 print(r.recognize_google(audio, language='pt-BR'))
 
 #print(r.recognize_google(audio, language='pt-BR', show_all=True))
