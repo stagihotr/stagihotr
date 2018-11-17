@@ -54,8 +54,9 @@ def speechToText():
 
 def interpretarTexto(text_ref):
     word_collection = text_ref.split(' ') #str(t.lower).split(' ')
+    print(word_collection)
 
-    cmd_dict ={"avance":"FW", "avancar":"FW", "ande" : "FW", "andar":"FW", "caminhe" :"FW", "caminhar": "FW", "casas":"FW", "casa":"FW",
+    cmd_dict ={"avance":"FW", "avancar":"FW", "ande" : "FW", "andar":"FW", "caminhe" :"FW", "caminhar": "FW",
                "sente":"SI", "sentar":"SI","abaixe":"SI", "abaixar":"SI",
                "levante":"UP","levantar":"UP","levante-se":"UP","levanta-se":"UP"}
 
@@ -80,12 +81,18 @@ def interpretarTexto(text_ref):
 
     resp["command"] = word_collection[0]
 
-    if 'passos' in word_collection:
-        resp["steps"] = word_collection[word_collection.index('passos') - 1]
+    try:
+        if 'passos' in word_collection:
+            resp["steps"] = word_collection[word_collection.index('passos') - 1]
+    except:
+        pass
 
-    if 'velocidade' in word_collection:
-        resp["velocity"] = word_collection[word_collection.index('velocidade') + 1]   
-
+    try:
+        if 'velocidade' in word_collection:
+            resp["velocity"] = word_collection[word_collection.index('velocidade') + 1]   
+    except:
+        pass
+        
     if resp["command"] != None:
         resp["command"] = cmd_dict[resp["command"]]
 
