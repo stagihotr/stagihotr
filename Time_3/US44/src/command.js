@@ -9,9 +9,9 @@ class Command {
   }
 
   validate() {
-    console.log("command: " + this.command);
+    console.log("command: " + this.command + " checking");
 
-    console.log("command length: " + this.command.length);
+    console.log("command: " + this.command.length + " length");
 
     //passo1: verificar o tamanho do comando. 
     //segundo o Protocolo do TS01, o comando possui 75 caracteres (0~74);  
@@ -20,17 +20,17 @@ class Command {
         //Quebrar o comando no caracter 43, em duas partes 1 e 2.
         var data = this.command.substr(0, (protocol.command_length() - protocol.content_validation_length()));
 
-        console.log("command data: " + data);
+        console.log("command: " + data + " data");
 
         var content_validation = this.command.substr(protocol.content_validation_index(), protocol.content_validation_length());
 
-        console.log("md5: " + content_validation);
+        console.log("command: " + content_validation + " md5");
 
         //Rodar MD5 na parte 1
         var crypto = require("crypto");
         var md5 = crypto.createHash("md5").update(data).digest("hex");
 
-        console.log("checksum: " + md5);
+        console.log("command: " + md5 + " checksum");
         
         //Comparar com a parte2;
         if(md5 == content_validation) {
@@ -40,6 +40,10 @@ class Command {
     }
 
     return protocol.command_wrapper_length_error();
+  }
+
+  getCommand() {
+    return this.command;
   }
 
   getHeader() {
