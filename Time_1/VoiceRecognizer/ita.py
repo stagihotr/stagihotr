@@ -56,7 +56,7 @@ def interpretarTexto(text_ref):
     word_collection = text_ref.split(' ') #str(t.lower).split(' ')
     print(word_collection)
 
-    cmd_dict ={"avance":"FW", "avancar":"FW", "ande" : "FW", "andar":"FW", "caminhe" :"FW", "caminhar": "FW",
+    cmd_dict ={"avance":"FW", "avancar":"FW", "ande" : "FW", "andar":"FW", "caminhe" :"FW", "caminhar": "FW", "avante":"FW",
                "sente":"SI", "sentar":"SI","abaixe":"SI", "abaixar":"SI",
                "levante":"UP","levantar":"UP","levante-se":"UP","levanta-se":"UP"}
 
