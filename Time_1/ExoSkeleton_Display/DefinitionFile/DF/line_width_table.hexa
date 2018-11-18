@@ -1,0 +1,87 @@
+# Resource_DF_File_Header
+A661 # A661_DF_MAGIC_NUMBER
+01 # Library_version
+06 # Supplement_version
+0000 # AppID
+0000 # Size_of_OEM_free_data
+
+# Line_Width_Block_Structure_DT
+61 # OEM_BEGIN_WIDTH_BLOCK
+00 # UnusedPad
+0008 # TableSize
+00000090 # CommandSize
+0008 #  NumberOfelements
+0000 # UnusedPad
+
+# Width_Structure
+07 # Index
+00 # UnusedPAd
+0000 # UnusedPad
+40D1999A # WidthValue
+40A00000 # ColorWidthValue
+40E00000 # HaloWidthValue
+
+# Width_Structure
+06 # Index
+00 # UnusedPAd
+0000 # UnusedPad
+40B1999A # WidthValue
+40880000 # ColorWidthValue
+40C80000 # HaloWidthValue
+
+# Width_Structure
+05 # Index
+00 # UnusedPAd
+0000 # UnusedPad
+4091999A # WidthValue
+40633333 # ColorWidthValue
+40B1999A # HaloWidthValue
+
+# Width_Structure
+04 # Index
+00 # UnusedPAd
+0000 # UnusedPad
+40633333 # WidthValue
+40233333 # ColorWidthValue
+4091999A # HaloWidthValue
+
+# Width_Structure
+03 # Index
+00 # UnusedPAd
+0000 # UnusedPad
+40300000 # WidthValue
+40100000 # ColorWidthValue
+40880000 # HaloWidthValue
+
+# Width_Structure
+02 # Index
+00 # UnusedPAd
+0000 # UnusedPad
+40233333 # WidthValue
+3FD33333 # ColorWidthValue
+4069999A # HaloWidthValue
+
+# Width_Structure
+01 # Index
+00 # UnusedPAd
+0000 # UnusedPad
+4019999A # WidthValue
+3FC00000 # ColorWidthValue
+40600000 # HaloWidthValue
+
+# Width_Structure
+00 # Index
+00 # UnusedPAd
+0000 # UnusedPad
+3FC00000 # WidthValue
+3FC00000 # ColorWidthValue
+40600000 # HaloWidthValue
+
+D0 # A661_END_BLOCK
+00 # UnusedPad
+0000 # UnusedPad
+
+# Resource_DF_File_Footer
+E0 # A661_DF_FOOTER
+00 # UnusedPad
+0000 # UnusedPad

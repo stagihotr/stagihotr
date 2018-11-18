@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<server_conf>
+  <options>
+    <pointers n="2"></pointers>
+    <keyboards n="2"></keyboards>
+    <dev_buffer_size n="32"></dev_buffer_size>
+    <event_queue size="64"></event_queue>
+    <event_commands pool="false"></event_commands>
+  </options>
+  <display_conf>
+    <du width="768" height="768" ratio_x="20.0" ratio_y="20.0"></du>
+    <conf>
+      <window du_id="1" x1="0.0" y1="0.0" x2="15359.0" y2="15359.0">
+        <layer app_id="1" layer_id="1" visible="true"></layer>
+      </window>
+    </conf>
+  </display_conf>
+  <connectors>
+<!--Connector definition template.-->
+<!-- Replace X, Y and Z with the respective values-->
+<!-- <ref id="X" app_id="Y" layer_id="Z" />-->
+</connectors>
+</server_conf>

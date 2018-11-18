@@ -1,0 +1,1015 @@
+# Resource_DF_File_Header
+A661 # A661_DF_MAGIC_NUMBER
+01 # Library_version
+06 # Supplement_version
+0000 # AppID
+0000 # Size_of_OEM_free_data
+
+# Color_Block_Structure_DT
+62 # OEM_BEGIN_COLOR_BLOCK
+01 # FormatVersion
+0200 # TableSize
+000003F0 # CommandSize
+007C #  NumberOfelements
+0000 # UnusedPad
+
+# Color_Structure
+0192 # Index
+0000 # UnusedPad
+FF # Red
+00 # Green
+33 # Blue
+FF # Alpha
+
+# Color_Structure
+0191 # Index
+0000 # UnusedPad
+1A # Red
+92 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0183 # Index
+0000 # UnusedPad
+80 # Red
+00 # Green
+66 # Blue
+FF # Alpha
+
+# Color_Structure
+0182 # Index
+0000 # UnusedPad
+D4 # Red
+00 # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+017F # Index
+0000 # UnusedPad
+FF # Red
+AA # Green
+EE # Blue
+FF # Alpha
+
+# Color_Structure
+017E # Index
+0000 # UnusedPad
+FF # Red
+D5 # Green
+F6 # Blue
+FF # Alpha
+
+# Color_Structure
+017D # Index
+0000 # UnusedPad
+FF # Red
+00 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0179 # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+80 # Blue
+FF # Alpha
+
+# Color_Structure
+0178 # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0177 # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+D4 # Blue
+FF # Alpha
+
+# Color_Structure
+0176 # Index
+0000 # UnusedPad
+55 # Red
+55 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0175 # Index
+0000 # UnusedPad
+AA # Red
+AA # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0174 # Index
+0000 # UnusedPad
+D5 # Red
+D5 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0173 # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+016F # Index
+0000 # UnusedPad
+00 # Red
+66 # Green
+66 # Blue
+FF # Alpha
+
+# Color_Structure
+016E # Index
+0000 # UnusedPad
+00 # Red
+AA # Green
+88 # Blue
+FF # Alpha
+
+# Color_Structure
+016D # Index
+0000 # UnusedPad
+00 # Red
+D4 # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+016C # Index
+0000 # UnusedPad
+55 # Red
+FF # Green
+DD # Blue
+FF # Alpha
+
+# Color_Structure
+016B # Index
+0000 # UnusedPad
+AA # Red
+FF # Green
+EE # Blue
+FF # Alpha
+
+# Color_Structure
+016A # Index
+0000 # UnusedPad
+D5 # Red
+FF # Green
+F6 # Blue
+FF # Alpha
+
+# Color_Structure
+0169 # Index
+0000 # UnusedPad
+00 # Red
+FF # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0165 # Index
+0000 # UnusedPad
+00 # Red
+80 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0164 # Index
+0000 # UnusedPad
+00 # Red
+AA # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0163 # Index
+0000 # UnusedPad
+00 # Red
+D4 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0162 # Index
+0000 # UnusedPad
+55 # Red
+FF # Green
+55 # Blue
+FF # Alpha
+
+# Color_Structure
+0161 # Index
+0000 # UnusedPad
+AA # Red
+FF # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0160 # Index
+0000 # UnusedPad
+D5 # Red
+FF # Green
+D5 # Blue
+FF # Alpha
+
+# Color_Structure
+015F # Index
+0000 # UnusedPad
+00 # Red
+FF # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+015B # Index
+0000 # UnusedPad
+AA # Red
+88 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+015A # Index
+0000 # UnusedPad
+D4 # Red
+AA # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0159 # Index
+0000 # UnusedPad
+FF # Red
+CC # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0158 # Index
+0000 # UnusedPad
+FF # Red
+DD # Green
+55 # Blue
+FF # Alpha
+
+# Color_Structure
+0157 # Index
+0000 # UnusedPad
+FF # Red
+EE # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0156 # Index
+0000 # UnusedPad
+FF # Red
+F6 # Green
+D5 # Blue
+FF # Alpha
+
+# Color_Structure
+0155 # Index
+0000 # UnusedPad
+FF # Red
+FF # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0151 # Index
+0000 # UnusedPad
+80 # Red
+33 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0150 # Index
+0000 # UnusedPad
+AA # Red
+44 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+014F # Index
+0000 # UnusedPad
+D4 # Red
+55 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+014E # Index
+0000 # UnusedPad
+FF # Red
+99 # Green
+55 # Blue
+FF # Alpha
+
+# Color_Structure
+014D # Index
+0000 # UnusedPad
+FF # Red
+CC # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+014C # Index
+0000 # UnusedPad
+FF # Red
+E6 # Green
+D5 # Blue
+FF # Alpha
+
+# Color_Structure
+014B # Index
+0000 # UnusedPad
+FF # Red
+80 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0147 # Index
+0000 # UnusedPad
+80 # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0146 # Index
+0000 # UnusedPad
+AA # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0145 # Index
+0000 # UnusedPad
+D4 # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0144 # Index
+0000 # UnusedPad
+FF # Red
+55 # Green
+55 # Blue
+FF # Alpha
+
+# Color_Structure
+0143 # Index
+0000 # UnusedPad
+FF # Red
+AA # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0142 # Index
+0000 # UnusedPad
+FF # Red
+D5 # Green
+D5 # Blue
+FF # Alpha
+
+# Color_Structure
+0141 # Index
+0000 # UnusedPad
+FF # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0139 # Index
+0000 # UnusedPad
+1A # Red
+1A # Green
+1A # Blue
+FF # Alpha
+
+# Color_Structure
+0138 # Index
+0000 # UnusedPad
+33 # Red
+33 # Green
+33 # Blue
+FF # Alpha
+
+# Color_Structure
+0137 # Index
+0000 # UnusedPad
+4D # Red
+4D # Green
+4D # Blue
+FF # Alpha
+
+# Color_Structure
+0136 # Index
+0000 # UnusedPad
+66 # Red
+66 # Green
+66 # Blue
+FF # Alpha
+
+# Color_Structure
+0135 # Index
+0000 # UnusedPad
+80 # Red
+80 # Green
+80 # Blue
+FF # Alpha
+
+# Color_Structure
+0134 # Index
+0000 # UnusedPad
+99 # Red
+99 # Green
+99 # Blue
+FF # Alpha
+
+# Color_Structure
+0133 # Index
+0000 # UnusedPad
+B3 # Red
+B3 # Green
+B3 # Blue
+FF # Alpha
+
+# Color_Structure
+0132 # Index
+0000 # UnusedPad
+CC # Red
+CC # Green
+CC # Blue
+FF # Alpha
+
+# Color_Structure
+0131 # Index
+0000 # UnusedPad
+E6 # Red
+E6 # Green
+E6 # Blue
+FF # Alpha
+
+# Color_Structure
+0130 # Index
+0000 # UnusedPad
+EC # Red
+EC # Green
+EC # Blue
+FF # Alpha
+
+# Color_Structure
+012F # Index
+0000 # UnusedPad
+F2 # Red
+F2 # Green
+F2 # Blue
+FF # Alpha
+
+# Color_Structure
+012E # Index
+0000 # UnusedPad
+F9 # Red
+F9 # Green
+F9 # Blue
+FF # Alpha
+
+# Color_Structure
+012D # Index
+0000 # UnusedPad
+FF # Red
+FF # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+012C # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0057 # Index
+0000 # UnusedPad
+80 # Red
+00 # Green
+66 # Blue
+FF # Alpha
+
+# Color_Structure
+0056 # Index
+0000 # UnusedPad
+D4 # Red
+00 # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0053 # Index
+0000 # UnusedPad
+FF # Red
+AA # Green
+EE # Blue
+FF # Alpha
+
+# Color_Structure
+0052 # Index
+0000 # UnusedPad
+FF # Red
+D5 # Green
+F6 # Blue
+FF # Alpha
+
+# Color_Structure
+0051 # Index
+0000 # UnusedPad
+FF # Red
+00 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+004D # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+80 # Blue
+FF # Alpha
+
+# Color_Structure
+004C # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+004B # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+D4 # Blue
+FF # Alpha
+
+# Color_Structure
+004A # Index
+0000 # UnusedPad
+55 # Red
+55 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0049 # Index
+0000 # UnusedPad
+AA # Red
+AA # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0048 # Index
+0000 # UnusedPad
+D5 # Red
+D5 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0047 # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0043 # Index
+0000 # UnusedPad
+00 # Red
+66 # Green
+66 # Blue
+FF # Alpha
+
+# Color_Structure
+0042 # Index
+0000 # UnusedPad
+00 # Red
+AA # Green
+88 # Blue
+FF # Alpha
+
+# Color_Structure
+0041 # Index
+0000 # UnusedPad
+00 # Red
+D4 # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0040 # Index
+0000 # UnusedPad
+55 # Red
+FF # Green
+DD # Blue
+FF # Alpha
+
+# Color_Structure
+003F # Index
+0000 # UnusedPad
+AA # Red
+FF # Green
+EE # Blue
+FF # Alpha
+
+# Color_Structure
+003E # Index
+0000 # UnusedPad
+D5 # Red
+FF # Green
+F6 # Blue
+FF # Alpha
+
+# Color_Structure
+003D # Index
+0000 # UnusedPad
+00 # Red
+FF # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0039 # Index
+0000 # UnusedPad
+00 # Red
+80 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0038 # Index
+0000 # UnusedPad
+00 # Red
+AA # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0037 # Index
+0000 # UnusedPad
+00 # Red
+D4 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0036 # Index
+0000 # UnusedPad
+55 # Red
+FF # Green
+55 # Blue
+FF # Alpha
+
+# Color_Structure
+0035 # Index
+0000 # UnusedPad
+AA # Red
+FF # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0034 # Index
+0000 # UnusedPad
+D5 # Red
+FF # Green
+D5 # Blue
+FF # Alpha
+
+# Color_Structure
+0033 # Index
+0000 # UnusedPad
+00 # Red
+FF # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+002F # Index
+0000 # UnusedPad
+AA # Red
+88 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+002E # Index
+0000 # UnusedPad
+D4 # Red
+AA # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+002D # Index
+0000 # UnusedPad
+FF # Red
+CC # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+002C # Index
+0000 # UnusedPad
+FF # Red
+DD # Green
+55 # Blue
+FF # Alpha
+
+# Color_Structure
+002B # Index
+0000 # UnusedPad
+FF # Red
+EE # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+002A # Index
+0000 # UnusedPad
+FF # Red
+F6 # Green
+D5 # Blue
+FF # Alpha
+
+# Color_Structure
+0029 # Index
+0000 # UnusedPad
+FF # Red
+FF # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0025 # Index
+0000 # UnusedPad
+80 # Red
+33 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0024 # Index
+0000 # UnusedPad
+AA # Red
+44 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0023 # Index
+0000 # UnusedPad
+D4 # Red
+55 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0022 # Index
+0000 # UnusedPad
+FF # Red
+99 # Green
+55 # Blue
+FF # Alpha
+
+# Color_Structure
+0021 # Index
+0000 # UnusedPad
+FF # Red
+CC # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0020 # Index
+0000 # UnusedPad
+FF # Red
+E6 # Green
+D5 # Blue
+FF # Alpha
+
+# Color_Structure
+001F # Index
+0000 # UnusedPad
+FF # Red
+80 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+001B # Index
+0000 # UnusedPad
+80 # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+001A # Index
+0000 # UnusedPad
+AA # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0019 # Index
+0000 # UnusedPad
+D4 # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+0018 # Index
+0000 # UnusedPad
+FF # Red
+55 # Green
+55 # Blue
+FF # Alpha
+
+# Color_Structure
+0017 # Index
+0000 # UnusedPad
+FF # Red
+AA # Green
+AA # Blue
+FF # Alpha
+
+# Color_Structure
+0016 # Index
+0000 # UnusedPad
+FF # Red
+D5 # Green
+D5 # Blue
+FF # Alpha
+
+# Color_Structure
+0015 # Index
+0000 # UnusedPad
+FF # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+# Color_Structure
+000D # Index
+0000 # UnusedPad
+1A # Red
+1A # Green
+1A # Blue
+FF # Alpha
+
+# Color_Structure
+000C # Index
+0000 # UnusedPad
+33 # Red
+33 # Green
+33 # Blue
+FF # Alpha
+
+# Color_Structure
+000B # Index
+0000 # UnusedPad
+4D # Red
+4D # Green
+4D # Blue
+FF # Alpha
+
+# Color_Structure
+000A # Index
+0000 # UnusedPad
+66 # Red
+66 # Green
+66 # Blue
+FF # Alpha
+
+# Color_Structure
+0009 # Index
+0000 # UnusedPad
+80 # Red
+80 # Green
+80 # Blue
+FF # Alpha
+
+# Color_Structure
+0008 # Index
+0000 # UnusedPad
+99 # Red
+99 # Green
+99 # Blue
+FF # Alpha
+
+# Color_Structure
+0007 # Index
+0000 # UnusedPad
+B3 # Red
+B3 # Green
+B3 # Blue
+FF # Alpha
+
+# Color_Structure
+0006 # Index
+0000 # UnusedPad
+CC # Red
+CC # Green
+CC # Blue
+FF # Alpha
+
+# Color_Structure
+0005 # Index
+0000 # UnusedPad
+E6 # Red
+E6 # Green
+E6 # Blue
+FF # Alpha
+
+# Color_Structure
+0004 # Index
+0000 # UnusedPad
+EC # Red
+EC # Green
+EC # Blue
+FF # Alpha
+
+# Color_Structure
+0003 # Index
+0000 # UnusedPad
+F2 # Red
+F2 # Green
+F2 # Blue
+FF # Alpha
+
+# Color_Structure
+0002 # Index
+0000 # UnusedPad
+F9 # Red
+F9 # Green
+F9 # Blue
+FF # Alpha
+
+# Color_Structure
+0001 # Index
+0000 # UnusedPad
+FF # Red
+FF # Green
+FF # Blue
+FF # Alpha
+
+# Color_Structure
+0000 # Index
+0000 # UnusedPad
+00 # Red
+00 # Green
+00 # Blue
+FF # Alpha
+
+D0 # A661_END_BLOCK
+00 # UnusedPad
+0000 # UnusedPad
+
+# Resource_DF_File_Footer
+E0 # A661_DF_FOOTER
+00 # UnusedPad
+0000 # UnusedPad
