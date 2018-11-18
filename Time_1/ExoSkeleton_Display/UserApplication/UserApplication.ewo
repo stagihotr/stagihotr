@@ -40,16 +40,19 @@
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="Simulation" 
 "E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="Simulation" 
+"C:\\Users\\Scade\\Downloads\\stagihotr-master\\stagihotr-master\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="Simulation" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Reporter]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="HTML" 
 "E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="HTML" 
+"C:\\Users\\Scade\\Downloads\\stagihotr-master\\stagihotr-master\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="HTML" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Synchronization]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"C:\\Users\\Scade\\Downloads\\stagihotr-master\\stagihotr-master\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Import/Export]
 
@@ -69,20 +72,23 @@
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\Timing and Stack Analysis Tools]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"C:\\Users\\Scade\\Downloads\\stagihotr-master\\stagihotr-master\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 
 [STUDIO\TOOLS\CONFIGURATIONS\DiffAnalyzer]
 
 "E:\\Projetos\\stagihotr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 "E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"C:\\Users\\Scade\\Downloads\\stagihotr-master\\stagihotr-master\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
 
 [STUDIO\Workspace]
 
-"ActiveProject"="E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp" 
+"ActiveProject"="C:\\Users\\Scade\\Downloads\\stagihotr-master\\stagihotr-master\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp" 
 
 [SCADE\Editor\Shortcut]
 
@@ -105,4 +111,4 @@
 
 [STUDIO\TOOLS\CONFIGURATIONS\Import/Export]
 
-"E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 
+"C:\\Users\\Scade\\Downloads\\stagihotr-master\\stagihotr-master\\Time_1\\ExoSkeleton_Display\\UserApplication\\UserApplication.etp"="KCG" 

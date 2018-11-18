@@ -1,7 +1,7 @@
-// Baseado na RosettaCode.org
+/* Baseado na RosettaCode.org
 // https://rosettacode.org/wiki/MD5#C
 // Adpatado para o Scade por Fabio Kfouri
-
+*/
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
@@ -44,7 +44,7 @@ unsigned *calcKs( unsigned *k)
     return k;
 }
  
-// ROtate v Left by amt bits
+/* ROtate v Left by amt bits*/
 unsigned rol( unsigned v, short amt )
 {
     unsigned  msk1 = (1<<amt) -1;
@@ -54,7 +54,7 @@ unsigned rol( unsigned v, short amt )
 unsigned *md5( const char *msg, int mlen) 
 {
     static Digest h0 = { 0x67452301, 0xEFCDAB89, 0x98BADCFE, 0x10325476 };
-//    static Digest h0 = { 0x01234567, 0x89ABCDEF, 0xFEDCBA98, 0x76543210 };
+/*    static Digest h0 = { 0x01234567, 0x89ABCDEF, 0xFEDCBA98, 0x76543210 };*/
     static DgstFctn ff[] = { &f0, &f1, &f2, &f3 };
     static short M[] = { 1, 5, 3, 7 };
     static short O[] = { 0, 1, 5, 0 };
@@ -82,7 +82,7 @@ unsigned *md5( const char *msg, int mlen)
  
     if (k==NULL) k= calcKs(kspace);
  
-    for (q=0; q<4; q++) h[q] = h0[q];   // initialize
+    for (q=0; q<4; q++) h[q] = h0[q];   /* initialize*/
  
     {
         grps  = 1 + (mlen+8)/64;
@@ -92,11 +92,11 @@ unsigned *md5( const char *msg, int mlen)
         q = mlen + 1;
         while (q < 64*grps){ msg2[q] = 0; q++ ; }
         {
-//            unsigned char t;
+/*            unsigned char t;*/
             WBunion u;
             u.w = 8*mlen;
-//            t = u.b[0]; u.b[0] = u.b[3]; u.b[3] = t;
-//            t = u.b[1]; u.b[1] = u.b[2]; u.b[2] = t;
+/*            t = u.b[0]; u.b[0] = u.b[3]; u.b[3] = t;*/
+/*            t = u.b[1]; u.b[1] = u.b[2]; u.b[2] = t;*/
             q -= 8;
             memcpy(msg2+q, &u.w, 4 );
         }
@@ -136,13 +136,13 @@ char *removeFirstChar(char *ref, int finalSize){
     memcpy(subbuff, &ref[1], finalSize );
     subbuff[finalSize] = '\0';
     strcpy(ref, subbuff);
-    //return subbuff;
+    /*return subbuff;*/
 }
 
 
 void checkMd5(char *Send, char *Output)
 {
-    //Converte texto em codigo Md5 em Hex
+    /*Converte texto em codigo Md5 em Hex*/
     unsigned *tmpHexMd5 = md5(Send, strlen(Send));
 
     char tmpStrMd5[32];
@@ -152,16 +152,16 @@ void checkMd5(char *Send, char *Output)
         u.w = tmpHexMd5[j];
         for (k=0;k<4;k++) {
 
-	    //tranforma codigo Hexadecimal para texto. 
-	    // ref: https://stackoverflow.com/questions/1745726/how-to-store-printf-into-a-variable
+	    /*tranforma codigo Hexadecimal para texto.*/ 
+	    /* ref: https://stackoverflow.com/questions/1745726/how-to-store-printf-into-a-variable*/
 	    char *buf;
 	    size_t sz;
 	    sz = snprintf(NULL, 0, "%02x", u.b[k]);
 	    buf = (char *)malloc(sz + 1); /* make sure you check for != NULL in real code */
 	    snprintf(buf, sz+1, "%02x", u.b[k]);
 
-	    //Concatena os resultados
-	    strcat(tmpStrMd5, buf);//
+	    /*Concatena os resultados*/
+	    strcat(tmpStrMd5, buf);
 	}
     }
     
