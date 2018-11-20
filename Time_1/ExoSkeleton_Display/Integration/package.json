@@ -1,0 +1,25 @@
+{
+  "name": "socket-sc",
+  "version": "1.0.0",
+  "description": "simple socket client and server in nodejs",
+  "main": "tcp_socket_server.js",
+  "scripts": {
+    "test": "NA"
+  },
+  "repository": {
+    "type": "git",
+    "url": "NA"
+  },
+  "keywords": [
+    "socket",
+    "server",
+    "client",
+    "nodejs"
+  ],
+  "author": "Claudio Lelis",
+  "license": "ISC",
+  "dependencies": {
+    "kafka-node": "^3.0.1",
+    "net": "^1.0.2"
+  }
+}

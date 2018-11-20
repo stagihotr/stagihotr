@@ -28,14 +28,8 @@ operator_input_type ua_inputs;
 operator_output_type ua_outputs;
 
 char *DF_output_ip = "127.0.0.1";
-int DF_output_port = 3030;
+int DF_output_port = 9999;
 int DF_output_socket;
-
-void createFile(char *text){
-    FILE *fp = fopen("Blob.txt", "w+");
-    fputs(text, fp);
-    fclose(fp);
-}
 
 void receiveMessage(FRAMEWORK_MESSAGE message) {
     /*TEAM1_INPUT_INTERFACE input;
@@ -112,12 +106,12 @@ void executeCustomLogic() {
     /* Insert your additional logic */
     /* For instance, you can execute your RaspberryPi controller here */
     /* You can use ua_outputs (which is updated before this function is called) to feed you controller */
-    char outputProt[11];
+    char outputProt[76];
     char btn[2];
     char status[3];
 
     sprintf(btn, "%d", ua_outputs.changed);
-    sprintf(outputProt, "%s", ua_outputs.Comando);
+    sprintf(outputProt, "%s", ua_outputs.Protocolo);
 
     if(strcmp(btn,"1\0") == 0){
         send(DF_output_socket, outputProt, sizeof(outputProt), MSG_DONTWAIT);
