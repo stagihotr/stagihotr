@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
-** Generation date: 2018-11-17T00:35:22
+** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$ */
 
 #include "kcg_types.h"
@@ -270,6 +270,6 @@ kcg_bool kcg_comp_S_ToLabel_76(S_ToLabel_76 *kcg_c1, S_ToLabel_76 *kcg_c2)
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.c
-** Generation date: 2018-11-17T00:35:22
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$ */
 

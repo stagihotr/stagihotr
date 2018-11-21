@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
-** Generation date: 2018-11-17T00:35:22
+** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$ */
 #ifndef _KCG_CONSTS_H_
 #define _KCG_CONSTS_H_
@@ -12,9 +12,6 @@ extern const T_String_10 P_TIME;
 
 /* P_RESERVED/ */
 extern const T_String_01 P_RESERVED;
-
-/* P_MAGNITUDE/ */
-extern const T_String_01 P_MAGNITUDE;
 
 /* P_TO/ */
 extern const T_String_06 P_TO;
@@ -58,6 +55,6 @@ extern const T_String_02 P_STATUS_WT;
 #endif /* _KCG_CONSTS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_consts.h
-** Generation date: 2018-11-17T00:35:22
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$ */
 

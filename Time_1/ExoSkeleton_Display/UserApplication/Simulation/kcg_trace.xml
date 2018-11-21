@@ -12,7 +12,7 @@
     <Option name="warn_error" value="#off#"/>
     <Option name="short_circuit" value="#off#"/>
     <Option name="wrap_c_ops" value="#off#"/>
-    <Option name="input_file" value="C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation/scade_model_without_unused.scade"/>
+    <Option name="input_file" value="E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/scade_model_without_unused.scade"/>
     <Option name="probes" value="#on#"/>
     <Option name="no_observe" value="#off#"/>
     <Option name="observe" value="#off#"/>
@@ -28,7 +28,7 @@
     <Option name="noexp" value="#off#"/>
     <Option name="exp" value="#off#"/>
     <Option name="expall" value="#on#"/>
-    <Option name="target_dir" value="C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation"/>
+    <Option name="target_dir" value="E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation"/>
     <Option name="target" value="C"/>
     <Option name="root" value="Main"/>
     <Option name="auth" value="#off#"/>
@@ -43,7 +43,6 @@
     <Constant scadeName="P_TOPIC" scadeType="T_String_06" targetName="P_TOPIC" targetType="T_String_06"/>
     <Constant scadeName="P_FROM" scadeType="T_String_06" targetName="P_FROM" targetType="T_String_06"/>
     <Constant scadeName="P_TO" scadeType="T_String_06" targetName="P_TO" targetType="T_String_06"/>
-    <Constant scadeName="P_MAGNITUDE" scadeType="T_String_01" targetName="P_MAGNITUDE" targetType="T_String_01"/>
     <Constant scadeName="P_RESERVED" scadeType="T_String_01" targetName="P_RESERVED" targetType="T_String_01"/>
     <Constant scadeName="P_TIME" scadeType="T_String_10" targetName="P_TIME" targetType="T_String_10"/>
     <Constant macroDef="true" scadeName="DEFAULT_MAGNITUDE" scadeType="int32" targetName="DEFAULT_MAGNITUDE" targetType="kcg_int32"/>
@@ -76,10 +75,16 @@
       <Output inCtx="true" scadeName="Out_Protocol_OutCMD" scadeType="S_ToLabel_10" targetName="Out_Protocol_OutCMD" targetType="S_ToLabel_10"/>
       <Output inCtx="true" scadeName="Out_Protocol_OutProtocol" scadeType="S_ToLabel_76" targetName="Out_Protocol_OutProtocol" targetType="S_ToLabel_76"/>
       <Output inCtx="true" scadeName="Out_Protocol_OutMD5" scadeType="S_ToLabel_33" targetName="Out_Protocol_OutMD5" targetType="S_ToLabel_33"/>
+      <Output inCtx="true" scadeName="Protocolo" scadeType="T_String_76" targetName="Protocolo" targetType="T_String_76"/>
+      <Output inCtx="true" scadeName="Comando" scadeType="T_String_10" targetName="Comando" targetType="T_String_10"/>
+      <Output inCtx="true" scadeName="PulseWalk" scadeType="bool" targetName="PulseWalk" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="PulseSit" scadeType="bool" targetName="PulseSit" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="PulseRaise" scadeType="bool" targetName="PulseRaise" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="changed" scadeType="bool" targetName="changed" targetType="kcg_bool"/>
       <Local inCtx="true" scadeName="Magnitude" scadeType="int32" targetName="Magnitude" targetType="kcg_int32"/>
       <Local inCtx="true" scadeName="Steps" scadeType="int32" targetName="Steps" targetType="kcg_int32"/>
       <Local inCtx="true" scadeName="varDoneRunning" scadeType="bool" targetName="varDoneRunning" targetType="kcg_bool"/>
-      <Local inCtx="true" scadeName="varWaiting" scadeType="bool" targetName="varWaiting" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="varDoneWaiting" scadeType="bool" targetName="varDoneWaiting" targetType="kcg_bool"/>
       <Local inCtx="true" scadeName="ImageReference" scadeType="T_ImageReference" targetName="ImageReference" targetType="T_ImageReference"/>
       <Local inCtx="true" scadeName="varDoneSitting" scadeType="bool" targetName="varDoneSitting" targetType="kcg_bool"/>
       <Local inCtx="true" scadeName="varDoneRising" scadeType="bool" targetName="varDoneRising" targetType="kcg_bool"/>
@@ -95,8 +100,6 @@
       <Local inCtx="true" scadeName="_L52" scadeType="bool" targetName="_L52" targetType="kcg_bool"/>
       <Local inCtx="true" scadeName="_L55" scadeType="int32" targetName="_L55" targetType="kcg_int32"/>
       <Local inCtx="true" scadeName="_L59" scadeType="int32" targetName="_L59" targetType="kcg_int32"/>
-      <Local inCtx="true" scadeName="_L42" scadeType="bool" targetName="_L42" targetType="kcg_bool"/>
-      <Local inCtx="true" scadeName="_L41" scadeType="bool" targetName="_L41" targetType="kcg_bool"/>
       <Local inCtx="true" scadeName="_L62" scadeType="S_ToLabel_76" targetName="_L62" targetType="S_ToLabel_76"/>
       <Local inCtx="true" scadeName="_L63" scadeType="S_ToLabel_33" targetName="_L63" targetType="S_ToLabel_33"/>
       <Local inCtx="true" scadeName="_L64" scadeType="S_ToLabel_10" targetName="_L64" targetType="S_ToLabel_10"/>
@@ -106,6 +109,18 @@
       <Local inCtx="true" scadeName="_L84" scadeType="int32" targetName="_L84" targetType="kcg_int32"/>
       <Local inCtx="true" scadeName="_L85" scadeType="int32" targetName="_L85" targetType="kcg_int32"/>
       <Local inCtx="true" scadeName="_L86" scadeType="T_String_03" targetName="_L86" targetType="T_String_03"/>
+      <Local inCtx="true" scadeName="_L87" scadeType="T_String_76" targetName="_L87" targetType="T_String_76"/>
+      <Local inCtx="true" scadeName="_L88" scadeType="T_String_10" targetName="_L88" targetType="T_String_10"/>
+      <Local inCtx="true" scadeName="_L89" scadeType="bool" targetName="_L89" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L90" scadeType="bool" targetName="_L90" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L91" scadeType="bool" targetName="_L91" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L98" scadeType="T_String_10" targetName="_L98" targetType="T_String_10"/>
+      <Local inCtx="true" scadeName="_L100" scadeType="bool" targetName="_L100" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L103" scadeType="bool" targetName="_L103" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L104" scadeType="bool" targetName="_L104" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L105" scadeType="bool" targetName="_L105" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L42" scadeType="bool" targetName="_L42" targetType="kcg_bool"/>
+      <Local inCtx="true" scadeName="_L41" scadeType="bool" targetName="_L41" targetType="kcg_bool"/>
       <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
         <State scadeName="Waiting" targetName="SSM_st_Waiting_SM1">
           <Local clockVal="SSM_st_Waiting_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L6" scadeType="bool" targetName="_L6_Waiting_SM1" targetType="kcg_bool"/>
@@ -225,6 +240,7 @@
           <Local clockVal="SSM_st_Runned_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L7" scadeType="bool" targetName="_L7_Runned_SM1" targetType="kcg_bool"/>
           <Local clockVal="SSM_st_Runned_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L12" scadeType="T_String_02" targetName="_L12_Runned_SM1" targetType="T_String_02"/>
           <Local clockVal="SSM_st_Runned_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L13" scadeType="T_String_02" targetName="_L13_Runned_SM1" targetType="T_String_02"/>
+          <Local clockVal="SSM_st_Runned_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L16" scadeType="bool" targetName="_L16_Runned_SM1" targetType="kcg_bool"/>
           <FbyOp instName="3">
             <Init inCtx="true" targetName="init4" targetType="kcg_bool"/>
             <Memory inCtx="true" targetName="_L4_Runned_SM1" targetType="kcg_int32"/>
@@ -410,13 +426,6 @@
         </FbyOp>
         <NodeInstance instName="1" refName="convert2Int" scadeName="convert2Int"/>
       </NodeInlining>
-      <NodeInlining instName="1" scadeName="DisplayView">
-        <Input inCtx="true" scadeName="isSitting" scadeType="bool" targetName="isSitting_DisplayView_1" targetType="kcg_bool"/>
-        <Output inCtx="true" scadeName="EnablePbSit" scadeType="bool" targetName="EnablePbSit_DisplayView_1" targetType="kcg_bool"/>
-        <Output inCtx="true" scadeName="EnablePbRaise" scadeType="bool" targetName="EnablePbRaise_DisplayView_1" targetType="kcg_bool"/>
-        <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_DisplayView_1" targetType="kcg_bool"/>
-        <Local inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10_DisplayView_1" targetType="kcg_bool"/>
-      </NodeInlining>
       <NodeInlining instName="1" scadeName="Protocol">
         <Input inCtx="true" scadeName="Status" scadeType="T_String_02" targetName="Status_Protocol_1" targetType="T_String_02"/>
         <Input inCtx="true" scadeName="Command" scadeType="T_String_02" targetName="Command_Protocol_1" targetType="T_String_02"/>
@@ -425,12 +434,13 @@
         <Output inCtx="true" scadeName="OutProtocol" scadeType="S_ToLabel_76" targetName="OutProtocol_Protocol_1" targetType="S_ToLabel_76"/>
         <Output inCtx="true" scadeName="OutMd5" scadeType="S_ToLabel_33" targetName="OutMd5_Protocol_1" targetType="S_ToLabel_33"/>
         <Output inCtx="true" scadeName="OutCMD" scadeType="S_ToLabel_10" targetName="OutCMD_Protocol_1" targetType="S_ToLabel_10"/>
+        <Output inCtx="true" scadeName="Protocolo" scadeType="T_String_76" targetName="Protocolo_Protocol_1" targetType="T_String_76"/>
+        <Output inCtx="true" scadeName="Comando" scadeType="T_String_10" targetName="Comando_Protocol_1" targetType="T_String_10"/>
         <Local inCtx="true" scadeName="_L1" scadeType="T_String_06" targetName="_L1_Protocol_1" targetType="T_String_06"/>
         <Local inCtx="true" scadeName="_L2" scadeType="T_String_06" targetName="_L2_Protocol_1" targetType="T_String_06"/>
         <Local inCtx="true" scadeName="_L3" scadeType="T_String_06" targetName="_L3_Protocol_1" targetType="T_String_06"/>
         <Local inCtx="true" scadeName="_L4" scadeType="T_String_06" targetName="_L4_Protocol_1" targetType="T_String_06"/>
         <Local inCtx="true" scadeName="_L7" scadeType="char^(43)" targetName="_L7_Protocol_1" targetType="T_String_43"/>
-        <Local inCtx="true" scadeName="_L9" scadeType="T_String_01" targetName="_L9_Protocol_1" targetType="T_String_01"/>
         <Local inCtx="true" scadeName="_L11" scadeType="T_String_01" targetName="_L11_Protocol_1" targetType="T_String_01"/>
         <Local inCtx="true" scadeName="_L13" scadeType="T_String_10" targetName="_L13_Protocol_1" targetType="T_String_10"/>
         <Local inCtx="true" scadeName="_L14" scadeType="T_String_32" targetName="_L14_Protocol_1" targetType="T_String_32"/>
@@ -460,6 +470,17 @@
       </NodeInlining>
       <NodeInstance instName="1" refName="convert2Char_1" scadeName="convert2Char_1"/>
       <NodeInstance instName="1" refName="convert2Char_3" scadeName="convert2Char_3"/>
+      <FbyOp instName="6">
+        <Init inCtx="true" targetName="init3" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="_L88" targetType="T_String_10"/>
+      </FbyOp>
+      <NodeInlining instName="1" scadeName="DisplayView">
+        <Input inCtx="true" scadeName="isSitting" scadeType="bool" targetName="isSitting_DisplayView_1" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="EnablePbSit" scadeType="bool" targetName="EnablePbSit_DisplayView_1" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="EnablePbRaise" scadeType="bool" targetName="EnablePbRaise_DisplayView_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L3" scadeType="bool" targetName="_L3_DisplayView_1" targetType="kcg_bool"/>
+        <Local inCtx="true" scadeName="_L10" scadeType="bool" targetName="_L10_DisplayView_1" targetType="kcg_bool"/>
+      </NodeInlining>
       <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
       <Init inCtx="true" targetName="init1" targetType="kcg_bool"/>
       <Init inCtx="true" targetName="init2" targetType="kcg_bool"/>
@@ -480,10 +501,11 @@
       <Memory inCtx="true" targetName="_L37_Running_SM1" targetType="kcg_bool"/>
       <Memory inCtx="true" targetName="_L4_Runned_SM1" targetType="kcg_int32"/>
       <Memory inCtx="true" targetName="varDoneRunning" targetType="kcg_bool"/>
-      <Memory inCtx="true" targetName="varWaiting" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="varDoneWaiting" targetType="kcg_bool"/>
       <Memory inCtx="true" targetName="ImageReference" targetType="T_ImageReference"/>
       <Memory inCtx="true" targetName="varDoneSitting" targetType="kcg_bool"/>
       <Memory inCtx="true" targetName="varDoneRising" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L88" targetType="T_String_10"/>
       <Clock inCtx="true" targetName="SM1_state_act" targetType="SSM_ST_SM1"/>
       <OutCtxType targetName="outC_Main"/>
       <InCtxType targetName="inC_Main"/>
@@ -495,7 +517,6 @@
       <Input scadeName="Send" scadeType="T_String_02" targetName="Send" targetType="T_String_02"/>
       <Output scadeName="Value" scadeType="int32" targetName="Value" targetType="kcg_int32"/>
     </NoExpNode>
-    <ExpNode scadeName="DisplayView"/>
     <ExpNode scadeName="Protocol"/>
     <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="checkMd5" targetCycleFct="checkMd5">
       <Input scadeName="Send" scadeType="T_String_43" targetName="Send" targetType="T_String_43"/>
@@ -509,6 +530,7 @@
       <Input scadeName="Send" scadeType="int32" targetName="Send" targetType="kcg_int32"/>
       <Output scadeName="Output" scadeType="T_String_03" targetName="Output" targetType="T_String_03"/>
     </NoExpNode>
+    <ExpNode scadeName="DisplayView"/>
     <Package scadeName="pwlinear">
       <ExpNode scadeName="Counter"/>
     </Package>

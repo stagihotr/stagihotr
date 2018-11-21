@@ -84,6 +84,24 @@ typedef struct {
 #define VARC_Main_Out_Protocol_OutMD5(context) context.outputs_ctx.Out_Protocol_OutMD5  /* Main/Out_Protocol_OutMD5 */
 #define VAR_Main_Out_Protocol_OutMD5 VARC_Main_Out_Protocol_OutMD5(CTX_Main)
 
+#define VARC_Main_Protocolo(context) context.outputs_ctx.Protocolo  /* Main/Protocolo */
+#define VAR_Main_Protocolo VARC_Main_Protocolo(CTX_Main)
+
+#define VARC_Main_Comando(context) context.outputs_ctx.Comando  /* Main/Comando */
+#define VAR_Main_Comando VARC_Main_Comando(CTX_Main)
+
+#define VARC_Main_PulseWalk(context) context.outputs_ctx.PulseWalk  /* Main/PulseWalk */
+#define VAR_Main_PulseWalk VARC_Main_PulseWalk(CTX_Main)
+
+#define VARC_Main_PulseSit(context) context.outputs_ctx.PulseSit  /* Main/PulseSit */
+#define VAR_Main_PulseSit VARC_Main_PulseSit(CTX_Main)
+
+#define VARC_Main_PulseRaise(context) context.outputs_ctx.PulseRaise  /* Main/PulseRaise */
+#define VAR_Main_PulseRaise VARC_Main_PulseRaise(CTX_Main)
+
+#define VARC_Main_changed(context) context.outputs_ctx.changed  /* Main/changed */
+#define VAR_Main_changed VARC_Main_changed(CTX_Main)
+
 
 /*$**********************************************************
 *                           ELEMENT ACCESS
@@ -124,6 +142,18 @@ typedef struct {
 #define CPY_Out_Protocol_OutProtocol(DST, SRC) kcg_copy_S_ToLabel_76(DST, SRC)
 #define T_Out_Protocol_OutMD5 S_ToLabel_33
 #define CPY_Out_Protocol_OutMD5(DST, SRC) kcg_copy_S_ToLabel_33(DST, SRC)
+#define T_Protocolo T_String_76
+#define CPY_Protocolo(DST, SRC) kcg_copy_T_String_76(DST, SRC)
+#define T_Comando T_String_10
+#define CPY_Comando(DST, SRC) kcg_copy_T_String_10(DST, SRC)
+#define T_PulseWalk kcg_bool
+#define CPY_PulseWalk(DST, SRC) DST = SRC
+#define T_PulseSit kcg_bool
+#define CPY_PulseSit(DST, SRC) DST = SRC
+#define T_PulseRaise kcg_bool
+#define CPY_PulseRaise(DST, SRC) DST = SRC
+#define T_changed kcg_bool
+#define CPY_changed(DST, SRC) DST = SRC
 
 
 /*$**********************************************************

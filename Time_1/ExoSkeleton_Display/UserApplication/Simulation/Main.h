@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
-** Generation date: 2018-11-17T00:35:22
+** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$ */
 #ifndef _Main_H_
 #define _Main_H_
@@ -31,6 +31,12 @@ typedef struct {
   S_ToLabel_10 /* Out_Protocol_OutCMD/ */ Out_Protocol_OutCMD;
   S_ToLabel_76 /* Out_Protocol_OutProtocol/ */ Out_Protocol_OutProtocol;
   S_ToLabel_33 /* Out_Protocol_OutMD5/ */ Out_Protocol_OutMD5;
+  T_String_76 /* Protocolo/ */ Protocolo;
+  T_String_10 /* Comando/ */ Comando;
+  kcg_bool /* PulseWalk/ */ PulseWalk;
+  kcg_bool /* PulseSit/ */ PulseSit;
+  kcg_bool /* PulseRaise/ */ PulseRaise;
+  kcg_bool /* changed/ */ changed;
   /* -----------------------  no local probes  ----------------------- */
   /* ----------------------- local memories  ------------------------- */
   kcg_bool init;
@@ -56,10 +62,11 @@ typedef struct {
   kcg_bool /* SM1: */ SM1_reset_act;
   kcg_bool /* SM1: */ SM1_reset_nxt;
   kcg_bool /* varDoneRunning/ */ varDoneRunning;
-  kcg_bool /* varWaiting/ */ varWaiting;
+  kcg_bool /* varDoneWaiting/ */ varDoneWaiting;
   T_ImageReference /* ImageReference/ */ ImageReference;
   kcg_bool /* varDoneSitting/ */ varDoneSitting;
   kcg_bool /* varDoneRising/ */ varDoneRising;
+  T_String_10 /* _L88/ */ _L88;
   /* -------------------- no sub nodes' contexts  -------------------- */
   /* ------------------ clocks of observable data -------------------- */
   SSM_ST_SM1 /* SM1: */ SM1_state_act;
@@ -177,49 +184,50 @@ typedef struct {
   kcg_int32 /* @9/_L4/ */ _L4_Read_InputNumber_5;
   kcg_bool /* @9/_L1/ */ _L1_Read_InputNumber_5;
   T_String_01 /* @9/_L2/ */ _L2_Read_InputNumber_5;
-  kcg_bool /* @10/EnablePbRaise/ */ EnablePbRaise_DisplayView_1;
-  kcg_bool /* @10/EnablePbSit/ */ EnablePbSit_DisplayView_1;
-  kcg_bool /* @10/isSitting/ */ isSitting_DisplayView_1;
-  kcg_bool /* @10/_L10/ */ _L10_DisplayView_1;
-  kcg_bool /* @10/_L3/ */ _L3_DisplayView_1;
-  S_ToLabel_10 /* @11/OutCMD/ */ OutCMD_Protocol_1;
-  S_ToLabel_33 /* @11/OutMd5/ */ OutMd5_Protocol_1;
-  S_ToLabel_76 /* @11/OutProtocol/ */ OutProtocol_Protocol_1;
-  T_String_03 /* @11/CommandPlus/ */ CommandPlus_Protocol_1;
-  T_String_01 /* @11/Magnitude/ */ Magnitude_Protocol_1;
-  T_String_02 /* @11/Command/ */ Command_Protocol_1;
-  T_String_02 /* @11/Status/ */ Status_Protocol_1;
-  T_String_03 /* @11/_L56/ */ _L56_Protocol_1;
-  T_String_01 /* @11/_L54/ */ _L54_Protocol_1;
-  T_String_02 /* @11/_L53/ */ _L53_Protocol_1;
-  T_String_02 /* @11/_L52/ */ _L52_Protocol_1;
-  T_String_01 /* @11/_L51/ */ _L51_Protocol_1;
-  T_String_01 /* @11/_L49/ */ _L49_Protocol_1;
-  T_String_76 /* @11/_L48/ */ _L48_Protocol_1;
-  T_String_33 /* @11/_L47/ */ _L47_Protocol_1;
-  T_String_01 /* @11/_L46/ */ _L46_Protocol_1;
-  T_String_10 /* @11/_L45/ */ _L45_Protocol_1;
-  S_ToLabel_10 /* @11/_L44/ */ _L44_Protocol_1;
-  kcg_uint16 /* @11/_L42/ */ _L42_Protocol_1;
-  kcg_uint16 /* @11/_L41/ */ _L41_Protocol_1;
-  S_ToLabel_76 /* @11/_L40/ */ _L40_Protocol_1;
-  S_ToLabel_33 /* @11/_L39/ */ _L39_Protocol_1;
-  kcg_int32 /* @11/_L34/ */ _L34_Protocol_1;
-  kcg_int32 /* @11/_L33/ */ _L33_Protocol_1;
-  kcg_int32 /* @11/_L32/ */ _L32_Protocol_1;
-  kcg_uint16 /* @11/_L30/ */ _L30_Protocol_1;
-  kcg_bool /* @11/_L24/ */ _L24_Protocol_1;
-  array_char_9 /* @11/_L17/ */ _L17_Protocol_1;
-  array_char_75 /* @11/_L16/ */ _L16_Protocol_1;
-  T_String_32 /* @11/_L14/ */ _L14_Protocol_1;
-  T_String_10 /* @11/_L13/ */ _L13_Protocol_1;
-  T_String_01 /* @11/_L11/ */ _L11_Protocol_1;
-  T_String_01 /* @11/_L9/ */ _L9_Protocol_1;
-  T_String_43 /* @11/_L7/ */ _L7_Protocol_1;
-  T_String_06 /* @11/_L4/ */ _L4_Protocol_1;
-  T_String_06 /* @11/_L3/ */ _L3_Protocol_1;
-  T_String_06 /* @11/_L2/ */ _L2_Protocol_1;
-  T_String_06 /* @11/_L1/ */ _L1_Protocol_1;
+  T_String_10 /* @10/Comando/ */ Comando_Protocol_1;
+  T_String_76 /* @10/Protocolo/ */ Protocolo_Protocol_1;
+  S_ToLabel_10 /* @10/OutCMD/ */ OutCMD_Protocol_1;
+  S_ToLabel_33 /* @10/OutMd5/ */ OutMd5_Protocol_1;
+  S_ToLabel_76 /* @10/OutProtocol/ */ OutProtocol_Protocol_1;
+  T_String_03 /* @10/CommandPlus/ */ CommandPlus_Protocol_1;
+  T_String_01 /* @10/Magnitude/ */ Magnitude_Protocol_1;
+  T_String_02 /* @10/Command/ */ Command_Protocol_1;
+  T_String_02 /* @10/Status/ */ Status_Protocol_1;
+  T_String_03 /* @10/_L56/ */ _L56_Protocol_1;
+  T_String_01 /* @10/_L54/ */ _L54_Protocol_1;
+  T_String_02 /* @10/_L53/ */ _L53_Protocol_1;
+  T_String_02 /* @10/_L52/ */ _L52_Protocol_1;
+  T_String_01 /* @10/_L51/ */ _L51_Protocol_1;
+  T_String_01 /* @10/_L49/ */ _L49_Protocol_1;
+  T_String_76 /* @10/_L48/ */ _L48_Protocol_1;
+  T_String_33 /* @10/_L47/ */ _L47_Protocol_1;
+  T_String_01 /* @10/_L46/ */ _L46_Protocol_1;
+  T_String_10 /* @10/_L45/ */ _L45_Protocol_1;
+  S_ToLabel_10 /* @10/_L44/ */ _L44_Protocol_1;
+  kcg_uint16 /* @10/_L42/ */ _L42_Protocol_1;
+  kcg_uint16 /* @10/_L41/ */ _L41_Protocol_1;
+  S_ToLabel_76 /* @10/_L40/ */ _L40_Protocol_1;
+  S_ToLabel_33 /* @10/_L39/ */ _L39_Protocol_1;
+  kcg_int32 /* @10/_L34/ */ _L34_Protocol_1;
+  kcg_int32 /* @10/_L33/ */ _L33_Protocol_1;
+  kcg_int32 /* @10/_L32/ */ _L32_Protocol_1;
+  kcg_uint16 /* @10/_L30/ */ _L30_Protocol_1;
+  kcg_bool /* @10/_L24/ */ _L24_Protocol_1;
+  array_char_9 /* @10/_L17/ */ _L17_Protocol_1;
+  array_char_75 /* @10/_L16/ */ _L16_Protocol_1;
+  T_String_32 /* @10/_L14/ */ _L14_Protocol_1;
+  T_String_10 /* @10/_L13/ */ _L13_Protocol_1;
+  T_String_01 /* @10/_L11/ */ _L11_Protocol_1;
+  T_String_43 /* @10/_L7/ */ _L7_Protocol_1;
+  T_String_06 /* @10/_L4/ */ _L4_Protocol_1;
+  T_String_06 /* @10/_L3/ */ _L3_Protocol_1;
+  T_String_06 /* @10/_L2/ */ _L2_Protocol_1;
+  T_String_06 /* @10/_L1/ */ _L1_Protocol_1;
+  kcg_bool /* @11/EnablePbRaise/ */ EnablePbRaise_DisplayView_1;
+  kcg_bool /* @11/EnablePbSit/ */ EnablePbSit_DisplayView_1;
+  kcg_bool /* @11/isSitting/ */ isSitting_DisplayView_1;
+  kcg_bool /* @11/_L10/ */ _L10_DisplayView_1;
+  kcg_bool /* @11/_L3/ */ _L3_DisplayView_1;
   T_String_02 /* SM1:Waiting:_L22/ */ _L22_Waiting_SM1;
   T_String_02 /* SM1:Waiting:_L20/ */ _L20_Waiting_SM1;
   kcg_bool /* SM1:Waiting:_L15/ */ _L15_Waiting_SM1;
@@ -250,6 +258,7 @@ typedef struct {
   kcg_bool /* SM1:Running:_L48/ */ _L48_Running_SM1;
   kcg_bool /* SM1:Running:_L47/ */ _L47_Running_SM1;
   kcg_int32 /* SM1:Running:_L15/ */ _L15_Running_SM1;
+  kcg_bool /* SM1:Runned:_L16/ */ _L16_Runned_SM1;
   T_String_02 /* SM1:Runned:_L13/ */ _L13_Runned_SM1;
   T_String_02 /* SM1:Runned:_L12/ */ _L12_Runned_SM1;
   kcg_bool /* SM1:Runned:_L7/ */ _L7_Runned_SM1;
@@ -290,8 +299,6 @@ typedef struct {
   kcg_bool /* _L52/ */ _L52;
   kcg_int32 /* _L55/ */ _L55;
   kcg_int32 /* _L59/ */ _L59;
-  kcg_bool /* _L42/ */ _L42;
-  kcg_bool /* _L41/ */ _L41;
   S_ToLabel_76 /* _L62/ */ _L62;
   S_ToLabel_33 /* _L63/ */ _L63;
   S_ToLabel_10 /* _L64/ */ _L64;
@@ -301,6 +308,18 @@ typedef struct {
   kcg_int32 /* _L84/ */ _L84;
   kcg_int32 /* _L85/ */ _L85;
   T_String_03 /* _L86/ */ _L86;
+  T_String_76 /* _L87/ */ _L87;
+  kcg_bool /* _L89/ */ _L89;
+  kcg_bool /* _L90/ */ _L90;
+  kcg_bool /* _L91/ */ _L91;
+  T_String_10 /* _L98/ */ _L98;
+  kcg_bool /* _L100/ */ _L100;
+  kcg_bool /* _L103/ */ _L103;
+  kcg_bool /* _L104/ */ _L104;
+  kcg_bool /* _L105/ */ _L105;
+  kcg_bool /* _L42/ */ _L42;
+  kcg_bool /* _L41/ */ _L41;
+  T_String_10 /* _L88/ */ _L886;
 } outC_Main;
 
 /* ===========  node initialization and cycle functions  =========== */
@@ -326,13 +345,13 @@ extern void Main_init(outC_Main *outC);
   @7: @6/(pwlinear::Counter#8)
   @8: (Read_InputNumber#1)
   @9: (Read_InputNumber#5)
-  @10: (DisplayView#1)
-  @11: (Protocol#1)
+  @10: (Protocol#1)
+  @11: (DisplayView#1)
 */
 
 #endif /* _Main_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Main.h
-** Generation date: 2018-11-17T00:35:22
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$ */
 

@@ -12,6 +12,6 @@ void send2Kafka(void)
 
 	//system("D:/Python/Python27/python.exe E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/Integration/test.py Luiz");
 
-    system("D:\\Python\\Python27\\python.exe E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\Integration\\test.py Luiz");	   
+    system("D:\\Python\\Python27\\python.exe E:\\Projetos\\stagiho-tr\\Time_1\\ExoSkeleton_Display\\Integration\\python\test.py Luiz");	   
     system("pause");
 }

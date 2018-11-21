@@ -60,7 +60,7 @@
                     <model>
                         <intprop name="WidgetIdent">2</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_FALSE</enumprop>
                         <intprop name="PosX">500</intprop>
                         <intprop name="PosY">3500</intprop>
                         <intprop name="SizeX">14500</intprop>
@@ -84,7 +84,7 @@
                     <model>
                         <intprop name="WidgetIdent">3</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_FALSE</enumprop>
                         <intprop name="PosX">500</intprop>
                         <intprop name="PosY">2500</intprop>
                         <intprop name="SizeX">14500</intprop>
@@ -108,7 +108,7 @@
                     <model>
                         <intprop name="WidgetIdent">4</intprop>
                         <enumprop name="Anonymous">A661_FALSE</enumprop>
-                        <enumprop name="Visible">A661_TRUE</enumprop>
+                        <enumprop name="Visible">A661_FALSE</enumprop>
                         <intprop name="PosX">500</intprop>
                         <intprop name="PosY">1500</intprop>
                         <intprop name="SizeX">14500</intprop>
@@ -352,5 +352,5 @@
     </children>
 </specification>
 
-<!-- crc32 : 3149665458 -->
+<!-- crc32 : 538411639 -->
 

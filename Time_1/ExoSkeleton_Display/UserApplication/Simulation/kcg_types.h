@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
-** Generation date: 2018-11-17T00:35:22
+** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$ */
 #ifndef _KCG_TYPES_H_
 #define _KCG_TYPES_H_
@@ -397,11 +397,10 @@ extern kcg_bool kcg_comp_array_char_75(
 #endif /* kcg_comp_array_char_75 */
 #endif /* kcg_use_array_char_75 */
 
-#ifdef kcg_use_T_String_10
 #ifndef kcg_comp_T_String_10
 extern kcg_bool kcg_comp_T_String_10(T_String_10 *kcg_c1, T_String_10 *kcg_c2);
+#define kcg_use_T_String_10
 #endif /* kcg_comp_T_String_10 */
-#endif /* kcg_use_T_String_10 */
 
 #ifdef kcg_use_T_String_01
 #ifndef kcg_comp_T_String_01
@@ -494,6 +493,6 @@ extern kcg_bool kcg_comp_T_String_06(T_String_06 *kcg_c1, T_String_06 *kcg_c2);
 #endif /* _KCG_TYPES_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.h
-** Generation date: 2018-11-17T00:35:22
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$ */
 

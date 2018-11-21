@@ -1,10 +1,10 @@
 $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
-** Command: kcg66.exe -config C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
-** Generation date: 2018-11-17T00:35:22
+** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$
 Data structures
   Structures
-    Max members in a single structure: 270
+    Max members in a single structure: 289
   Arrays
     Max number of dimensions for an array: 1
     Maximum size for a dimension: 76
@@ -21,9 +21,9 @@ Program size
     Max number of nesting levels of parenthesized expression in a full expression: 3
   Identifiers
     Max number of identifiers with block scope declared in one block: 81
-    Max number of macro identifiers simultaneously defined in one preprocessing translation unit: 63
-    Max number of extern identifiers in one translation unit: 40
+    Max number of macro identifiers simultaneously defined in one preprocessing translation unit: 64
+    Max number of extern identifiers in one translation unit: 39
 $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_metrics.txt
-** Generation date: 2018-11-17T00:35:22
+** Generation date: 2018-11-20T22:01:17
 *************************************************************$

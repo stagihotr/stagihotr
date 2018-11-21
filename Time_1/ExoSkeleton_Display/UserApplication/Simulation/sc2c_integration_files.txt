@@ -26,8 +26,8 @@ $(SCADE)\lib\C\SmuTypes.c
 $(SCADE)\lib\C\SmuLib.c
 $(SCADE)\lib\C\SmuVTable.c
 UserApplication_mapping.c
-..\..\Integration\md5.c
-..\..\Integration\convert.c
+..\Codes_C\md5.c
+..\Codes_C\convert.c
 
 *****************************
 *** Generated SC2C Files ***
@@ -44,6 +44,6 @@ $(SCADE)\include
 $(SCADE)\include\C
 $(SCADE)\include\Ada
 $(SCADE)\lib\Ada
-..\..\Integration
+..\Codes_C
 $(SCADE)\libraries\SC65\libmathext
 

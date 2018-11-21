@@ -9,13 +9,13 @@
 
 void AfterSimInit(void){
 	const char *pszBinListFiles[2];
-	A661SetServerPath("C:/Program Files/ANSYS Inc/v192/SCADE/SCADE/bin/../../SCADE A661/bin/A661Server.exe");
+	A661SetServerPath("E:/SCADE/Suite/SCADE/bin/../../SCADE A661/bin/A661Server.exe");
 	#ifdef A661_LOGFILE
 	A661SetLogFile(A661_LOGFILE);
 	#endif
-	pszBinListFiles[0] = "C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation/Main_UA_1_binaries.txt";
+	pszBinListFiles[0] = "E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/Main_UA_1_binaries.txt";
 	pszBinListFiles[1] = 0;
-	if (0/*OK*/ != A661ConnectServer("127.0.0.1", 1231, pszBinListFiles, "C:/Users/Scade/Downloads/stagihotr-master/stagihotr-master/Time_1/ExoSkeleton_Display/UserApplication/Simulation/Main_UA_1_conf.xml" )) {
+	if (0/*OK*/ != A661ConnectServer("127.0.0.1", 1231, pszBinListFiles, "E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/Main_UA_1_conf.xml" )) {
 		const char *pszError;
 		A661GetLastError(&pszError);
 		SsmOutputMessage(SIM_WARNING, pszError);
