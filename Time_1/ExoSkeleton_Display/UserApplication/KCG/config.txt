@@ -1,0 +1,3 @@
+-target_dir "E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG" -expall -target C -name_length 200 -significance_length 31 -user_config "./user_macros.h" -input_threshold 2 
+-root Main
+"E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/scade_model_without_unused.scade"

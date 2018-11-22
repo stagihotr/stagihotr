@@ -73,6 +73,7 @@
 			<value>51</value>
 		</Prop>
 		<Prop id="54" name="@SDY:CONFSOURCE">
+			<value>%ALL%</value>
 			<configuration>51</configuration>
 		</Prop>
 		<Prop id="55" name="@SDY:CONFOUTPUT">

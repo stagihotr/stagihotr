@@ -126,7 +126,7 @@ def protocol(resp):
 
     P_TIME = GetTimeStamp()
 
-    prot = "{0}{1}{2}{3}->{4}.{5}.{6}.{7}.{8}<-{9}".format(P_HEADER, P_TOPIC, P_FROM, P_TO, 
+    prot = "{0}{1}{2}{3}{4}{5}{6}{7}{8}{9}".format(P_HEADER, P_TOPIC, P_FROM, P_TO, 
                                                     P_CMD, P_MAGNITUDE, P_CMD_PLUS, P_RESERVED, P_STATUS, 
                                                     P_TIME)
 
@@ -144,6 +144,25 @@ def protocol(resp):
     return "{0}{1}".format(prot,P_MD5)
 
 
+def SendToKafka(message):
+    import sys
+    from kafka import KafkaProducer, KafkaClient, SimpleProducer
+    import socket
+
+    KAFKA_TOPIC = 'TS1IN'
+    KAFKA_BROKERS = '35.202.217.21:9092' #'192.168.100.100:9091' # see step 1
+
+
+    producer = KafkaProducer(bootstrap_servers=KAFKA_BROKERS)
+
+    # Must send bytes
+    if str(type(message)) != "<type 'str'>":
+        message = bytes(message, "utf-8")
+   
+    # Send the messages
+    producer.send(KAFKA_TOPIC, message).get(timeout=30)
+
+
 if __name__ == "__main__":
     text_ref = speechToText()
     #text_ref = "avance 5 passos velocidade 2"
@@ -152,5 +171,6 @@ if __name__ == "__main__":
     print (resp)
     prot = protocol(resp)
     print (prot)
+    SendToKafka(prot)
 
 

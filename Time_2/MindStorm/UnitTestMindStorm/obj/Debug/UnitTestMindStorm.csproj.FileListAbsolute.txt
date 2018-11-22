@@ -21,3 +21,7 @@ C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\UnitTestMindStorm\bin\Debug\Lego.E
 C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\UnitTestMindStorm\obj\Debug\UnitTestMindStorm.csproj.CopyComplete
 C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\UnitTestMindStorm\obj\Debug\UnitTestMindStorm.dll
 C:\Users\jcpr_\Git\stagihotr\Time_2\MindStorm\UnitTestMindStorm\obj\Debug\UnitTestMindStorm.pdb
+C:\Users\guilh\Desktop\stagihotr\Time_2\MindStorm\UnitTestMindStorm\obj\Debug\UnitTestMindStorm.csprojAssemblyReference.cache
+C:\Users\guilh\Desktop\stagihotr\Time_2\MindStorm\UnitTestMindStorm\obj\Debug\UnitTestMindStorm.csproj.CoreCompileInputs.cache
+C:\Users\guilh\Desktop\stagihotr\Time_2\MindStorm\UnitTestMindStorm\obj\Debug\UnitTestMindStorm.dll
+C:\Users\guilh\Desktop\stagihotr\Time_2\MindStorm\UnitTestMindStorm\obj\Debug\UnitTestMindStorm.pdb

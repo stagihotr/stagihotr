@@ -1,0 +1,825 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/config.txt
+** Generation date: 2018-11-21T23:28:09
+*************************************************************$-->
+<mapping>
+  <config>
+    <option name="use_types" value="#off#"/>
+    <option name="imported_root_package" value="#off#"/>
+    <option name="root_package" value="#off#"/>
+    <option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <option name="state_vector" value="#off#"/>
+    <option name="static" value="#off#"/>
+    <option name="separate_io_all" value="#off#"/>
+    <option name="no_separate_io" value="#off#"/>
+    <option name="separate_io" value="#off#"/>
+    <option name="warn_error" value="#off#"/>
+    <option name="short_circuit" value="#off#"/>
+    <option name="wrap_c_ops" value="#off#"/>
+    <option name="input_file"
+        value="E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/scade_model_without_unused.scade"/>
+    <option name="probes" value="#off#"/>
+    <option name="debug" value="#off#"/>
+    <option name="no_observe" value="#off#"/>
+    <option name="observe" value="#off#"/>
+    <option name="user_config" value="./user_macros.h"/>
+    <option name="input_threshold" value="2"/>
+    <option name="header" value="#off#"/>
+    <option name="significance_length" value="31"/>
+    <option name="name_length" value="200"/>
+    <option name="globals_prefix" value="#off#"/>
+    <option name="keep_asserts" value="#off#"/>
+    <option name="global_root_context" value="#off#"/>
+    <option name="noexp" value="#off#"/>
+    <option name="exp" value="#off#"/>
+    <option name="expall" value="#on#"/>
+    <option name="target_dir" value="E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG"/>
+    <option name="target" value="C"/>
+    <option name="root" value="Main"/>
+    <option name="auth" value="#off#"/>
+  </config>
+  <model>
+    <array id="1" baseType="40" size="10"/>
+    <array id="2" baseType="40" size="3"/>
+    <array id="3" baseType="40" size="75"/>
+    <array id="4" baseType="40" size="32"/>
+    <struct id="5">
+      <field id="6" name="Emit2DF" type="39"/>
+      <field id="7" name="string_size" type="46"/>
+      <field id="8" name="value" type="76"/>
+    </struct>
+    <array id="9" baseType="40" size="1"/>
+    <array id="10" baseType="40" size="6"/>
+    <struct id="11">
+      <field id="12" name="Emit2DF" type="39"/>
+      <field id="13" name="string_size" type="46"/>
+      <field id="14" name="value" type="78"/>
+    </struct>
+    <struct id="15">
+      <field id="16" name="Emit2DF" type="39"/>
+      <field id="17" name="string_size" type="46"/>
+      <field id="18" name="value" type="19"/>
+    </struct>
+    <array id="19" baseType="40" size="76"/>
+    <array id="20" baseType="40" size="33"/>
+    <array id="21" baseType="40" size="9"/>
+    <array id="22" baseType="40" size="2"/>
+    <struct id="23">
+      <field id="24" name="Emit2DF" type="39"/>
+      <field id="25" name="Reference" type="46"/>
+    </struct>
+    <array id="26" baseType="40" size="43"/>
+    <struct id="27">
+      <field id="28" name="Emit2DF" type="39"/>
+      <field id="29" name="string_size" type="46"/>
+      <field id="30" name="value" type="71"/>
+    </struct>
+    <struct id="31">
+      <field id="32" name="Emit2DF" type="39"/>
+      <field id="33" name="string_size" type="46"/>
+      <field id="34" name="value" type="1"/>
+    </struct>
+    <struct id="35">
+      <field id="36" name="Emit2DF" type="39"/>
+      <field id="37" name="string_size" type="46"/>
+      <field id="38" name="value" type="20"/>
+    </struct>
+    <predefType id="39" name="bool"/>
+    <predefType id="40" name="char"/>
+    <predefType id="41" name="int8"/>
+    <predefType id="42" name="int16"/>
+    <predefType id="43" name="int32"/>
+    <predefType id="44" name="int64"/>
+    <predefType id="45" name="uint8"/>
+    <predefType id="46" name="uint16"/>
+    <predefType id="47" name="uint32"/>
+    <predefType id="48" name="uint64"/>
+    <predefType id="49" name="float32"/>
+    <predefType id="50" name="float64"/>
+    <predefType id="51" name="size"/>
+    <constant id="52" name="P_STATUS_WT" imported="false" type="67"/>
+    <constant id="53" name="P_CMD" imported="false" type="67"/>
+    <constant id="54" name="P_STATUS_RN" imported="false" type="67"/>
+    <constant id="55" name="P_CMD_FW" imported="false" type="67"/>
+    <constant id="56" name="P_CMD_SI" imported="false" type="67"/>
+    <constant id="57" name="P_CMD_UP" imported="false" type="67"/>
+    <constant id="58" name="_END_STRING" imported="false" type="69"/>
+    <constant id="59" name="P_HEADER" imported="false" type="70"/>
+    <constant id="60" name="P_TOPIC" imported="false" type="70"/>
+    <constant id="61" name="P_FROM" imported="false" type="70"/>
+    <constant id="62" name="P_TO" imported="false" type="70"/>
+    <constant id="63" name="P_RESERVED" imported="false" type="69"/>
+    <constant id="64" name="P_TIME" imported="false" type="71"/>
+    <constant id="65" name="DEFAULT_MAGNITUDE" imported="false" type="43"/>
+    <constant id="66" name="DEFAULT_STEPS" imported="false" type="43"/>
+    <type id="67" name="T_String_02" imported="false" type="22"/>
+    <type id="68" name="T_ImageReference" imported="false" type="23"/>
+    <type id="69" name="T_String_01" imported="false" type="9"/>
+    <type id="70" name="T_String_06" imported="false" type="10"/>
+    <type id="71" name="T_String_10" imported="false" type="1"/>
+    <type id="72" name="T_String_32" imported="false" type="4"/>
+    <type id="73" name="T_String_43" imported="false" type="26"/>
+    <type id="74" name="T_String_03" imported="false" type="2"/>
+    <type id="75" name="S_ToLabel_76" imported="false" type="5"/>
+    <type id="76" name="T_String_76" imported="false" type="19"/>
+    <type id="77" name="S_ToLabel_33" imported="false" type="11"/>
+    <type id="78" name="T_String_33" imported="false" type="20"/>
+    <type id="79" name="S_ToLabel_10" imported="false" type="27"/>
+    <operator id="80" name="Main" imported="false" root="true" expanded="false">
+      <input id="81" name="walkStart" clock="false" type="39"/>
+      <input id="82" name="walkSteps" clock="false" type="69"/>
+      <input id="83" name="walkMagnitude" clock="false" type="69"/>
+      <input id="84" name="sitStart" clock="false" type="39"/>
+      <input id="85" name="raiseStart" clock="false" type="39"/>
+      <input id="86" name="StepsNotification" clock="false" type="39"/>
+      <input id="87" name="MagnitudeNotification" clock="false" type="39"/>
+      <input id="88" name="ConfirmWalk" clock="false" type="39"/>
+      <input id="89" name="ConfirmSit" clock="false" type="39"/>
+      <input id="90" name="ConfirmRaise" clock="false" type="39"/>
+      <output id="91" name="OutImageReference" clock="false" type="68"/>
+      <output id="92" name="EnablePbSit" clock="false" type="39"/>
+      <output id="93" name="EnablePbRaise" clock="false" type="39"/>
+      <output id="94" name="Out_Protocol_OutCMD" clock="false" type="79"/>
+      <output id="95" name="Out_Protocol_OutProtocol" clock="false" type="75"/>
+      <output id="96" name="Out_Protocol_OutMD5" clock="false" type="77"/>
+      <output id="97" name="Protocolo" clock="false" type="76"/>
+      <output id="98" name="Comando" clock="false" type="71"/>
+      <output id="99" name="PulseWalk" clock="false" type="39"/>
+      <output id="100" name="PulseSit" clock="false" type="39"/>
+      <output id="101" name="PulseRaise" clock="false" type="39"/>
+      <output id="102" name="changed" clock="false" type="39"/>
+      <automaton id="103" name="SM1">
+        <state id="104" name="Waiting" initial="true" final="false" default="false">
+          <fork id="105" name="1" kind="weak">
+            <transition id="106" dest="136"/>
+          </fork>
+          <fork id="107" name="2" kind="weak">
+            <transition id="108" dest="109"/>
+          </fork>
+        </state>
+        <state id="109" name="Running" initial="false" final="false" default="false">
+          <instance id="110" name="1" op="207" expanded="true">
+            <input id="111" name="Start" clock="false" type="43"/>
+            <input id="112" name="Finish" clock="false" type="43"/>
+            <input id="113" name="Reset" clock="false" type="39"/>
+            <input id="114" name="Tick" clock="false" type="39"/>
+            <output id="115" name="isFinished" clock="false" type="39"/>
+            <output id="116" name="Count" clock="false" type="43"/>
+            <fby id="117" name="4"/>
+          </instance>
+          <instance id="118" name="2" op="226" expanded="true">
+            <input id="119" name="Incr" clock="false" type="43"/>
+            <input id="120" name="Reset" clock="false" type="39"/>
+            <output id="121" name="Count" clock="false" type="43"/>
+            <fby id="122" name="5"/>
+          </instance>
+          <fby id="123" name="2"/>
+          <instance id="124" name="1" op="226" expanded="true">
+            <input id="125" name="Incr" clock="false" type="43"/>
+            <input id="126" name="Reset" clock="false" type="39"/>
+            <output id="127" name="Count" clock="false" type="43"/>
+            <fby id="128" name="5"/>
+          </instance>
+          <fby id="129" name="4"/>
+          <fork id="130" name="1" kind="weak">
+            <transition id="131" dest="132"/>
+          </fork>
+        </state>
+        <state id="132" name="Runned" initial="false" final="false" default="false">
+          <fby id="133" name="3"/>
+          <fork id="134" name="1" kind="weak">
+            <transition id="135" dest="104"/>
+          </fork>
+        </state>
+        <state id="136" name="Sitting" initial="false" final="false" default="false">
+          <instance id="137" name="1" op="208" expanded="true">
+            <input id="138" name="InMagnitude" clock="false" type="43"/>
+            <input id="139" name="InStartImage" clock="false" type="43"/>
+            <input id="140" name="InFinishImage" clock="false" type="43"/>
+            <input id="141" name="InReferenceTimerTicket" clock="false" type="43"/>
+            <input id="142" name="InConfirm" clock="false" type="39"/>
+            <output id="143" name="Out_ImageReference" clock="false" type="68"/>
+            <output id="144" name="Out_Done" clock="false" type="39"/>
+            <instance id="145" name="8" op="226" expanded="true">
+              <input id="146" name="Incr" clock="false" type="43"/>
+              <input id="147" name="Reset" clock="false" type="39"/>
+              <output id="148" name="Count" clock="false" type="43"/>
+              <fby id="149" name="5"/>
+            </instance>
+            <fby id="150" name="4"/>
+            <fby id="151" name="5"/>
+          </instance>
+          <fork id="152" name="1" kind="weak">
+            <transition id="153" dest="154"/>
+          </fork>
+        </state>
+        <state id="154" name="sat" initial="false" final="false" default="false">
+          <fork id="155" name="1" kind="weak">
+            <transition id="156" dest="157"/>
+          </fork>
+        </state>
+        <state id="157" name="raising" initial="false" final="false" default="false">
+          <instance id="158" name="2" op="208" expanded="true">
+            <input id="159" name="InMagnitude" clock="false" type="43"/>
+            <input id="160" name="InStartImage" clock="false" type="43"/>
+            <input id="161" name="InFinishImage" clock="false" type="43"/>
+            <input id="162" name="InReferenceTimerTicket" clock="false" type="43"/>
+            <input id="163" name="InConfirm" clock="false" type="39"/>
+            <output id="164" name="Out_ImageReference" clock="false" type="68"/>
+            <output id="165" name="Out_Done" clock="false" type="39"/>
+            <instance id="166" name="8" op="226" expanded="true">
+              <input id="167" name="Incr" clock="false" type="43"/>
+              <input id="168" name="Reset" clock="false" type="39"/>
+              <output id="169" name="Count" clock="false" type="43"/>
+              <fby id="170" name="5"/>
+            </instance>
+            <fby id="171" name="4"/>
+            <fby id="172" name="5"/>
+          </instance>
+          <fork id="173" name="1" kind="weak">
+            <transition id="174" dest="104"/>
+          </fork>
+        </state>
+      </automaton>
+      <instance id="175" name="1" op="209" expanded="true">
+        <input id="176" name="Notification" clock="false" type="39"/>
+        <input id="177" name="ScalarNumber" clock="false" type="69"/>
+        <input id="178" name="DefaultValue" clock="false" type="43"/>
+        <output id="179" name="Number" clock="false" type="43"/>
+        <fby id="180" name="1"/>
+        <instance id="181" name="1" op="210" expanded="false"/>
+      </instance>
+      <instance id="182" name="5" op="209" expanded="true">
+        <input id="183" name="Notification" clock="false" type="39"/>
+        <input id="184" name="ScalarNumber" clock="false" type="69"/>
+        <input id="185" name="DefaultValue" clock="false" type="43"/>
+        <output id="186" name="Number" clock="false" type="43"/>
+        <fby id="187" name="1"/>
+        <instance id="188" name="1" op="210" expanded="false"/>
+      </instance>
+      <instance id="189" name="1" op="213" expanded="true">
+        <input id="190" name="Status" clock="false" type="67"/>
+        <input id="191" name="Command" clock="false" type="67"/>
+        <input id="192" name="Magnitude" clock="false" type="69"/>
+        <input id="193" name="CommandPlus" clock="false" type="74"/>
+        <output id="194" name="OutProtocol" clock="false" type="75"/>
+        <output id="195" name="OutMd5" clock="false" type="77"/>
+        <output id="196" name="OutCMD" clock="false" type="79"/>
+        <output id="197" name="Protocolo" clock="false" type="76"/>
+        <output id="198" name="Comando" clock="false" type="71"/>
+        <instance id="199" name="1" op="214" expanded="false"/>
+      </instance>
+      <instance id="200" name="1" op="217" expanded="false"/>
+      <instance id="201" name="1" op="220" expanded="false"/>
+      <fby id="202" name="6"/>
+      <instance id="203" name="1" op="223" expanded="true">
+        <input id="204" name="isSitting" clock="false" type="39"/>
+        <output id="205" name="EnablePbSit" clock="false" type="39"/>
+        <output id="206" name="EnablePbRaise" clock="false" type="39"/>
+      </instance>
+    </operator>
+    <operator id="207" name="MovingCycle" imported="false" root="false" expanded="true"/>
+    <operator id="208" name="Transition" imported="false" root="false" expanded="true"/>
+    <operator id="209" name="Read_InputNumber" imported="false" root="false" expanded="true"/>
+    <operator id="210" name="convert2Int" imported="true" root="false" expanded="false">
+      <input id="211" name="Send" clock="false" type="67"/>
+      <output id="212" name="Value" clock="false" type="43"/>
+    </operator>
+    <operator id="213" name="Protocol" imported="false" root="false" expanded="true"/>
+    <operator id="214" name="checkMd5" imported="true" root="false" expanded="false">
+      <input id="215" name="Send" clock="false" type="73"/>
+      <output id="216" name="Output" clock="false" type="72"/>
+    </operator>
+    <operator id="217" name="convert2Char_1" imported="true" root="false" expanded="false">
+      <input id="218" name="Send" clock="false" type="43"/>
+      <output id="219" name="Output" clock="false" type="69"/>
+    </operator>
+    <operator id="220" name="convert2Char_3" imported="true" root="false" expanded="false">
+      <input id="221" name="Send" clock="false" type="43"/>
+      <output id="222" name="Output" clock="false" type="74"/>
+    </operator>
+    <operator id="223" name="DisplayView" imported="false" root="false" expanded="true"/>
+    <package id="224" name="pwlinear">
+      <operator id="225" name="Counter" imported="false" root="false" expanded="true"/>
+      <mono id="226" src="225">
+        <typeVar id="227" name="T" type="43"/>
+      </mono>
+    </package>
+  </model>
+  <generated>
+    <c>
+      <file id="228" name="Main.h">
+        <function id="229" name="Main_init">
+          <parameter id="230" name="outC" type="236" pointer="true"/>
+        </function>
+        <function id="231" name="Main_reset">
+          <parameter id="232" name="outC" type="236" pointer="true"/>
+        </function>
+        <function id="233" name="Main">
+          <parameter id="234" name="inC" type="270" pointer="true"/>
+          <parameter id="235" name="outC" type="236" pointer="true"/>
+        </function>
+        <struct id="236" name="outC_Main">
+          <field id="237" name="OutImageReference" type="360" pointer="false"/>
+          <field id="238" name="EnablePbSit" type="427" pointer="false"/>
+          <field id="239" name="EnablePbRaise" type="427" pointer="false"/>
+          <field id="240" name="Out_Protocol_OutCMD" type="352" pointer="false"/>
+          <field id="241" name="Out_Protocol_OutProtocol" type="363" pointer="false"/>
+          <field id="242" name="Out_Protocol_OutMD5" type="356" pointer="false"/>
+          <field id="243" name="Protocolo" type="373" pointer="false"/>
+          <field id="244" name="Comando" type="367" pointer="false"/>
+          <field id="245" name="PulseWalk" type="427" pointer="false"/>
+          <field id="246" name="PulseSit" type="427" pointer="false"/>
+          <field id="247" name="PulseRaise" type="427" pointer="false"/>
+          <field id="248" name="changed" type="427" pointer="false"/>
+          <field id="249" name="SM1_reset_nxt" type="427" pointer="false"/>
+          <field id="250" name="SM1_state_nxt" type="377" pointer="false"/>
+          <field id="251" name="_L4_Runned_SM1" type="418" pointer="false"/>
+          <field id="252" name="_L37_Running_SM1" type="427" pointer="false"/>
+          <field id="253" name="_L25_Running_SM1" type="427" pointer="false"/>
+          <field id="254" name="_L5_Read_InputNumber_5" type="418" pointer="false"/>
+          <field id="255" name="_L5_Read_InputNumber_1" type="418" pointer="false"/>
+          <field id="256" name="_L9_Counter_8_Transition_2_int32" type="418" pointer="false"/>
+          <field id="257" name="_L71_Transition_2" type="427" pointer="false"/>
+          <field id="258" name="_L93_Transition_2" type="418" pointer="false"/>
+          <field id="259" name="_L9_Counter_8_Transition_1_int32" type="418" pointer="false"/>
+          <field id="260" name="_L71_Transition_1" type="427" pointer="false"/>
+          <field id="261" name="_L93_Transition_1" type="418" pointer="false"/>
+          <field id="262" name="_L9_Counter_1_int32" type="418" pointer="false"/>
+          <field id="263" name="_L9_Counter_2_int32" type="418" pointer="false"/>
+          <field id="264" name="_L7_MovingCycle_1" type="418" pointer="false"/>
+          <field id="265" name="init" type="427" pointer="false"/>
+          <field id="266" name="init1" type="427" pointer="false"/>
+          <field id="267" name="init2" type="427" pointer="false"/>
+          <field id="268" name="init3" type="427" pointer="false"/>
+          <field id="269" name="init4" type="427" pointer="false"/>
+        </struct>
+        <struct id="270" name="inC_Main">
+          <field id="271" name="walkStart" type="427" pointer="false"/>
+          <field id="272" name="walkSteps" type="368" pointer="false"/>
+          <field id="273" name="walkMagnitude" type="368" pointer="false"/>
+          <field id="274" name="sitStart" type="427" pointer="false"/>
+          <field id="275" name="raiseStart" type="427" pointer="false"/>
+          <field id="276" name="StepsNotification" type="427" pointer="false"/>
+          <field id="277" name="MagnitudeNotification" type="427" pointer="false"/>
+          <field id="278" name="ConfirmWalk" type="427" pointer="false"/>
+          <field id="279" name="ConfirmSit" type="427" pointer="false"/>
+          <field id="280" name="ConfirmRaise" type="427" pointer="false"/>
+        </struct>
+      </file>
+      <file id="281" name="kcg_types.h">
+        <ifdef id="282" name="kcg_use_T_String_06">
+          <function id="283" name="kcg_comp_T_String_06" returnType="427">
+            <parameter id="336" name="kcg_c1" type="376" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="376" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="286" name="kcg_use_T_String_32">
+          <function id="287" name="kcg_comp_T_String_32" returnType="427">
+            <parameter id="336" name="kcg_c1" type="375" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="375" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="290" name="kcg_use_T_String_02">
+          <function id="291" name="kcg_comp_T_String_02" returnType="427">
+            <parameter id="336" name="kcg_c1" type="374" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="374" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="294" name="kcg_use_T_String_76">
+          <function id="295" name="kcg_comp_T_String_76" returnType="427">
+            <parameter id="336" name="kcg_c1" type="373" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="373" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="298" name="kcg_use_T_String_33">
+          <function id="299" name="kcg_comp_T_String_33" returnType="427">
+            <parameter id="336" name="kcg_c1" type="372" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="372" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="302" name="kcg_use_T_String_03">
+          <function id="303" name="kcg_comp_T_String_03" returnType="427">
+            <parameter id="336" name="kcg_c1" type="371" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="371" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="306" name="kcg_use_T_String_43">
+          <function id="307" name="kcg_comp_T_String_43" returnType="427">
+            <parameter id="336" name="kcg_c1" type="370" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="370" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="310" name="kcg_use_array_char_9">
+          <function id="311" name="kcg_comp_array_char_9" returnType="427">
+            <parameter id="336" name="kcg_c1" type="369" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="369" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="314" name="kcg_use_T_String_01">
+          <function id="315" name="kcg_comp_T_String_01" returnType="427">
+            <parameter id="336" name="kcg_c1" type="368" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="368" pointer="true"/>
+          </function>
+        </ifdef>
+        <macro id="318" name="kcg_use_T_String_10"/>
+        <function id="319" name="kcg_comp_T_String_10" returnType="427">
+          <parameter id="336" name="kcg_c1" type="367" pointer="true"/>
+          <parameter id="337" name="kcg_c2" type="367" pointer="true"/>
+        </function>
+        <ifdef id="322" name="kcg_use_S_ToLabel_76">
+          <function id="323" name="kcg_comp_S_ToLabel_76" returnType="427">
+            <parameter id="336" name="kcg_c1" type="363" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="363" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="326" name="kcg_use_T_ImageReference">
+          <function id="327" name="kcg_comp_T_ImageReference" returnType="427">
+            <parameter id="336" name="kcg_c1" type="360" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="360" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="330" name="kcg_use_S_ToLabel_33">
+          <function id="331" name="kcg_comp_S_ToLabel_33" returnType="427">
+            <parameter id="336" name="kcg_c1" type="356" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="356" pointer="true"/>
+          </function>
+        </ifdef>
+        <ifdef id="334" name="kcg_use_S_ToLabel_10">
+          <function id="335" name="kcg_comp_S_ToLabel_10" returnType="427">
+            <parameter id="336" name="kcg_c1" type="352" pointer="true"/>
+            <parameter id="337" name="kcg_c2" type="352" pointer="true"/>
+          </function>
+        </ifdef>
+        <macro id="338" name="kcg_copy_T_String_06"/>
+        <macro id="339" name="kcg_copy_T_String_32"/>
+        <macro id="340" name="kcg_copy_T_String_02"/>
+        <macro id="341" name="kcg_copy_T_String_76"/>
+        <macro id="342" name="kcg_copy_T_String_33"/>
+        <macro id="343" name="kcg_copy_T_String_03"/>
+        <macro id="344" name="kcg_copy_T_String_43"/>
+        <macro id="345" name="kcg_copy_array_char_9"/>
+        <macro id="346" name="kcg_copy_T_String_01"/>
+        <macro id="347" name="kcg_copy_T_String_10"/>
+        <macro id="348" name="kcg_copy_S_ToLabel_76"/>
+        <macro id="349" name="kcg_copy_T_ImageReference"/>
+        <macro id="350" name="kcg_copy_S_ToLabel_33"/>
+        <macro id="351" name="kcg_copy_S_ToLabel_10"/>
+        <struct id="352" name="S_ToLabel_10" tagName="kcg_tag_S_ToLabel_10">
+          <field id="353" name="Emit2DF" type="427" pointer="false"/>
+          <field id="354" name="string_size" type="421" pointer="false"/>
+          <field id="355" name="value" type="367" pointer="false"/>
+        </struct>
+        <struct id="356" name="S_ToLabel_33" tagName="kcg_tag_S_ToLabel_33">
+          <field id="357" name="Emit2DF" type="427" pointer="false"/>
+          <field id="358" name="string_size" type="421" pointer="false"/>
+          <field id="359" name="value" type="372" pointer="false"/>
+        </struct>
+        <struct id="360" name="T_ImageReference" tagName="kcg_tag_T_ImageReference">
+          <field id="361" name="Emit2DF" type="427" pointer="false"/>
+          <field id="362" name="Reference" type="421" pointer="false"/>
+        </struct>
+        <struct id="363" name="S_ToLabel_76" tagName="kcg_tag_S_ToLabel_76">
+          <field id="364" name="Emit2DF" type="427" pointer="false"/>
+          <field id="365" name="string_size" type="421" pointer="false"/>
+          <field id="366" name="value" type="373" pointer="false"/>
+        </struct>
+        <array id="367" name="T_String_10" baseType="428" size="10"/>
+        <array id="368" name="T_String_01" baseType="428" size="1"/>
+        <array id="369" name="array_char_9" baseType="428" size="9"/>
+        <array id="370" name="T_String_43" baseType="428" size="43"/>
+        <array id="371" name="T_String_03" baseType="428" size="3"/>
+        <array id="372" name="T_String_33" baseType="428" size="33"/>
+        <array id="373" name="T_String_76" baseType="428" size="76"/>
+        <array id="374" name="T_String_02" baseType="428" size="2"/>
+        <array id="375" name="T_String_32" baseType="428" size="32"/>
+        <array id="376" name="T_String_06" baseType="428" size="6"/>
+        <enum id="377" name="SSM_ST_SM1" tagName="kcg_tag_SSM_ST_SM1">
+          <value id="378" name="SSM_st_Waiting_SM1"/>
+          <value id="379" name="SSM_st_Running_SM1"/>
+          <value id="380" name="SSM_st_Runned_SM1"/>
+          <value id="381" name="SSM_st_Sitting_SM1"/>
+          <value id="382" name="SSM_st_sat_SM1"/>
+          <value id="383" name="SSM_st_raising_SM1"/>
+        </enum>
+        <enum id="384" name="SSM_TR_SM1" tagName="kcg_tag_SSM_TR_SM1">
+          <value id="385" name="SSM_TR_no_trans_SM1"/>
+          <value id="386" name="SSM_TR_Waiting_Sitting_1_Waiting_SM1"/>
+          <value id="387" name="SSM_TR_Waiting_Running_2_Waiting_SM1"/>
+          <value id="388" name="SSM_TR_Running_Runned_1_Running_SM1"/>
+          <value id="389" name="SSM_TR_Runned_Waiting_1_Runned_SM1"/>
+          <value id="390" name="SSM_TR_Sitting_sat_1_Sitting_SM1"/>
+          <value id="391" name="SSM_TR_sat_raising_1_sat_SM1"/>
+          <value id="392" name="SSM_TR_raising_Waiting_1_raising_SM1"/>
+        </enum>
+        <macro id="393" name="kcg_assign_array"/>
+        <macro id="394" name="kcg_assign_struct"/>
+        <macro id="395" name="kcg_lnot_uint8"/>
+        <macro id="396" name="kcg_lnot_uint16"/>
+        <macro id="397" name="kcg_lnot_uint32"/>
+        <macro id="398" name="kcg_lnot_uint64"/>
+        <macro id="399" name="kcg_lsl_uint8"/>
+        <macro id="400" name="kcg_lsl_uint16"/>
+        <macro id="401" name="kcg_lsl_uint32"/>
+        <macro id="402" name="kcg_lsl_uint64"/>
+        <macro id="403" name="kcg_true"/>
+        <macro id="404" name="kcg_false"/>
+        <macro id="405" name="kcg_lit_int8"/>
+        <macro id="406" name="kcg_lit_int16"/>
+        <macro id="407" name="kcg_lit_int32"/>
+        <macro id="408" name="kcg_lit_int64"/>
+        <macro id="409" name="kcg_lit_uint8"/>
+        <macro id="410" name="kcg_lit_uint16"/>
+        <macro id="411" name="kcg_lit_uint32"/>
+        <macro id="412" name="kcg_lit_uint64"/>
+        <macro id="413" name="kcg_lit_size"/>
+        <macro id="414" name="kcg_lit_float64"/>
+        <macro id="415" name="kcg_lit_float32"/>
+        <predefType id="416" name="kcg_int8"/>
+        <predefType id="417" name="kcg_int16"/>
+        <predefType id="418" name="kcg_int32"/>
+        <predefType id="419" name="kcg_int64"/>
+        <predefType id="420" name="kcg_uint8"/>
+        <predefType id="421" name="kcg_uint16"/>
+        <predefType id="422" name="kcg_uint32"/>
+        <predefType id="423" name="kcg_uint64"/>
+        <predefType id="424" name="kcg_size"/>
+        <predefType id="425" name="kcg_float64"/>
+        <predefType id="426" name="kcg_float32"/>
+        <predefType id="427" name="kcg_bool"/>
+        <predefType id="428" name="kcg_char"/>
+        <macro id="429" name="KCG_MAPW_CPY"/>
+      </file>
+      <file id="430" name="kcg_consts.h">
+        <constant id="431" name="P_STATUS_WT" type="374" pointer="false"/>
+        <constant id="432" name="P_CMD" type="374" pointer="false"/>
+        <constant id="433" name="P_STATUS_RN" type="374" pointer="false"/>
+        <constant id="434" name="P_CMD_FW" type="374" pointer="false"/>
+        <constant id="435" name="P_CMD_SI" type="374" pointer="false"/>
+        <constant id="436" name="P_CMD_UP" type="374" pointer="false"/>
+        <macro id="437" name="DEFAULT_MAGNITUDE" type="418"/>
+        <macro id="438" name="DEFAULT_STEPS" type="418"/>
+        <constant id="439" name="_END_STRING" type="368" pointer="false"/>
+        <constant id="440" name="P_HEADER" type="376" pointer="false"/>
+        <constant id="441" name="P_TOPIC" type="376" pointer="false"/>
+        <constant id="442" name="P_FROM" type="376" pointer="false"/>
+        <constant id="443" name="P_TO" type="376" pointer="false"/>
+        <constant id="444" name="P_RESERVED" type="368" pointer="false"/>
+        <constant id="445" name="P_TIME" type="367" pointer="false"/>
+      </file>
+      <file id="446" name="kcg_sensors.h"/>
+      <file id="447" name="kcg_imported_functions.h">
+        <function id="448" name="convert2Int" returnType="418">
+          <parameter id="449" name="Send" type="374" pointer="true"/>
+        </function>
+        <function id="450" name="checkMd5">
+          <parameter id="451" name="Send" type="370" pointer="true"/>
+          <parameter id="452" name="Output" type="375" pointer="true"/>
+        </function>
+        <function id="453" name="convert2Char_1">
+          <parameter id="454" name="Send" type="418" pointer="false"/>
+          <parameter id="455" name="Output" type="368" pointer="true"/>
+        </function>
+        <function id="456" name="convert2Char_3">
+          <parameter id="457" name="Send" type="418" pointer="false"/>
+          <parameter id="458" name="Output" type="371" pointer="true"/>
+        </function>
+      </file>
+    </c>
+    <map srcId="425" dstId="414" role="wrapped-lit"/>
+    <map srcId="426" dstId="415" role="wrapped-lit"/>
+    <map srcId="424" dstId="413" role="wrapped-lit"/>
+    <map srcId="423" dstId="412" role="wrapped-lit"/>
+    <map srcId="423" dstId="398" role="wrapped-lnot"/>
+    <map srcId="423" dstId="402" role="wrapped-lsl"/>
+    <map srcId="422" dstId="411" role="wrapped-lit"/>
+    <map srcId="422" dstId="397" role="wrapped-lnot"/>
+    <map srcId="422" dstId="401" role="wrapped-lsl"/>
+    <map srcId="421" dstId="410" role="wrapped-lit"/>
+    <map srcId="421" dstId="396" role="wrapped-lnot"/>
+    <map srcId="421" dstId="400" role="wrapped-lsl"/>
+    <map srcId="420" dstId="409" role="wrapped-lit"/>
+    <map srcId="420" dstId="395" role="wrapped-lnot"/>
+    <map srcId="420" dstId="399" role="wrapped-lsl"/>
+    <map srcId="419" dstId="408" role="wrapped-lit"/>
+    <map srcId="418" dstId="407" role="wrapped-lit"/>
+    <map srcId="417" dstId="406" role="wrapped-lit"/>
+    <map srcId="416" dstId="405" role="wrapped-lit"/>
+    <map srcId="376" dstId="282" role="type-use"/>
+    <map srcId="376" dstId="283" role="type-comparison"/>
+    <map srcId="376" dstId="338" role="type-copy"/>
+    <map srcId="375" dstId="286" role="type-use"/>
+    <map srcId="375" dstId="287" role="type-comparison"/>
+    <map srcId="375" dstId="339" role="type-copy"/>
+    <map srcId="363" dstId="322" role="type-use"/>
+    <map srcId="363" dstId="323" role="type-comparison"/>
+    <map srcId="363" dstId="348" role="type-copy"/>
+    <map srcId="374" dstId="290" role="type-use"/>
+    <map srcId="374" dstId="291" role="type-comparison"/>
+    <map srcId="374" dstId="340" role="type-copy"/>
+    <map srcId="373" dstId="294" role="type-use"/>
+    <map srcId="373" dstId="295" role="type-comparison"/>
+    <map srcId="373" dstId="341" role="type-copy"/>
+    <map srcId="372" dstId="298" role="type-use"/>
+    <map srcId="372" dstId="299" role="type-comparison"/>
+    <map srcId="372" dstId="342" role="type-copy"/>
+    <map srcId="371" dstId="302" role="type-use"/>
+    <map srcId="371" dstId="303" role="type-comparison"/>
+    <map srcId="371" dstId="343" role="type-copy"/>
+    <map srcId="360" dstId="326" role="type-use"/>
+    <map srcId="360" dstId="327" role="type-comparison"/>
+    <map srcId="360" dstId="349" role="type-copy"/>
+    <map srcId="356" dstId="330" role="type-use"/>
+    <map srcId="356" dstId="331" role="type-comparison"/>
+    <map srcId="356" dstId="350" role="type-copy"/>
+    <map srcId="370" dstId="306" role="type-use"/>
+    <map srcId="370" dstId="307" role="type-comparison"/>
+    <map srcId="370" dstId="344" role="type-copy"/>
+    <map srcId="369" dstId="310" role="type-use"/>
+    <map srcId="369" dstId="311" role="type-comparison"/>
+    <map srcId="369" dstId="345" role="type-copy"/>
+    <map srcId="352" dstId="334" role="type-use"/>
+    <map srcId="352" dstId="335" role="type-comparison"/>
+    <map srcId="352" dstId="351" role="type-copy"/>
+    <map srcId="368" dstId="314" role="type-use"/>
+    <map srcId="368" dstId="315" role="type-comparison"/>
+    <map srcId="368" dstId="346" role="type-copy"/>
+    <map srcId="367" dstId="318" role="type-use"/>
+    <map srcId="367" dstId="319" role="type-comparison"/>
+    <map srcId="367" dstId="347" role="type-copy"/>
+  </generated>
+  <map modelId="174" generatedId="392"/>
+  <map modelId="156" generatedId="391"/>
+  <map modelId="153" generatedId="390"/>
+  <map modelId="135" generatedId="389"/>
+  <map modelId="131" generatedId="388"/>
+  <map modelId="108" generatedId="387"/>
+  <map modelId="106" generatedId="386"/>
+  <map modelId="103" generatedId="385" role="autom-no-trans-enum"/>
+  <map modelId="104" generatedId="378"/>
+  <map modelId="109" generatedId="379"/>
+  <map modelId="132" generatedId="380"/>
+  <map modelId="136" generatedId="381"/>
+  <map modelId="154" generatedId="382"/>
+  <map modelId="157" generatedId="383"/>
+  <map modelId="80" generatedId="230" role="context-parameter"/>
+  <map modelId="80" generatedId="229" role="init-method"/>
+  <map modelId="80" generatedId="232" role="context-parameter"/>
+  <map modelId="80" generatedId="231" role="reset-method"/>
+  <map modelId="80" generatedId="234" role="input-struct-parameter"/>
+  <map modelId="90" generatedId="280"/>
+  <map modelId="89" generatedId="279"/>
+  <map modelId="88" generatedId="278"/>
+  <map modelId="87" generatedId="277"/>
+  <map modelId="176" generatedId="277"/>
+  <map modelId="86" generatedId="276"/>
+  <map modelId="183" generatedId="276"/>
+  <map modelId="85" generatedId="275"/>
+  <map modelId="84" generatedId="274"/>
+  <map modelId="83" generatedId="273"/>
+  <map modelId="177" generatedId="273"/>
+  <map modelId="82" generatedId="272"/>
+  <map modelId="184" generatedId="272"/>
+  <map modelId="81" generatedId="271"/>
+  <map modelId="80" generatedId="270" role="input-struct-type"/>
+  <map modelId="80" generatedId="235" role="context-parameter"/>
+  <map modelId="129" generatedId="269" role="init"/>
+  <map modelId="123" generatedId="269" role="init"/>
+  <map modelId="117" generatedId="269" role="init"/>
+  <map modelId="122" generatedId="269" role="init"/>
+  <map modelId="128" generatedId="269" role="init"/>
+  <map modelId="133" generatedId="268" role="init"/>
+  <map modelId="202" generatedId="267" role="init"/>
+  <map modelId="171" generatedId="266" role="init"/>
+  <map modelId="172" generatedId="266" role="init"/>
+  <map modelId="170" generatedId="266" role="init"/>
+  <map modelId="150" generatedId="265" role="init"/>
+  <map modelId="151" generatedId="265" role="init"/>
+  <map modelId="149" generatedId="265" role="init"/>
+  <map modelId="117" generatedId="264" role="memory"/>
+  <map modelId="122" generatedId="263" role="memory"/>
+  <map modelId="128" generatedId="262" role="memory"/>
+  <map modelId="151" generatedId="261" role="memory"/>
+  <map modelId="150" generatedId="260" role="memory"/>
+  <map modelId="149" generatedId="259" role="memory"/>
+  <map modelId="172" generatedId="258" role="memory"/>
+  <map modelId="171" generatedId="257" role="memory"/>
+  <map modelId="170" generatedId="256" role="memory"/>
+  <map modelId="180" generatedId="255" role="memory"/>
+  <map modelId="187" generatedId="254" role="memory"/>
+  <map modelId="123" generatedId="253" role="memory"/>
+  <map modelId="129" generatedId="252" role="memory"/>
+  <map modelId="115" generatedId="252"/>
+  <map modelId="133" generatedId="251" role="memory"/>
+  <map modelId="103" generatedId="250" role="autom-next-state"/>
+  <map modelId="103" generatedId="249" role="autom-next-reset"/>
+  <map modelId="102" generatedId="248"/>
+  <map modelId="101" generatedId="247"/>
+  <map modelId="100" generatedId="246"/>
+  <map modelId="99" generatedId="245"/>
+  <map modelId="98" generatedId="244"/>
+  <map modelId="202" generatedId="244" role="memory"/>
+  <map modelId="198" generatedId="244"/>
+  <map modelId="97" generatedId="243"/>
+  <map modelId="197" generatedId="243"/>
+  <map modelId="96" generatedId="242"/>
+  <map modelId="195" generatedId="242"/>
+  <map modelId="95" generatedId="241"/>
+  <map modelId="194" generatedId="241"/>
+  <map modelId="94" generatedId="240"/>
+  <map modelId="196" generatedId="240"/>
+  <map modelId="93" generatedId="239"/>
+  <map modelId="103" generatedId="239" role="memory"/>
+  <map modelId="204" generatedId="239"/>
+  <map modelId="206" generatedId="239"/>
+  <map modelId="92" generatedId="238"/>
+  <map modelId="205" generatedId="238"/>
+  <map modelId="91" generatedId="237"/>
+  <map modelId="103" generatedId="237" role="memory"/>
+  <map modelId="80" generatedId="236" role="context-type"/>
+  <map modelId="80" generatedId="228" role="interface-file"/>
+  <map modelId="80" generatedId="233" role="cycle-method"/>
+  <map modelId="222" generatedId="458"/>
+  <map modelId="221" generatedId="457"/>
+  <map modelId="220" generatedId="456" role="cycle-method"/>
+  <map modelId="219" generatedId="455"/>
+  <map modelId="218" generatedId="454"/>
+  <map modelId="217" generatedId="453" role="cycle-method"/>
+  <map modelId="216" generatedId="452"/>
+  <map modelId="215" generatedId="451"/>
+  <map modelId="214" generatedId="450" role="cycle-method"/>
+  <map modelId="211" generatedId="449"/>
+  <map modelId="210" generatedId="448" role="cycle-method"/>
+  <map modelId="64" generatedId="445"/>
+  <map modelId="63" generatedId="444"/>
+  <map modelId="62" generatedId="443"/>
+  <map modelId="61" generatedId="442"/>
+  <map modelId="60" generatedId="441"/>
+  <map modelId="59" generatedId="440"/>
+  <map modelId="58" generatedId="439"/>
+  <map modelId="66" generatedId="438"/>
+  <map modelId="65" generatedId="437"/>
+  <map modelId="57" generatedId="436"/>
+  <map modelId="56" generatedId="435"/>
+  <map modelId="55" generatedId="434"/>
+  <map modelId="54" generatedId="433"/>
+  <map modelId="53" generatedId="432"/>
+  <map modelId="52" generatedId="431"/>
+  <map modelId="103" generatedId="384" role="autom-transitions-type"/>
+  <map modelId="103" generatedId="377" role="autom-states-type"/>
+  <map modelId="70" generatedId="376"/>
+  <map modelId="10" generatedId="376"/>
+  <map modelId="72" generatedId="375"/>
+  <map modelId="4" generatedId="375"/>
+  <map modelId="8" generatedId="366"/>
+  <map modelId="7" generatedId="365"/>
+  <map modelId="6" generatedId="364"/>
+  <map modelId="75" generatedId="363"/>
+  <map modelId="5" generatedId="363"/>
+  <map modelId="67" generatedId="374"/>
+  <map modelId="22" generatedId="374"/>
+  <map modelId="76" generatedId="373"/>
+  <map modelId="19" generatedId="373"/>
+  <map modelId="78" generatedId="372"/>
+  <map modelId="20" generatedId="372"/>
+  <map modelId="74" generatedId="371"/>
+  <map modelId="2" generatedId="371"/>
+  <map modelId="25" generatedId="362"/>
+  <map modelId="24" generatedId="361"/>
+  <map modelId="68" generatedId="360"/>
+  <map modelId="23" generatedId="360"/>
+  <map modelId="14" generatedId="359"/>
+  <map modelId="13" generatedId="358"/>
+  <map modelId="12" generatedId="357"/>
+  <map modelId="77" generatedId="356"/>
+  <map modelId="11" generatedId="356"/>
+  <map modelId="73" generatedId="370"/>
+  <map modelId="26" generatedId="370"/>
+  <map modelId="30" generatedId="355"/>
+  <map modelId="29" generatedId="354"/>
+  <map modelId="28" generatedId="353"/>
+  <map modelId="79" generatedId="352"/>
+  <map modelId="27" generatedId="352"/>
+  <map modelId="69" generatedId="368"/>
+  <map modelId="9" generatedId="368"/>
+  <map modelId="71" generatedId="367"/>
+  <map modelId="1" generatedId="367"/>
+  <map modelId="40" generatedId="428"/>
+  <map modelId="39" generatedId="427"/>
+  <map modelId="50" generatedId="425"/>
+  <map modelId="49" generatedId="426"/>
+  <map modelId="51" generatedId="424"/>
+  <map modelId="48" generatedId="423"/>
+  <map modelId="47" generatedId="422"/>
+  <map modelId="46" generatedId="421"/>
+  <map modelId="45" generatedId="420"/>
+  <map modelId="44" generatedId="419"/>
+  <map modelId="43" generatedId="418"/>
+  <map modelId="42" generatedId="417"/>
+  <map modelId="41" generatedId="416"/>
+</mapping>
+<!--$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** mapping.xml
+** Generation date: 2018-11-21T23:28:09
+*************************************************************$-->

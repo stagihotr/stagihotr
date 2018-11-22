@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+  <Model commandLine="" date="">
+    <Option name="use_types" value="#off#"/>
+    <Option name="imported_root_package" value="#off#"/>
+    <Option name="root_package" value="#off#"/>
+    <Option name="xml_basename" value="kcg_xml_filter_out.scade"/>
+    <Option name="state_vector" value="#off#"/>
+    <Option name="static" value="#off#"/>
+    <Option name="separate_io_all" value="#off#"/>
+    <Option name="no_separate_io" value="#off#"/>
+    <Option name="separate_io" value="#off#"/>
+    <Option name="warn_error" value="#off#"/>
+    <Option name="short_circuit" value="#off#"/>
+    <Option name="wrap_c_ops" value="#off#"/>
+    <Option name="input_file" value="E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/scade_model_without_unused.scade"/>
+    <Option name="probes" value="#off#"/>
+    <Option name="debug" value="#off#"/>
+    <Option name="no_observe" value="#off#"/>
+    <Option name="observe" value="#off#"/>
+    <Option name="user_config" value="./user_macros.h"/>
+    <Option name="input_threshold" value="2"/>
+    <Option name="header" value="#off#"/>
+    <Option name="significance_length" value="31"/>
+    <Option name="name_length" value="200"/>
+    <Option name="globals_prefix" value="#off#"/>
+    <Option name="keep_asserts" value="#off#"/>
+    <Option name="global_root_context" value="#off#"/>
+    <Option name="noexp" value="#off#"/>
+    <Option name="exp" value="#off#"/>
+    <Option name="expall" value="#on#"/>
+    <Option name="target_dir" value="E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG"/>
+    <Option name="target" value="C"/>
+    <Option name="root" value="Main"/>
+    <Option name="auth" value="#off#"/>
+    <Constant scadeName="P_STATUS_WT" scadeType="T_String_02" targetName="P_STATUS_WT" targetType="T_String_02"/>
+    <Constant scadeName="P_CMD" scadeType="T_String_02" targetName="P_CMD" targetType="T_String_02"/>
+    <Constant scadeName="P_STATUS_RN" scadeType="T_String_02" targetName="P_STATUS_RN" targetType="T_String_02"/>
+    <Constant scadeName="P_CMD_FW" scadeType="T_String_02" targetName="P_CMD_FW" targetType="T_String_02"/>
+    <Constant scadeName="P_CMD_SI" scadeType="T_String_02" targetName="P_CMD_SI" targetType="T_String_02"/>
+    <Constant scadeName="P_CMD_UP" scadeType="T_String_02" targetName="P_CMD_UP" targetType="T_String_02"/>
+    <Constant scadeName="_END_STRING" scadeType="T_String_01" targetName="_END_STRING" targetType="T_String_01"/>
+    <Constant scadeName="P_HEADER" scadeType="T_String_06" targetName="P_HEADER" targetType="T_String_06"/>
+    <Constant scadeName="P_TOPIC" scadeType="T_String_06" targetName="P_TOPIC" targetType="T_String_06"/>
+    <Constant scadeName="P_FROM" scadeType="T_String_06" targetName="P_FROM" targetType="T_String_06"/>
+    <Constant scadeName="P_TO" scadeType="T_String_06" targetName="P_TO" targetType="T_String_06"/>
+    <Constant scadeName="P_RESERVED" scadeType="T_String_01" targetName="P_RESERVED" targetType="T_String_01"/>
+    <Constant scadeName="P_TIME" scadeType="T_String_10" targetName="P_TIME" targetType="T_String_10"/>
+    <Constant macroDef="true" scadeName="DEFAULT_MAGNITUDE" scadeType="int32" targetName="DEFAULT_MAGNITUDE" targetType="kcg_int32"/>
+    <Constant macroDef="true" scadeName="DEFAULT_STEPS" scadeType="int32" targetName="DEFAULT_STEPS" targetType="kcg_int32"/>
+    <NamedType refType="T_String_02" scadeName="T_String_02" targetName="T_String_02"/>
+    <NamedType refType="T_ImageReference" scadeName="T_ImageReference" targetName="T_ImageReference"/>
+    <NamedType refType="T_String_01" scadeName="T_String_01" targetName="T_String_01"/>
+    <NamedType refType="T_String_06" scadeName="T_String_06" targetName="T_String_06"/>
+    <NamedType refType="T_String_10" scadeName="T_String_10" targetName="T_String_10"/>
+    <NamedType refType="T_String_32" scadeName="T_String_32" targetName="T_String_32"/>
+    <NamedType refType="T_String_43" scadeName="T_String_43" targetName="T_String_43"/>
+    <NamedType refType="T_String_03" scadeName="T_String_03" targetName="T_String_03"/>
+    <NamedType refType="S_ToLabel_76" scadeName="S_ToLabel_76" targetName="S_ToLabel_76"/>
+    <NamedType refType="T_String_76" scadeName="T_String_76" targetName="T_String_76"/>
+    <NamedType refType="S_ToLabel_33" scadeName="S_ToLabel_33" targetName="S_ToLabel_33"/>
+    <NamedType refType="T_String_33" scadeName="T_String_33" targetName="T_String_33"/>
+    <NamedType refType="S_ToLabel_10" scadeName="S_ToLabel_10" targetName="S_ToLabel_10"/>
+    <RootNode headerFile="Main.h" scadeName="Main" targetCycleFct="Main" targetInitFct="Main_reset" targetInitializationFct="Main_init">
+      <Input inCtx="true" scadeName="walkStart" scadeType="bool" targetName="walkStart" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="walkSteps" scadeType="T_String_01" targetName="walkSteps" targetType="T_String_01"/>
+      <Input inCtx="true" scadeName="walkMagnitude" scadeType="T_String_01" targetName="walkMagnitude" targetType="T_String_01"/>
+      <Input inCtx="true" scadeName="sitStart" scadeType="bool" targetName="sitStart" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="raiseStart" scadeType="bool" targetName="raiseStart" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="StepsNotification" scadeType="bool" targetName="StepsNotification" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="MagnitudeNotification" scadeType="bool" targetName="MagnitudeNotification" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmWalk" scadeType="bool" targetName="ConfirmWalk" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmSit" scadeType="bool" targetName="ConfirmSit" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmRaise" scadeType="bool" targetName="ConfirmRaise" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="OutImageReference" scadeType="T_ImageReference" targetName="OutImageReference" targetType="T_ImageReference"/>
+      <Output inCtx="true" scadeName="EnablePbSit" scadeType="bool" targetName="EnablePbSit" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="EnablePbRaise" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="Out_Protocol_OutCMD" scadeType="S_ToLabel_10" targetName="Out_Protocol_OutCMD" targetType="S_ToLabel_10"/>
+      <Output inCtx="true" scadeName="Out_Protocol_OutProtocol" scadeType="S_ToLabel_76" targetName="Out_Protocol_OutProtocol" targetType="S_ToLabel_76"/>
+      <Output inCtx="true" scadeName="Out_Protocol_OutMD5" scadeType="S_ToLabel_33" targetName="Out_Protocol_OutMD5" targetType="S_ToLabel_33"/>
+      <Output inCtx="true" scadeName="Protocolo" scadeType="T_String_76" targetName="Protocolo" targetType="T_String_76"/>
+      <Output inCtx="true" scadeName="Comando" scadeType="T_String_10" targetName="Comando" targetType="T_String_10"/>
+      <Output inCtx="true" scadeName="PulseWalk" scadeType="bool" targetName="PulseWalk" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="PulseSit" scadeType="bool" targetName="PulseSit" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="PulseRaise" scadeType="bool" targetName="PulseRaise" targetType="kcg_bool"/>
+      <Output inCtx="true" scadeName="changed" scadeType="bool" targetName="changed" targetType="kcg_bool"/>
+      <Automaton scadeName="SM1" targetStatesType="SSM_ST_SM1" targetTransitionsType="SSM_TR_SM1">
+        <State scadeName="Waiting" targetName="SSM_st_Waiting_SM1">
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="weak" scadeDest="Sitting" targetName="SSM_TR_Waiting_Sitting_1_Waiting_SM1"/>
+          </Fork>
+          <Fork priority="2">
+            <Condition/>
+            <Transition kind="weak" scadeDest="Running" targetName="SSM_TR_Waiting_Running_2_Waiting_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="Running" targetName="SSM_st_Running_SM1">
+          <NodeInlining instName="1" scadeName="MovingCycle">
+            <Output inCtx="true" scadeName="isFinished" scadeType="bool" targetName="_L37_Running_SM1" targetType="kcg_bool"/>
+            <FbyOp instName="4">
+              <Init inCtx="true" targetName="init4" targetType="kcg_bool"/>
+              <Memory inCtx="true" targetName="_L7_MovingCycle_1" targetType="kcg_int32"/>
+            </FbyOp>
+          </NodeInlining>
+          <NodeInlining instName="2" scadeName="pwlinear::Counter">
+            <FbyOp instName="5">
+              <Init inCtx="true" targetName="init4" targetType="kcg_bool"/>
+              <Memory inCtx="true" targetName="_L9_Counter_2_int32" targetType="kcg_int32"/>
+            </FbyOp>
+          </NodeInlining>
+          <FbyOp instName="2">
+            <Init inCtx="true" targetName="init4" targetType="kcg_bool"/>
+            <Memory inCtx="true" targetName="_L25_Running_SM1" targetType="kcg_bool"/>
+          </FbyOp>
+          <NodeInlining instName="1" scadeName="pwlinear::Counter">
+            <FbyOp instName="5">
+              <Init inCtx="true" targetName="init4" targetType="kcg_bool"/>
+              <Memory inCtx="true" targetName="_L9_Counter_1_int32" targetType="kcg_int32"/>
+            </FbyOp>
+          </NodeInlining>
+          <FbyOp instName="4">
+            <Init inCtx="true" targetName="init4" targetType="kcg_bool"/>
+            <Memory inCtx="true" targetName="_L37_Running_SM1" targetType="kcg_bool"/>
+          </FbyOp>
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="weak" scadeDest="Runned" targetName="SSM_TR_Running_Runned_1_Running_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="Runned" targetName="SSM_st_Runned_SM1">
+          <FbyOp instName="3">
+            <Init inCtx="true" targetName="init3" targetType="kcg_bool"/>
+            <Memory inCtx="true" targetName="_L4_Runned_SM1" targetType="kcg_int32"/>
+          </FbyOp>
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="weak" scadeDest="Waiting" targetName="SSM_TR_Runned_Waiting_1_Runned_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="Sitting" targetName="SSM_st_Sitting_SM1">
+          <NodeInlining instName="1" scadeName="Transition">
+            <NodeInlining instName="8" scadeName="pwlinear::Counter">
+              <FbyOp instName="5">
+                <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+                <Memory inCtx="true" targetName="_L9_Counter_8_Transition_1_int32" targetType="kcg_int32"/>
+              </FbyOp>
+            </NodeInlining>
+            <FbyOp instName="4">
+              <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+              <Memory inCtx="true" targetName="_L71_Transition_1" targetType="kcg_bool"/>
+            </FbyOp>
+            <FbyOp instName="5">
+              <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+              <Memory inCtx="true" targetName="_L93_Transition_1" targetType="kcg_int32"/>
+            </FbyOp>
+          </NodeInlining>
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="weak" scadeDest="sat" targetName="SSM_TR_Sitting_sat_1_Sitting_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="sat" targetName="SSM_st_sat_SM1">
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="weak" scadeDest="raising" targetName="SSM_TR_sat_raising_1_sat_SM1"/>
+          </Fork>
+        </State>
+        <State scadeName="raising" targetName="SSM_st_raising_SM1">
+          <NodeInlining instName="2" scadeName="Transition">
+            <NodeInlining instName="8" scadeName="pwlinear::Counter">
+              <FbyOp instName="5">
+                <Init inCtx="true" targetName="init1" targetType="kcg_bool"/>
+                <Memory inCtx="true" targetName="_L9_Counter_8_Transition_2_int32" targetType="kcg_int32"/>
+              </FbyOp>
+            </NodeInlining>
+            <FbyOp instName="4">
+              <Init inCtx="true" targetName="init1" targetType="kcg_bool"/>
+              <Memory inCtx="true" targetName="_L71_Transition_2" targetType="kcg_bool"/>
+            </FbyOp>
+            <FbyOp instName="5">
+              <Init inCtx="true" targetName="init1" targetType="kcg_bool"/>
+              <Memory inCtx="true" targetName="_L93_Transition_2" targetType="kcg_int32"/>
+            </FbyOp>
+          </NodeInlining>
+          <Fork priority="1">
+            <Condition/>
+            <Transition kind="weak" scadeDest="Waiting" targetName="SSM_TR_raising_Waiting_1_raising_SM1"/>
+          </Fork>
+        </State>
+        <NextState inCtx="true" mem="true" targetName="SM1_state_nxt"/>
+        <ResetNextState inCtx="true" mem="true" targetName="SM1_reset_nxt"/>
+      </Automaton>
+      <NodeInlining instName="1" scadeName="Read_InputNumber">
+        <Input inCtx="true" scadeName="Notification" scadeType="bool" targetName="MagnitudeNotification" targetType="kcg_bool"/>
+        <Input inCtx="true" scadeName="ScalarNumber" scadeType="T_String_01" targetName="walkMagnitude" targetType="T_String_01"/>
+        <FbyOp instName="1">
+          <Memory inCtx="true" targetName="_L5_Read_InputNumber_1" targetType="kcg_int32"/>
+        </FbyOp>
+        <NodeInstance instName="1" refName="convert2Int" scadeName="convert2Int"/>
+      </NodeInlining>
+      <NodeInlining instName="5" scadeName="Read_InputNumber">
+        <Input inCtx="true" scadeName="Notification" scadeType="bool" targetName="StepsNotification" targetType="kcg_bool"/>
+        <Input inCtx="true" scadeName="ScalarNumber" scadeType="T_String_01" targetName="walkSteps" targetType="T_String_01"/>
+        <FbyOp instName="1">
+          <Memory inCtx="true" targetName="_L5_Read_InputNumber_5" targetType="kcg_int32"/>
+        </FbyOp>
+        <NodeInstance instName="1" refName="convert2Int" scadeName="convert2Int"/>
+      </NodeInlining>
+      <NodeInlining instName="1" scadeName="Protocol">
+        <Output inCtx="true" scadeName="OutProtocol" scadeType="S_ToLabel_76" targetName="Out_Protocol_OutProtocol" targetType="S_ToLabel_76"/>
+        <Output inCtx="true" scadeName="OutMd5" scadeType="S_ToLabel_33" targetName="Out_Protocol_OutMD5" targetType="S_ToLabel_33"/>
+        <Output inCtx="true" scadeName="OutCMD" scadeType="S_ToLabel_10" targetName="Out_Protocol_OutCMD" targetType="S_ToLabel_10"/>
+        <Output inCtx="true" scadeName="Protocolo" scadeType="T_String_76" targetName="Protocolo" targetType="T_String_76"/>
+        <Output inCtx="true" scadeName="Comando" scadeType="T_String_10" targetName="Comando" targetType="T_String_10"/>
+        <NodeInstance instName="1" refName="checkMd5" scadeName="checkMd5"/>
+      </NodeInlining>
+      <NodeInstance instName="1" refName="convert2Char_1" scadeName="convert2Char_1"/>
+      <NodeInstance instName="1" refName="convert2Char_3" scadeName="convert2Char_3"/>
+      <FbyOp instName="6">
+        <Init inCtx="true" targetName="init2" targetType="kcg_bool"/>
+        <Memory inCtx="true" targetName="Comando" targetType="T_String_10"/>
+      </FbyOp>
+      <NodeInlining instName="1" scadeName="DisplayView">
+        <Input inCtx="true" scadeName="isSitting" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="EnablePbSit" scadeType="bool" targetName="EnablePbSit" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="EnablePbRaise" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>
+      </NodeInlining>
+      <Memory inCtx="true" targetName="OutImageReference" targetType="T_ImageReference"/>
+      <Memory inCtx="true" targetName="EnablePbRaise" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="Comando" targetType="T_String_10"/>
+      <Memory inCtx="true" targetName="_L4_Runned_SM1" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L37_Running_SM1" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L25_Running_SM1" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L5_Read_InputNumber_5" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L5_Read_InputNumber_1" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L9_Counter_8_Transition_2_int32" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L71_Transition_2" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L93_Transition_2" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L9_Counter_8_Transition_1_int32" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L71_Transition_1" targetType="kcg_bool"/>
+      <Memory inCtx="true" targetName="_L93_Transition_1" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L9_Counter_1_int32" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L9_Counter_2_int32" targetType="kcg_int32"/>
+      <Memory inCtx="true" targetName="_L7_MovingCycle_1" targetType="kcg_int32"/>
+      <Init inCtx="true" targetName="init" targetType="kcg_bool"/>
+      <Init inCtx="true" targetName="init1" targetType="kcg_bool"/>
+      <Init inCtx="true" targetName="init2" targetType="kcg_bool"/>
+      <Init inCtx="true" targetName="init3" targetType="kcg_bool"/>
+      <Init inCtx="true" targetName="init4" targetType="kcg_bool"/>
+      <OutCtxType targetName="outC_Main"/>
+      <InCtxType targetName="inC_Main"/>
+    </RootNode>
+    <ExpNode scadeName="MovingCycle"/>
+    <ExpNode scadeName="Transition"/>
+    <ExpNode scadeName="Read_InputNumber"/>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="convert2Int" targetCycleFct="convert2Int">
+      <Input scadeName="Send" scadeType="T_String_02" targetName="Send" targetType="T_String_02"/>
+      <Output scadeName="Value" scadeType="int32" targetName="Value" targetType="kcg_int32"/>
+    </NoExpNode>
+    <ExpNode scadeName="Protocol"/>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="checkMd5" targetCycleFct="checkMd5">
+      <Input scadeName="Send" scadeType="T_String_43" targetName="Send" targetType="T_String_43"/>
+      <Output scadeName="Output" scadeType="T_String_32" targetName="Output" targetType="T_String_32"/>
+    </NoExpNode>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="convert2Char_1" targetCycleFct="convert2Char_1">
+      <Input scadeName="Send" scadeType="int32" targetName="Send" targetType="kcg_int32"/>
+      <Output scadeName="Output" scadeType="T_String_01" targetName="Output" targetType="T_String_01"/>
+    </NoExpNode>
+    <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="convert2Char_3" targetCycleFct="convert2Char_3">
+      <Input scadeName="Send" scadeType="int32" targetName="Send" targetType="kcg_int32"/>
+      <Output scadeName="Output" scadeType="T_String_03" targetName="Output" targetType="T_String_03"/>
+    </NoExpNode>
+    <ExpNode scadeName="DisplayView"/>
+    <Package scadeName="pwlinear">
+      <ExpNode scadeName="Counter"/>
+    </Package>
+    <StructType targetCompFct="kcg_comp_S_ToLabel_10" targetCopyFct="kcg_copy_S_ToLabel_10" targetName="S_ToLabel_10">
+      <Field scadeName="Emit2DF" scadeType="kcg_bool" targetName="Emit2DF" targetType="kcg_bool"/>
+      <Field scadeName="string_size" scadeType="kcg_uint16" targetName="string_size" targetType="kcg_uint16"/>
+      <Field scadeName="value" scadeType="T_String_10" targetName="value" targetType="T_String_10"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_S_ToLabel_33" targetCopyFct="kcg_copy_S_ToLabel_33" targetName="S_ToLabel_33">
+      <Field scadeName="Emit2DF" scadeType="kcg_bool" targetName="Emit2DF" targetType="kcg_bool"/>
+      <Field scadeName="string_size" scadeType="kcg_uint16" targetName="string_size" targetType="kcg_uint16"/>
+      <Field scadeName="value" scadeType="T_String_33" targetName="value" targetType="T_String_33"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_T_ImageReference" targetCopyFct="kcg_copy_T_ImageReference" targetName="T_ImageReference">
+      <Field scadeName="Emit2DF" scadeType="kcg_bool" targetName="Emit2DF" targetType="kcg_bool"/>
+      <Field scadeName="Reference" scadeType="kcg_uint16" targetName="Reference" targetType="kcg_uint16"/>
+    </StructType>
+    <StructType targetCompFct="kcg_comp_S_ToLabel_76" targetCopyFct="kcg_copy_S_ToLabel_76" targetName="S_ToLabel_76">
+      <Field scadeName="Emit2DF" scadeType="kcg_bool" targetName="Emit2DF" targetType="kcg_bool"/>
+      <Field scadeName="string_size" scadeType="kcg_uint16" targetName="string_size" targetType="kcg_uint16"/>
+      <Field scadeName="value" scadeType="T_String_76" targetName="value" targetType="T_String_76"/>
+    </StructType>
+    <ArrayType cellType="kcg_char" size="10" targetCompFct="kcg_comp_T_String_10" targetCopyFct="kcg_copy_T_String_10" targetName="T_String_10"/>
+    <ArrayType cellType="kcg_char" size="1" targetCompFct="kcg_comp_T_String_01" targetCopyFct="kcg_copy_T_String_01" targetName="T_String_01"/>
+    <ArrayType cellType="kcg_char" size="9" targetCompFct="kcg_comp_array_char_9" targetCopyFct="kcg_copy_array_char_9" targetName="array_char_9"/>
+    <ArrayType cellType="kcg_char" size="43" targetCompFct="kcg_comp_T_String_43" targetCopyFct="kcg_copy_T_String_43" targetName="T_String_43"/>
+    <ArrayType cellType="kcg_char" size="3" targetCompFct="kcg_comp_T_String_03" targetCopyFct="kcg_copy_T_String_03" targetName="T_String_03"/>
+    <ArrayType cellType="kcg_char" size="33" targetCompFct="kcg_comp_T_String_33" targetCopyFct="kcg_copy_T_String_33" targetName="T_String_33"/>
+    <ArrayType cellType="kcg_char" size="76" targetCompFct="kcg_comp_T_String_76" targetCopyFct="kcg_copy_T_String_76" targetName="T_String_76"/>
+    <ArrayType cellType="kcg_char" size="2" targetCompFct="kcg_comp_T_String_02" targetCopyFct="kcg_copy_T_String_02" targetName="T_String_02"/>
+    <ArrayType cellType="kcg_char" size="32" targetCompFct="kcg_comp_T_String_32" targetCopyFct="kcg_copy_T_String_32" targetName="T_String_32"/>
+    <ArrayType cellType="kcg_char" size="6" targetCompFct="kcg_comp_T_String_06" targetCopyFct="kcg_copy_T_String_06" targetName="T_String_06"/>
+    <PredefType scadeName="int8" targetName="kcg_int8"/>
+    <PredefType scadeName="int16" targetName="kcg_int16"/>
+    <PredefType scadeName="int32" targetName="kcg_int32"/>
+    <PredefType scadeName="int64" targetName="kcg_int64"/>
+    <PredefType scadeName="uint8" targetName="kcg_uint8"/>
+    <PredefType scadeName="uint16" targetName="kcg_uint16"/>
+    <PredefType scadeName="uint32" targetName="kcg_uint32"/>
+    <PredefType scadeName="uint64" targetName="kcg_uint64"/>
+    <PredefType scadeName="size" targetName="kcg_size"/>
+    <PredefType scadeName="float32" targetName="kcg_float32"/>
+    <PredefType scadeName="float64" targetName="kcg_float64"/>
+    <PredefType scadeName="bool" targetName="kcg_bool"/>
+    <PredefType scadeName="char" targetName="kcg_char"/>
+  </Model>

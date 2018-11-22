@@ -1,0 +1,49 @@
+*****************************
+*** Generated KCG H/Ads files ***
+*****************************
+Main.h
+kcg_types.h
+kcg_consts.h
+kcg_sensors.h
+kcg_imported_functions.h
+
+*****************************
+*** Generated KCG C/Adb files ***
+*****************************
+Main.c
+kcg_types.c
+kcg_consts.c
+
+*****************************
+*** External C Files ***
+*****************************
+$(SCADE)\lib\A661Cosim.c
+Main_cosim.c
+UserApplication_type.c
+$(SCADE)\lib\C\SmuPredefConv.c
+$(SCADE)\lib\C\SmuConfig.c
+$(SCADE)\lib\C\SmuTypes.c
+$(SCADE)\lib\C\SmuLib.c
+$(SCADE)\lib\C\SmuVTable.c
+UserApplication_mapping.c
+..\Codes_C\md5.c
+..\Codes_C\convert.c
+
+*****************************
+*** Generated SC2C Files ***
+*****************************
+user_macros.h
+kcg_imported_types.h
+
+*****************************
+*** Include Directories ***
+*****************************
+.
+$(SCADE)
+$(SCADE)\include
+$(SCADE)\include\C
+$(SCADE)\include\Ada
+$(SCADE)\lib\Ada
+..\Codes_C
+$(SCADE)\libraries\SC65\libmathext
+

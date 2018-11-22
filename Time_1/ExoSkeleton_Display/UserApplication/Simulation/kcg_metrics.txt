@@ -1,0 +1,29 @@
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
+** Generation date: 2018-11-21T23:06:27
+*************************************************************$
+Data structures
+  Structures
+    Max members in a single structure: 300
+  Arrays
+    Max number of dimensions for an array: 1
+    Maximum size for a dimension: 76
+  Enumeration
+    Max of enum constants in a single enumeration: 8
+Control structures
+  Max numbers of case labels in a switch: 6
+  Max number of nesting levels in compound statement: 2
+Program size
+  Functions
+    Max number of function parameters in definition: 2
+    Max number of function arguments in a call: 3
+  Expressions
+    Max number of nesting levels of parenthesized expression in a full expression: 3
+  Identifiers
+    Max number of identifiers with block scope declared in one block: 81
+    Max number of macro identifiers simultaneously defined in one preprocessing translation unit: 64
+    Max number of extern identifiers in one translation unit: 39
+$********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
+** kcg_metrics.txt
+** Generation date: 2018-11-21T23:06:27
+*************************************************************$

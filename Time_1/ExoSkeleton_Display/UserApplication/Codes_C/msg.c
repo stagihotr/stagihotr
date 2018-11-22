@@ -1,15 +1,14 @@
-// Autor: Kfouri baseado no codigo de Marcelo Paiva
-// Data: 26/10/2018
+// Autor: Marcelo Paiva
+// Data: 06/10/2017
 // Objetivo: Integracao do CDS SCADE R18 com o Kafka, topico: erlun
 
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include "kcg_types.h"
 
-int send2Kafka( /* Send/ */ T_String_32 *Send )
+int msg( char *Send )
 {
-    char cmd[4], cmdKafka[200]="python E:\\Projetos\\stagiho-tr\Time_1\\ExoSkeleton_Display\\Integration\\test.py";
+    char cmd[4], cmdKafka[200]="python C:\\Users\\Paiva\\SCADE\\STAMPS-TR\\\Integration\\send2Bridge.py ";
     strncpy(cmd, Send, 4);
     if(strncmp(cmd, " ", 1) != 0)
     {

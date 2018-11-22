@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<Project id="1" oid_count="171" defaultConfiguration="24">
+<Project id="1" oid_count="181" defaultConfiguration="24">
 	<props>
 		<Prop id="10" name="@STUDIO:PRODUCT">
 			<value>SC</value>
@@ -384,6 +384,10 @@
 			<value>Reporter/ScadeReport.tcl</value>
 			<configuration>36</configuration>
 		</Prop>
+		<Prop id="172" name="@GENERATOR:OBSERVE_MODE">
+			<value>4</value>
+			<configuration>14</configuration>
+		</Prop>
 	</props>
 	<roots>
 		<Folder id="3" extensions="vsp;etp" name="SCADE Libraries">
@@ -407,10 +411,10 @@
 				<FileRef id="146" persistAs="Transition.xscade"/>
 				<FileRef id="153" persistAs="convert2Int.xscade"/>
 				<FileRef id="161" persistAs="Read_InputNumber.xscade"/>
-				<FileRef id="148" persistAs="DisplayView.xscade"/>
 				<FileRef id="165" persistAs="convert2Char_1.xscade"/>
 				<FileRef id="167" persistAs="convert2Char_3.xscade"/>
 				<FileRef id="171" persistAs="send2Kafka.xscade"/>
+				<FileRef id="148" persistAs="DisplayView.xscade"/>
 			</elements>
 		</Folder>
 		<FileRef id="93" persistAs="..\DefinitionFile\DefinitionFile.etp"/>
@@ -421,34 +425,35 @@
 		</Folder>
 		<Folder id="114" extensions="c;adb;ada" name="External Code">
 			<elements>
-				<FileRef id="121" persistAs="..\Integration\md5.c">
+				<FileRef id="154" persistAs="..\Integration\convert.c"/>
+				<FileRef id="173" persistAs="Codes_C\md5.c">
 					<props>
-						<Prop id="122" name="@SIMULATOR:FILEKIND">
+						<Prop id="174" name="@SIMULATOR:FILEKIND">
 							<value>CS</value>
 						</Prop>
-						<Prop id="123" name="@SCADE:IMPORTED_NODES">
+						<Prop id="175" name="@SCADE:IMPORTED_NODES">
 							<value>checkMd5</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="154" persistAs="..\Integration\convert.c">
+				<FileRef id="176" persistAs="Codes_C\convert.c">
 					<props>
-						<Prop id="155" name="@SIMULATOR:FILEKIND">
+						<Prop id="177" name="@SIMULATOR:FILEKIND">
 							<value>CS</value>
 						</Prop>
-						<Prop id="156" name="@SCADE:IMPORTED_NODES">
-							<value>convert2Int</value>
+						<Prop id="178" name="@SCADE:IMPORTED_NODES">
 							<value>convert2Char_1</value>
 							<value>convert2Char_3</value>
+							<value>convert2Int</value>
 						</Prop>
 					</props>
 				</FileRef>
-				<FileRef id="168" persistAs="..\Integration\send2Kafka.c">
+				<FileRef id="179" persistAs="Codes_C\send2Kafka.c">
 					<props>
-						<Prop id="169" name="@SIMULATOR:FILEKIND">
+						<Prop id="180" name="@SIMULATOR:FILEKIND">
 							<value>CS</value>
 						</Prop>
-						<Prop id="170" name="@SCADE:IMPORTED_NODES">
+						<Prop id="181" name="@SCADE:IMPORTED_NODES">
 							<value>send2Kafka</value>
 						</Prop>
 					</props>

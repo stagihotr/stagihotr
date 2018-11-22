@@ -1,0 +1,56 @@
+# Resource_DF_File_Header
+A661 # A661_DF_MAGIC_NUMBER
+01 # Library_version
+06 # Supplement_version
+0000 # AppID
+0000 # Size_of_OEM_free_data
+
+# Line_Stipple_Block_Structure_DT
+60 # OEM_BEGIN_STIPPLE_BLOCK
+00 # UnusedPad
+0010 # TableSize
+00000028 # CommandSize
+0005 #  NumberOfelements
+0000 # UnusedPad
+
+# Stipple_Structure
+04 # Index
+04 # Size
+01 # SegmentSize
+08 # SegmentSize
+08 # SegmentSize
+08 # SegmentSize
+0000 # UnusedPad
+
+# Stipple_Structure
+03 # Index
+02 # Size
+01 # SegmentSize
+06 # SegmentSize
+
+# Stipple_Structure
+02 # Index
+02 # Size
+08 # SegmentSize
+08 # SegmentSize
+
+# Stipple_Structure
+01 # Index
+02 # Size
+0C # SegmentSize
+0C # SegmentSize
+
+# Stipple_Structure
+00 # Index
+00 # Size
+00 # SegmentSize
+00 # UnusedPad
+
+D0 # A661_END_BLOCK
+00 # UnusedPad
+0000 # UnusedPad
+
+# Resource_DF_File_Footer
+E0 # A661_DF_FOOTER
+00 # UnusedPad
+0000 # UnusedPad

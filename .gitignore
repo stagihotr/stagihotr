@@ -5,7 +5,6 @@
 **.log
 
 
-**/KCG/
 **/Simulation/
-**/DF/
 /Time_1/.vagrant
+/Time_1/VoiceRecognizer/.vscode
