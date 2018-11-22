@@ -68,6 +68,9 @@
       <Input inCtx="true" scadeName="raiseStart" scadeType="bool" targetName="raiseStart" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="StepsNotification" scadeType="bool" targetName="StepsNotification" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="MagnitudeNotification" scadeType="bool" targetName="MagnitudeNotification" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmWalk" scadeType="bool" targetName="ConfirmWalk" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmSit" scadeType="bool" targetName="ConfirmSit" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmRaise" scadeType="bool" targetName="ConfirmRaise" targetType="kcg_bool"/>
       <Output inCtx="true" scadeName="OutImageReference" scadeType="T_ImageReference" targetName="OutImageReference" targetType="T_ImageReference"/>
       <Output inCtx="true" scadeName="EnablePbSit" scadeType="bool" targetName="EnablePbSit" targetType="kcg_bool"/>
       <Output inCtx="true" scadeName="EnablePbRaise" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>

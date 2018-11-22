@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/config.txt
-** Generation date: 2018-11-21T22:34:45
+** Generation date: 2018-11-21T23:00:48
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -21,19 +21,9 @@ void Main(inC_Main *inC, outC_Main *outC)
   T_String_10 tmp8;
   /* SM1: */
   SSM_ST_SM1 SM1_state_act;
-  /* @3/Out_Done/,
-     @3/_L96/,
-     SM1:,
-     SM1:raising:<1>,
-     SM1:raising:_L4/,
-     varDoneRising/ */
+  /* @3/Out_Done/, @3/_L96/, SM1:raising:_L4/ */
   kcg_bool _L4_raising_SM1;
-  /* @5/Out_Done/,
-     @5/_L96/,
-     SM1:,
-     SM1:Sitting:<1>,
-     SM1:Sitting:_L2/,
-     varDoneSitting/ */
+  /* @5/Out_Done/, @5/_L96/, SM1:Sitting:_L2/ */
   kcg_bool _L2_Sitting_SM1;
   /* @9/Count/, @9/_L15/, SM1:Running:_L38/ */
   kcg_int32 _L38_Running_SM1;
@@ -221,17 +211,21 @@ void Main(inC_Main *inC, outC_Main *outC)
     case SSM_st_raising_SM1 :
       kcg_copy_T_String_02(&outC->Comando[7], (T_String_02 *) &P_STATUS_RN);
       outC->OutImageReference.Emit2DF = kcg_true;
+      outC->SM1_reset_nxt = inC->ConfirmRaise | _L4_raising_SM1;
       /* @3/_L97= */
       if (_L4_raising_SM1) {
         outC->OutImageReference.Reference = kcg_lit_uint16(39);
-        outC->SM1_state_nxt = SSM_st_Waiting_SM1;
       }
       else {
         outC->OutImageReference.Reference = /* @3/_L75= */(kcg_uint16)
             outC->_L93_Transition_2;
+      }
+      if (outC->SM1_reset_nxt) {
+        outC->SM1_state_nxt = SSM_st_Waiting_SM1;
+      }
+      else {
         outC->SM1_state_nxt = SSM_st_raising_SM1;
       }
-      outC->SM1_reset_nxt = _L4_raising_SM1;
       outC->init1 = kcg_false;
       break;
     case SSM_st_sat_SM1 :
@@ -246,19 +240,23 @@ void Main(inC_Main *inC, outC_Main *outC)
       break;
     case SSM_st_Sitting_SM1 :
       kcg_copy_T_String_02(&outC->Comando[7], (T_String_02 *) &P_STATUS_RN);
-      outC->EnablePbRaise = _L2_Sitting_SM1;
+      outC->SM1_reset_nxt = inC->ConfirmSit | _L2_Sitting_SM1;
+      outC->EnablePbRaise = outC->SM1_reset_nxt;
       outC->OutImageReference.Emit2DF = kcg_true;
       /* @5/_L97= */
       if (_L2_Sitting_SM1) {
         outC->OutImageReference.Reference = kcg_lit_uint16(35);
-        outC->SM1_state_nxt = SSM_st_sat_SM1;
       }
       else {
         outC->OutImageReference.Reference = /* @5/_L75= */(kcg_uint16)
             outC->_L93_Transition_1;
+      }
+      if (outC->SM1_reset_nxt) {
+        outC->SM1_state_nxt = SSM_st_sat_SM1;
+      }
+      else {
         outC->SM1_state_nxt = SSM_st_Sitting_SM1;
       }
-      outC->SM1_reset_nxt = _L2_Sitting_SM1;
       outC->init = kcg_false;
       break;
     case SSM_st_Runned_SM1 :
@@ -281,11 +279,18 @@ void Main(inC_Main *inC, outC_Main *outC)
       break;
     case SSM_st_Running_SM1 :
       kcg_copy_T_String_02(&outC->Comando[7], (T_String_02 *) &P_STATUS_RN);
-      outC->SM1_reset_nxt = outC->_L5_Read_InputNumber_5 <= _L21_Running_SM1;
+      outC->SM1_reset_nxt = inC->ConfirmWalk | (outC->_L5_Read_InputNumber_5 <=
+          _L21_Running_SM1);
       outC->OutImageReference.Emit2DF = kcg_true;
-      outC->OutImageReference.Reference = /* SM1:Running:_L44= */(kcg_uint16)
-          _L38_Running_SM1;
       outC->_L25_Running_SM1 = kcg_lit_int32(10) <= _L9_Running_SM1;
+      /* SM1:Running:_L60= */
+      if (inC->ConfirmWalk) {
+        outC->OutImageReference.Reference = kcg_lit_uint16(3);
+      }
+      else {
+        outC->OutImageReference.Reference = /* SM1:Running:_L44= */(kcg_uint16)
+            _L38_Running_SM1;
+      }
       if (outC->SM1_reset_nxt) {
         outC->SM1_state_nxt = SSM_st_Runned_SM1;
       }
@@ -441,6 +446,6 @@ void Main_reset(outC_Main *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Main.c
-** Generation date: 2018-11-21T22:34:45
+** Generation date: 2018-11-21T23:00:48
 *************************************************************$ */
 
