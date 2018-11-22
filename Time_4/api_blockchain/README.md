@@ -49,8 +49,6 @@ POST - https://ts04stagihotr.herokuapp.com/pacientes
 ``` 
 
 ***
-***
-***
 
 ### CADASTRAR MOVIMENTOS
 ---
