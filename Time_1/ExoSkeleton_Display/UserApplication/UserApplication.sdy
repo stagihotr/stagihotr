@@ -147,18 +147,6 @@
 						</A661_CMD_SET_PARAMETER>
 					</inputs>
 				</MappingItem>
-				<MappingItem>
-					<output>
-						<A661_NOTIFY_WIDGET_EVENT name="Notify" type="a661_bool" pathname="..\DefinitionFile\exoSkeleton.sgfx" layer="a661_layer" LayerIdent="1" WidgetIdent="7" ParameterIdent="A661_EVT_SELECTION" WidgetType="PushButton" WidgetName="pbStop">
-							<A661Data>
-								<Notify/>
-							</A661Data>
-						</A661_NOTIFY_WIDGET_EVENT>
-					</output>
-					<inputs>
-						<Variable name="walkStop" type="bool" oid="!ed/1adf4/E3/3060/5bc68cd13c82" instancepath="Main/"/>
-					</inputs>
-				</MappingItem>
 			</mappingItems>
 		</OperatorMapping>
 	</operatorMappings>

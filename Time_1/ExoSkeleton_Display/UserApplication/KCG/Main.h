@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/config.txt
-** Generation date: 2018-11-21T23:00:48
+** Generation date: 2018-11-21T23:28:09
 *************************************************************$ */
 #ifndef _Main_H_
 #define _Main_H_
@@ -122,6 +122,6 @@ extern void Main_init(outC_Main *outC);
 #endif /* _Main_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Main.h
-** Generation date: 2018-11-21T23:00:48
+** Generation date: 2018-11-21T23:28:09
 *************************************************************$ */
 
