@@ -39,20 +39,20 @@ DECL_SCOPE(scope_33, 9);
 DECL_SCOPE(scope_32, 7);
 DECL_SCOPE(scope_31, 20);
 DECL_SCOPE(scope_30, 1);
-DECL_SCOPE(scope_29, 9);
+DECL_SCOPE(scope_29, 12);
 DECL_SCOPE(scope_28, 1);
 DECL_SCOPE(scope_27, 3);
 DECL_SCOPE(scope_26, 7);
 DECL_SCOPE(scope_25, 20);
 DECL_SCOPE(scope_24, 1);
-DECL_SCOPE(scope_23, 9);
+DECL_SCOPE(scope_23, 12);
 DECL_SCOPE(scope_22, 1);
 DECL_SCOPE(scope_21, 10);
 DECL_SCOPE(scope_20, 7);
 DECL_SCOPE(scope_19, 7);
 DECL_SCOPE(scope_18, 13);
 DECL_SCOPE(scope_17, 1);
-DECL_SCOPE(scope_16, 29);
+DECL_SCOPE(scope_16, 34);
 DECL_SCOPE(scope_15, 1);
 DECL_SCOPE(scope_14, 1);
 DECL_SCOPE(scope_13, 9);
@@ -67,7 +67,7 @@ DECL_SCOPE(scope_5, 3);
 DECL_SCOPE(scope_4, 1);
 DECL_SCOPE(scope_3, 3);
 DECL_SCOPE(scope_2, 2);
-DECL_SCOPE(scope_1, 65);
+DECL_SCOPE(scope_1, 67);
 DECL_SCOPE(scope_0, 1);
 
 /* clock definition */
@@ -274,7 +274,7 @@ const MappingScope scope_30 = {
     scope_30_entries, 1
 };
 
-const MappingEntry scope_29_entries[9] = {
+const MappingEntry scope_29_entries[12] = {
     /* 0 */ { MAP_FORK, "<1", NULL, 0, 0, NULL, &scope_12_entries[6], isActive_SSM_TR_SM1_SSM_TR_raising_Waiting_1_raising_SM1, &scope_30, 1, 0 },
     /* 1 */ { MAP_LOCAL, "_L5", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L5_raising_SM1, &_Type_kcg_int32_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_raising_SM1, NULL, 1, 1 },
     /* 2 */ { MAP_LOCAL, "_L3", NULL, sizeof(T_ImageReference), (size_t)&outputs_ctx._L3_raising_SM1, &_Type_T_ImageReference_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_raising_SM1, &scope_2, 1, 2 },
@@ -283,11 +283,14 @@ const MappingEntry scope_29_entries[9] = {
     /* 5 */ { MAP_LOCAL, "_L1", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L1_raising_SM1, &_Type_kcg_int32_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_raising_SM1, NULL, 1, 5 },
     /* 6 */ { MAP_LOCAL, "_L12", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L12_raising_SM1, &_Type_T_String_02_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_raising_SM1, &scope_10, 1, 6 },
     /* 7 */ { MAP_LOCAL, "_L13", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L13_raising_SM1, &_Type_T_String_02_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_raising_SM1, &scope_10, 1, 7 },
-    /* 8 */ { MAP_EXPANDED, "Transition 2", NULL, 0, 0, NULL, NULL, NULL, &scope_31, 1, 8 }
+    /* 8 */ { MAP_LOCAL, "_L14", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L14_raising_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_raising_SM1, NULL, 1, 8 },
+    /* 9 */ { MAP_LOCAL, "_L15", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L15_raising_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_raising_SM1, NULL, 1, 9 },
+    /* 10 */ { MAP_LOCAL, "_L16", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L16_raising_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_raising_SM1, NULL, 1, 10 },
+    /* 11 */ { MAP_EXPANDED, "Transition 2", NULL, 0, 0, NULL, NULL, NULL, &scope_31, 1, 11 }
 };
 const MappingScope scope_29 = {
     "Main/ MainSM1:raising:",
-    scope_29_entries, 9
+    scope_29_entries, 12
 };
 
 const MappingEntry scope_28_entries[1] = {
@@ -357,7 +360,7 @@ const MappingScope scope_24 = {
     scope_24_entries, 1
 };
 
-const MappingEntry scope_23_entries[9] = {
+const MappingEntry scope_23_entries[12] = {
     /* 0 */ { MAP_FORK, "<1", NULL, 0, 0, NULL, &scope_12_entries[6], isActive_SSM_TR_SM1_SSM_TR_Sitting_sat_1_Sitting_SM1, &scope_24, 1, 0 },
     /* 1 */ { MAP_LOCAL, "_L2", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L2_Sitting_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Sitting_SM1, NULL, 1, 1 },
     /* 2 */ { MAP_LOCAL, "_L1", NULL, sizeof(T_ImageReference), (size_t)&outputs_ctx._L1_Sitting_SM1, &_Type_T_ImageReference_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Sitting_SM1, &scope_2, 1, 2 },
@@ -366,11 +369,14 @@ const MappingEntry scope_23_entries[9] = {
     /* 5 */ { MAP_LOCAL, "_L8", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L8_Sitting_SM1, &_Type_kcg_int32_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Sitting_SM1, NULL, 1, 5 },
     /* 6 */ { MAP_LOCAL, "_L10", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L10_Sitting_SM1, &_Type_T_String_02_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Sitting_SM1, &scope_10, 1, 6 },
     /* 7 */ { MAP_LOCAL, "_L12", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L12_Sitting_SM1, &_Type_T_String_02_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Sitting_SM1, &scope_10, 1, 7 },
-    /* 8 */ { MAP_EXPANDED, "Transition 1", NULL, 0, 0, NULL, NULL, NULL, &scope_25, 1, 8 }
+    /* 8 */ { MAP_LOCAL, "_L13", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L13_Sitting_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Sitting_SM1, NULL, 1, 8 },
+    /* 9 */ { MAP_LOCAL, "_L14", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L14_Sitting_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Sitting_SM1, NULL, 1, 9 },
+    /* 10 */ { MAP_LOCAL, "_L15", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L15_Sitting_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Sitting_SM1, NULL, 1, 10 },
+    /* 11 */ { MAP_EXPANDED, "Transition 1", NULL, 0, 0, NULL, NULL, NULL, &scope_25, 1, 11 }
 };
 const MappingScope scope_23 = {
     "Main/ MainSM1:Sitting:",
-    scope_23_entries, 9
+    scope_23_entries, 12
 };
 
 const MappingEntry scope_22_entries[1] = {
@@ -454,7 +460,7 @@ const MappingScope scope_17 = {
     scope_17_entries, 1
 };
 
-const MappingEntry scope_16_entries[29] = {
+const MappingEntry scope_16_entries[34] = {
     /* 0 */ { MAP_FORK, "<1", NULL, 0, 0, NULL, &scope_12_entries[6], isActive_SSM_TR_SM1_SSM_TR_Running_Runned_1_Running_SM1, &scope_17, 1, 0 },
     /* 1 */ { MAP_LOCAL, "_L15", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L15_Running_SM1, &_Type_kcg_int32_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 1 },
     /* 2 */ { MAP_LOCAL, "_L47", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L47_Running_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 2 },
@@ -481,13 +487,18 @@ const MappingEntry scope_16_entries[29] = {
     /* 23 */ { MAP_LOCAL, "_L54", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L54_Running_SM1, &_Type_T_String_02_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, &scope_10, 1, 23 },
     /* 24 */ { MAP_LOCAL, "_L5", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L5_Running_SM1, &_Type_kcg_int32_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 24 },
     /* 25 */ { MAP_LOCAL, "_L55", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L55_Running_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 25 },
-    /* 26 */ { MAP_EXPANDED, "MovingCycle 1", NULL, 0, 0, NULL, NULL, NULL, &scope_18, 1, 26 },
-    /* 27 */ { MAP_EXPANDED, "pwlinear::Counter 2", NULL, 0, 0, NULL, NULL, NULL, &scope_19, 1, 27 },
-    /* 28 */ { MAP_EXPANDED, "pwlinear::Counter 1", NULL, 0, 0, NULL, NULL, NULL, &scope_20, 1, 28 }
+    /* 26 */ { MAP_LOCAL, "_L56", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L56_Running_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 26 },
+    /* 27 */ { MAP_LOCAL, "_L57", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L57_Running_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 27 },
+    /* 28 */ { MAP_LOCAL, "_L59", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L59_Running_SM1, &_Type_kcg_bool_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 28 },
+    /* 29 */ { MAP_LOCAL, "_L60", NULL, sizeof(kcg_uint16), (size_t)&outputs_ctx._L60_Running_SM1, &_Type_kcg_uint16_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 29 },
+    /* 30 */ { MAP_LOCAL, "_L61", NULL, sizeof(kcg_uint16), (size_t)&outputs_ctx._L61_Running_SM1, &_Type_kcg_uint16_Utils, &scope_12_entries[0], isActive_SSM_ST_SM1_SSM_st_Running_SM1, NULL, 1, 30 },
+    /* 31 */ { MAP_EXPANDED, "MovingCycle 1", NULL, 0, 0, NULL, NULL, NULL, &scope_18, 1, 31 },
+    /* 32 */ { MAP_EXPANDED, "pwlinear::Counter 2", NULL, 0, 0, NULL, NULL, NULL, &scope_19, 1, 32 },
+    /* 33 */ { MAP_EXPANDED, "pwlinear::Counter 1", NULL, 0, 0, NULL, NULL, NULL, &scope_20, 1, 33 }
 };
 const MappingScope scope_16 = {
     "Main/ MainSM1:Running:",
-    scope_16_entries, 29
+    scope_16_entries, 34
 };
 
 const MappingEntry scope_15_entries[1] = {
@@ -629,7 +640,7 @@ const MappingScope scope_2 = {
     scope_2_entries, 2
 };
 
-const MappingEntry scope_1_entries[65] = {
+const MappingEntry scope_1_entries[67] = {
     /* 0 */ { MAP_OUTPUT, "OutImageReference", NULL, sizeof(T_ImageReference), (size_t)&outputs_ctx.OutImageReference, &_Type_T_ImageReference_Utils, NULL, NULL, &scope_2, 1, 0 },
     /* 1 */ { MAP_OUTPUT, "EnablePbSit", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.EnablePbSit, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 1 },
     /* 2 */ { MAP_OUTPUT, "EnablePbRaise", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.EnablePbRaise, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 2 },
@@ -643,62 +654,64 @@ const MappingEntry scope_1_entries[65] = {
     /* 10 */ { MAP_OUTPUT, "PulseRaise", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.PulseRaise, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 10 },
     /* 11 */ { MAP_OUTPUT, "changed", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.changed, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 11 },
     /* 12 */ { MAP_INPUT, "walkStart", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.walkStart, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 12 },
-    /* 13 */ { MAP_INPUT, "walkStop", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.walkStop, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 13 },
-    /* 14 */ { MAP_INPUT, "walkSteps", NULL, sizeof(T_String_01), (size_t)&inputs_ctx.walkSteps, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 14 },
-    /* 15 */ { MAP_INPUT, "walkMagnitude", NULL, sizeof(T_String_01), (size_t)&inputs_ctx.walkMagnitude, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 15 },
-    /* 16 */ { MAP_INPUT, "sitStart", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.sitStart, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 16 },
-    /* 17 */ { MAP_INPUT, "raiseStart", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.raiseStart, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 17 },
-    /* 18 */ { MAP_INPUT, "StepsNotification", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.StepsNotification, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 18 },
-    /* 19 */ { MAP_INPUT, "MagnitudeNotification", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.MagnitudeNotification, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 19 },
-    /* 20 */ { MAP_LOCAL, "Magnitude", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx.Magnitude, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 20 },
-    /* 21 */ { MAP_LOCAL, "Steps", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx.Steps, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 21 },
-    /* 22 */ { MAP_LOCAL, "varDoneRunning", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.varDoneRunning, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 22 },
-    /* 23 */ { MAP_LOCAL, "varDoneWaiting", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.varDoneWaiting, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 23 },
-    /* 24 */ { MAP_LOCAL, "ImageReference", NULL, sizeof(T_ImageReference), (size_t)&outputs_ctx.ImageReference, &_Type_T_ImageReference_Utils, NULL, NULL, &scope_2, 1, 24 },
-    /* 25 */ { MAP_LOCAL, "varDoneSitting", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.varDoneSitting, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 25 },
-    /* 26 */ { MAP_LOCAL, "varDoneRising", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.varDoneRising, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 26 },
-    /* 27 */ { MAP_LOCAL, "currentStatus", NULL, sizeof(T_String_02), (size_t)&outputs_ctx.currentStatus, &_Type_T_String_02_Utils, NULL, NULL, &scope_10, 1, 27 },
-    /* 28 */ { MAP_LOCAL, "currentCommand", NULL, sizeof(T_String_02), (size_t)&outputs_ctx.currentCommand, &_Type_T_String_02_Utils, NULL, NULL, &scope_10, 1, 28 },
-    /* 29 */ { MAP_LOCAL, "_L37", NULL, sizeof(T_ImageReference), (size_t)&outputs_ctx._L37, &_Type_T_ImageReference_Utils, NULL, NULL, &scope_2, 1, 29 },
-    /* 30 */ { MAP_LOCAL, "_L43", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L43, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 30 },
-    /* 31 */ { MAP_LOCAL, "_L44", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L44, &_Type_T_String_02_Utils, NULL, NULL, &scope_10, 1, 31 },
-    /* 32 */ { MAP_LOCAL, "_L45", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L45, &_Type_T_String_02_Utils, NULL, NULL, &scope_10, 1, 32 },
-    /* 33 */ { MAP_LOCAL, "_L18", NULL, sizeof(T_String_01), (size_t)&outputs_ctx._L18, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 33 },
-    /* 34 */ { MAP_LOCAL, "_L15", NULL, sizeof(T_String_01), (size_t)&outputs_ctx._L15, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 34 },
-    /* 35 */ { MAP_LOCAL, "_L51", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L51, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 35 },
-    /* 36 */ { MAP_LOCAL, "_L52", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L52, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 36 },
-    /* 37 */ { MAP_LOCAL, "_L55", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L55, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 37 },
-    /* 38 */ { MAP_LOCAL, "_L59", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L59, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 38 },
-    /* 39 */ { MAP_LOCAL, "_L62", NULL, sizeof(S_ToLabel_76), (size_t)&outputs_ctx._L62, &_Type_S_ToLabel_76_Utils, NULL, NULL, &scope_5, 1, 39 },
-    /* 40 */ { MAP_LOCAL, "_L63", NULL, sizeof(S_ToLabel_33), (size_t)&outputs_ctx._L63, &_Type_S_ToLabel_33_Utils, NULL, NULL, &scope_7, 1, 40 },
-    /* 41 */ { MAP_LOCAL, "_L64", NULL, sizeof(S_ToLabel_10), (size_t)&outputs_ctx._L64, &_Type_S_ToLabel_10_Utils, NULL, NULL, &scope_3, 1, 41 },
-    /* 42 */ { MAP_LOCAL, "_L78", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L78, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 42 },
-    /* 43 */ { MAP_LOCAL, "_L79", NULL, sizeof(T_String_01), (size_t)&outputs_ctx._L79, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 43 },
-    /* 44 */ { MAP_LOCAL, "_L81", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L81, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 44 },
-    /* 45 */ { MAP_LOCAL, "_L84", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L84, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 45 },
-    /* 46 */ { MAP_LOCAL, "_L85", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L85, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 46 },
-    /* 47 */ { MAP_LOCAL, "_L86", NULL, sizeof(T_String_03), (size_t)&outputs_ctx._L86, &_Type_T_String_03_Utils, NULL, NULL, &scope_11, 1, 47 },
-    /* 48 */ { MAP_LOCAL, "_L87", NULL, sizeof(T_String_76), (size_t)&outputs_ctx._L87, &_Type_T_String_76_Utils, NULL, NULL, &scope_6, 1, 48 },
-    /* 49 */ { MAP_LOCAL, "_L88", NULL, sizeof(T_String_10), (size_t)&outputs_ctx._L88, &_Type_T_String_10_Utils, NULL, NULL, &scope_4, 1, 49 },
-    /* 50 */ { MAP_LOCAL, "_L89", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L89, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 50 },
-    /* 51 */ { MAP_LOCAL, "_L90", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L90, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 51 },
-    /* 52 */ { MAP_LOCAL, "_L91", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L91, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 52 },
-    /* 53 */ { MAP_LOCAL, "_L98", NULL, sizeof(T_String_10), (size_t)&outputs_ctx._L98, &_Type_T_String_10_Utils, NULL, NULL, &scope_4, 1, 53 },
-    /* 54 */ { MAP_LOCAL, "_L100", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L100, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 54 },
-    /* 55 */ { MAP_LOCAL, "_L103", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L103, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 55 },
-    /* 56 */ { MAP_LOCAL, "_L104", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L104, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 56 },
-    /* 57 */ { MAP_LOCAL, "_L105", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L105, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 57 },
-    /* 58 */ { MAP_LOCAL, "_L42", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L42, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 58 },
-    /* 59 */ { MAP_LOCAL, "_L41", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L41, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 59 },
-    /* 60 */ { MAP_AUTOMATON, "SM1:", NULL, 0, 0, NULL, NULL, NULL, &scope_12, 1, 60 },
-    /* 61 */ { MAP_EXPANDED, "Read_InputNumber 1", NULL, 0, 0, NULL, NULL, NULL, &scope_33, 1, 61 },
-    /* 62 */ { MAP_EXPANDED, "Read_InputNumber 5", NULL, 0, 0, NULL, NULL, NULL, &scope_34, 1, 62 },
-    /* 63 */ { MAP_EXPANDED, "Protocol 1", NULL, 0, 0, NULL, NULL, NULL, &scope_35, 1, 63 },
-    /* 64 */ { MAP_EXPANDED, "DisplayView 1", NULL, 0, 0, NULL, NULL, NULL, &scope_41, 1, 64 }
+    /* 13 */ { MAP_INPUT, "walkSteps", NULL, sizeof(T_String_01), (size_t)&inputs_ctx.walkSteps, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 13 },
+    /* 14 */ { MAP_INPUT, "walkMagnitude", NULL, sizeof(T_String_01), (size_t)&inputs_ctx.walkMagnitude, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 14 },
+    /* 15 */ { MAP_INPUT, "sitStart", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.sitStart, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 15 },
+    /* 16 */ { MAP_INPUT, "raiseStart", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.raiseStart, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 16 },
+    /* 17 */ { MAP_INPUT, "StepsNotification", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.StepsNotification, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 17 },
+    /* 18 */ { MAP_INPUT, "MagnitudeNotification", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.MagnitudeNotification, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 18 },
+    /* 19 */ { MAP_INPUT, "ConfirmWalk", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.ConfirmWalk, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 19 },
+    /* 20 */ { MAP_INPUT, "ConfirmSit", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.ConfirmSit, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 20 },
+    /* 21 */ { MAP_INPUT, "ConfirmRaise", NULL, sizeof(kcg_bool), (size_t)&inputs_ctx.ConfirmRaise, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 21 },
+    /* 22 */ { MAP_LOCAL, "Magnitude", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx.Magnitude, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 22 },
+    /* 23 */ { MAP_LOCAL, "Steps", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx.Steps, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 23 },
+    /* 24 */ { MAP_LOCAL, "varDoneRunning", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.varDoneRunning, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 24 },
+    /* 25 */ { MAP_LOCAL, "varDoneWaiting", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.varDoneWaiting, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 25 },
+    /* 26 */ { MAP_LOCAL, "ImageReference", NULL, sizeof(T_ImageReference), (size_t)&outputs_ctx.ImageReference, &_Type_T_ImageReference_Utils, NULL, NULL, &scope_2, 1, 26 },
+    /* 27 */ { MAP_LOCAL, "varDoneSitting", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.varDoneSitting, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 27 },
+    /* 28 */ { MAP_LOCAL, "varDoneRising", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx.varDoneRising, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 28 },
+    /* 29 */ { MAP_LOCAL, "currentStatus", NULL, sizeof(T_String_02), (size_t)&outputs_ctx.currentStatus, &_Type_T_String_02_Utils, NULL, NULL, &scope_10, 1, 29 },
+    /* 30 */ { MAP_LOCAL, "currentCommand", NULL, sizeof(T_String_02), (size_t)&outputs_ctx.currentCommand, &_Type_T_String_02_Utils, NULL, NULL, &scope_10, 1, 30 },
+    /* 31 */ { MAP_LOCAL, "_L37", NULL, sizeof(T_ImageReference), (size_t)&outputs_ctx._L37, &_Type_T_ImageReference_Utils, NULL, NULL, &scope_2, 1, 31 },
+    /* 32 */ { MAP_LOCAL, "_L43", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L43, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 32 },
+    /* 33 */ { MAP_LOCAL, "_L44", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L44, &_Type_T_String_02_Utils, NULL, NULL, &scope_10, 1, 33 },
+    /* 34 */ { MAP_LOCAL, "_L45", NULL, sizeof(T_String_02), (size_t)&outputs_ctx._L45, &_Type_T_String_02_Utils, NULL, NULL, &scope_10, 1, 34 },
+    /* 35 */ { MAP_LOCAL, "_L18", NULL, sizeof(T_String_01), (size_t)&outputs_ctx._L18, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 35 },
+    /* 36 */ { MAP_LOCAL, "_L15", NULL, sizeof(T_String_01), (size_t)&outputs_ctx._L15, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 36 },
+    /* 37 */ { MAP_LOCAL, "_L51", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L51, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 37 },
+    /* 38 */ { MAP_LOCAL, "_L52", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L52, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 38 },
+    /* 39 */ { MAP_LOCAL, "_L55", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L55, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 39 },
+    /* 40 */ { MAP_LOCAL, "_L59", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L59, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 40 },
+    /* 41 */ { MAP_LOCAL, "_L62", NULL, sizeof(S_ToLabel_76), (size_t)&outputs_ctx._L62, &_Type_S_ToLabel_76_Utils, NULL, NULL, &scope_5, 1, 41 },
+    /* 42 */ { MAP_LOCAL, "_L63", NULL, sizeof(S_ToLabel_33), (size_t)&outputs_ctx._L63, &_Type_S_ToLabel_33_Utils, NULL, NULL, &scope_7, 1, 42 },
+    /* 43 */ { MAP_LOCAL, "_L64", NULL, sizeof(S_ToLabel_10), (size_t)&outputs_ctx._L64, &_Type_S_ToLabel_10_Utils, NULL, NULL, &scope_3, 1, 43 },
+    /* 44 */ { MAP_LOCAL, "_L78", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L78, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 44 },
+    /* 45 */ { MAP_LOCAL, "_L79", NULL, sizeof(T_String_01), (size_t)&outputs_ctx._L79, &_Type_T_String_01_Utils, NULL, NULL, &scope_9, 1, 45 },
+    /* 46 */ { MAP_LOCAL, "_L81", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L81, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 46 },
+    /* 47 */ { MAP_LOCAL, "_L84", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L84, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 47 },
+    /* 48 */ { MAP_LOCAL, "_L85", NULL, sizeof(kcg_int32), (size_t)&outputs_ctx._L85, &_Type_kcg_int32_Utils, NULL, NULL, NULL, 1, 48 },
+    /* 49 */ { MAP_LOCAL, "_L86", NULL, sizeof(T_String_03), (size_t)&outputs_ctx._L86, &_Type_T_String_03_Utils, NULL, NULL, &scope_11, 1, 49 },
+    /* 50 */ { MAP_LOCAL, "_L87", NULL, sizeof(T_String_76), (size_t)&outputs_ctx._L87, &_Type_T_String_76_Utils, NULL, NULL, &scope_6, 1, 50 },
+    /* 51 */ { MAP_LOCAL, "_L88", NULL, sizeof(T_String_10), (size_t)&outputs_ctx._L88, &_Type_T_String_10_Utils, NULL, NULL, &scope_4, 1, 51 },
+    /* 52 */ { MAP_LOCAL, "_L89", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L89, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 52 },
+    /* 53 */ { MAP_LOCAL, "_L90", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L90, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 53 },
+    /* 54 */ { MAP_LOCAL, "_L91", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L91, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 54 },
+    /* 55 */ { MAP_LOCAL, "_L98", NULL, sizeof(T_String_10), (size_t)&outputs_ctx._L98, &_Type_T_String_10_Utils, NULL, NULL, &scope_4, 1, 55 },
+    /* 56 */ { MAP_LOCAL, "_L100", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L100, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 56 },
+    /* 57 */ { MAP_LOCAL, "_L103", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L103, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 57 },
+    /* 58 */ { MAP_LOCAL, "_L104", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L104, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 58 },
+    /* 59 */ { MAP_LOCAL, "_L105", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L105, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 59 },
+    /* 60 */ { MAP_LOCAL, "_L42", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L42, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 60 },
+    /* 61 */ { MAP_LOCAL, "_L41", NULL, sizeof(kcg_bool), (size_t)&outputs_ctx._L41, &_Type_kcg_bool_Utils, NULL, NULL, NULL, 1, 61 },
+    /* 62 */ { MAP_AUTOMATON, "SM1:", NULL, 0, 0, NULL, NULL, NULL, &scope_12, 1, 62 },
+    /* 63 */ { MAP_EXPANDED, "Read_InputNumber 1", NULL, 0, 0, NULL, NULL, NULL, &scope_33, 1, 63 },
+    /* 64 */ { MAP_EXPANDED, "Read_InputNumber 5", NULL, 0, 0, NULL, NULL, NULL, &scope_34, 1, 64 },
+    /* 65 */ { MAP_EXPANDED, "Protocol 1", NULL, 0, 0, NULL, NULL, NULL, &scope_35, 1, 65 },
+    /* 66 */ { MAP_EXPANDED, "DisplayView 1", NULL, 0, 0, NULL, NULL, NULL, &scope_41, 1, 66 }
 };
 const MappingScope scope_1 = {
     "Main/ Main",
-    scope_1_entries, 65
+    scope_1_entries, 67
 };
 
 const MappingEntry scope_0_entries[1] = {

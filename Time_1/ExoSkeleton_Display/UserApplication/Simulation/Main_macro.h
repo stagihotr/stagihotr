@@ -40,9 +40,6 @@ typedef struct {
 #define VARC_Main_walkStart(context) context.inputs_ctx.walkStart  /* Main/walkStart */
 #define VAR_Main_walkStart VARC_Main_walkStart(CTX_Main)
 
-#define VARC_Main_walkStop(context) context.inputs_ctx.walkStop  /* Main/walkStop */
-#define VAR_Main_walkStop VARC_Main_walkStop(CTX_Main)
-
 #define VARC_Main_walkSteps(context) context.inputs_ctx.walkSteps  /* Main/walkSteps */
 #define VAR_Main_walkSteps VARC_Main_walkSteps(CTX_Main)
 
@@ -60,6 +57,15 @@ typedef struct {
 
 #define VARC_Main_MagnitudeNotification(context) context.inputs_ctx.MagnitudeNotification  /* Main/MagnitudeNotification */
 #define VAR_Main_MagnitudeNotification VARC_Main_MagnitudeNotification(CTX_Main)
+
+#define VARC_Main_ConfirmWalk(context) context.inputs_ctx.ConfirmWalk  /* Main/ConfirmWalk */
+#define VAR_Main_ConfirmWalk VARC_Main_ConfirmWalk(CTX_Main)
+
+#define VARC_Main_ConfirmSit(context) context.inputs_ctx.ConfirmSit  /* Main/ConfirmSit */
+#define VAR_Main_ConfirmSit VARC_Main_ConfirmSit(CTX_Main)
+
+#define VARC_Main_ConfirmRaise(context) context.inputs_ctx.ConfirmRaise  /* Main/ConfirmRaise */
+#define VAR_Main_ConfirmRaise VARC_Main_ConfirmRaise(CTX_Main)
 
 
 /*$**********************************************************
@@ -116,8 +122,6 @@ typedef struct {
 
 #define T_walkStart kcg_bool
 #define CPY_walkStart(DST, SRC) DST = SRC
-#define T_walkStop kcg_bool
-#define CPY_walkStop(DST, SRC) DST = SRC
 #define T_walkSteps T_String_01
 #define CPY_walkSteps(DST, SRC) kcg_copy_T_String_01(DST, SRC)
 #define T_walkMagnitude T_String_01
@@ -130,6 +134,12 @@ typedef struct {
 #define CPY_StepsNotification(DST, SRC) DST = SRC
 #define T_MagnitudeNotification kcg_bool
 #define CPY_MagnitudeNotification(DST, SRC) DST = SRC
+#define T_ConfirmWalk kcg_bool
+#define CPY_ConfirmWalk(DST, SRC) DST = SRC
+#define T_ConfirmSit kcg_bool
+#define CPY_ConfirmSit(DST, SRC) DST = SRC
+#define T_ConfirmRaise kcg_bool
+#define CPY_ConfirmRaise(DST, SRC) DST = SRC
 #define T_OutImageReference T_ImageReference
 #define CPY_OutImageReference(DST, SRC) kcg_copy_T_ImageReference(DST, SRC)
 #define T_EnablePbSit kcg_bool
