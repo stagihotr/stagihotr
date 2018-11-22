@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/config.txt
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T23:28:09
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -22,14 +22,14 @@ void Main(inC_Main *inC, outC_Main *outC)
   /* SM1: */
   SSM_ST_SM1 SM1_state_act;
   /* @3/Out_Done/,
-     @3/_L96/,
+     @3/_L100/,
      SM1:,
      SM1:raising:<1>,
      SM1:raising:_L4/,
      varDoneRising/ */
   kcg_bool _L4_raising_SM1;
   /* @5/Out_Done/,
-     @5/_L96/,
+     @5/_L100/,
      SM1:,
      SM1:Sitting:<1>,
      SM1:Sitting:_L2/,
@@ -95,7 +95,8 @@ void Main(inC_Main *inC, outC_Main *outC)
         tmp5 = outC->_L93_Transition_2;
       }
       outC->_L93_Transition_2 = tmp4 + tmp5;
-      _L4_raising_SM1 = outC->_L93_Transition_2 >= kcg_lit_int32(39);
+      _L4_raising_SM1 = inC->ConfirmRaise | (outC->_L93_Transition_2 >=
+          kcg_lit_int32(39));
       outC->_L9_Counter_8_Transition_2_int32 =
         _L4_Counter_8_Transition_2_int32 + kcg_lit_int32(1);
       kcg_copy_T_String_02(&outC->Comando[0], (T_String_02 *) &P_CMD_UP);
@@ -132,7 +133,8 @@ void Main(inC_Main *inC, outC_Main *outC)
         tmp3 = outC->_L93_Transition_1;
       }
       outC->_L93_Transition_1 = tmp2 + tmp3;
-      _L2_Sitting_SM1 = outC->_L93_Transition_1 >= kcg_lit_int32(35);
+      _L2_Sitting_SM1 = inC->ConfirmSit | (outC->_L93_Transition_1 >=
+          kcg_lit_int32(35));
       outC->_L9_Counter_8_Transition_1_int32 =
         _L4_Counter_8_Transition_1_int32 + kcg_lit_int32(1);
       kcg_copy_T_String_02(&outC->Comando[0], (T_String_02 *) &P_CMD_SI);
@@ -281,11 +283,18 @@ void Main(inC_Main *inC, outC_Main *outC)
       break;
     case SSM_st_Running_SM1 :
       kcg_copy_T_String_02(&outC->Comando[7], (T_String_02 *) &P_STATUS_RN);
-      outC->SM1_reset_nxt = outC->_L5_Read_InputNumber_5 <= _L21_Running_SM1;
+      outC->SM1_reset_nxt = inC->ConfirmWalk | (outC->_L5_Read_InputNumber_5 <=
+          _L21_Running_SM1);
       outC->OutImageReference.Emit2DF = kcg_true;
-      outC->OutImageReference.Reference = /* SM1:Running:_L44= */(kcg_uint16)
-          _L38_Running_SM1;
       outC->_L25_Running_SM1 = kcg_lit_int32(10) <= _L9_Running_SM1;
+      /* SM1:Running:_L60= */
+      if (inC->ConfirmWalk) {
+        outC->OutImageReference.Reference = kcg_lit_uint16(3);
+      }
+      else {
+        outC->OutImageReference.Reference = /* SM1:Running:_L44= */(kcg_uint16)
+            _L38_Running_SM1;
+      }
       if (outC->SM1_reset_nxt) {
         outC->SM1_state_nxt = SSM_st_Runned_SM1;
       }
@@ -321,7 +330,6 @@ void Main(inC_Main *inC, outC_Main *outC)
     outC->_L5_Read_InputNumber_5 = /* @10/_L6=(convert2Int#1)/ */
       convert2Int(&tmp7);
   }
-  outC->EnablePbSit = !outC->EnablePbRaise;
   kcg_copy_T_String_06(&outC->Protocolo[0], (T_String_06 *) &P_HEADER);
   kcg_copy_T_String_06(&outC->Protocolo[6], (T_String_06 *) &P_TOPIC);
   kcg_copy_T_String_06(&outC->Protocolo[12], (T_String_06 *) &P_FROM);
@@ -337,6 +345,7 @@ void Main(inC_Main *inC, outC_Main *outC)
   kcg_copy_T_String_76(&outC->Out_Protocol_OutProtocol.value, &outC->Protocolo);
   outC->Comando[9] = _END_STRING[0];
   kcg_copy_T_String_10(&outC->Out_Protocol_OutCMD.value, &outC->Comando);
+  outC->EnablePbSit = !outC->EnablePbRaise;
   /* _L98= */
   if (outC->init2) {
     outC->init2 = kcg_false;
@@ -441,6 +450,6 @@ void Main_reset(outC_Main *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Main.c
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T23:28:09
 *************************************************************$ */
 

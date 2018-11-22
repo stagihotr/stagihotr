@@ -62,13 +62,15 @@
     <NamedType refType="S_ToLabel_10" scadeName="S_ToLabel_10" targetName="S_ToLabel_10"/>
     <RootNode headerFile="Main.h" scadeName="Main" targetCycleFct="Main" targetInitFct="Main_reset" targetInitializationFct="Main_init">
       <Input inCtx="true" scadeName="walkStart" scadeType="bool" targetName="walkStart" targetType="kcg_bool"/>
-      <Input inCtx="true" scadeName="walkStop" scadeType="bool" targetName="walkStop" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="walkSteps" scadeType="T_String_01" targetName="walkSteps" targetType="T_String_01"/>
       <Input inCtx="true" scadeName="walkMagnitude" scadeType="T_String_01" targetName="walkMagnitude" targetType="T_String_01"/>
       <Input inCtx="true" scadeName="sitStart" scadeType="bool" targetName="sitStart" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="raiseStart" scadeType="bool" targetName="raiseStart" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="StepsNotification" scadeType="bool" targetName="StepsNotification" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="MagnitudeNotification" scadeType="bool" targetName="MagnitudeNotification" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmWalk" scadeType="bool" targetName="ConfirmWalk" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmSit" scadeType="bool" targetName="ConfirmSit" targetType="kcg_bool"/>
+      <Input inCtx="true" scadeName="ConfirmRaise" scadeType="bool" targetName="ConfirmRaise" targetType="kcg_bool"/>
       <Output inCtx="true" scadeName="OutImageReference" scadeType="T_ImageReference" targetName="OutImageReference" targetType="T_ImageReference"/>
       <Output inCtx="true" scadeName="EnablePbSit" scadeType="bool" targetName="EnablePbSit" targetType="kcg_bool"/>
       <Output inCtx="true" scadeName="EnablePbRaise" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>
@@ -165,6 +167,11 @@
           <Local clockVal="SSM_st_Running_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L54" scadeType="T_String_02" targetName="_L54_Running_SM1" targetType="T_String_02"/>
           <Local clockVal="SSM_st_Running_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L5" scadeType="int32" targetName="_L5_Running_SM1" targetType="kcg_int32"/>
           <Local clockVal="SSM_st_Running_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L55" scadeType="bool" targetName="_L55_Running_SM1" targetType="kcg_bool"/>
+          <Local clockVal="SSM_st_Running_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L56" scadeType="bool" targetName="_L56_Running_SM1" targetType="kcg_bool"/>
+          <Local clockVal="SSM_st_Running_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L57" scadeType="bool" targetName="_L57_Running_SM1" targetType="kcg_bool"/>
+          <Local clockVal="SSM_st_Running_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L59" scadeType="bool" targetName="_L59_Running_SM1" targetType="kcg_bool"/>
+          <Local clockVal="SSM_st_Running_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L60" scadeType="uint16" targetName="_L60_Running_SM1" targetType="kcg_uint16"/>
+          <Local clockVal="SSM_st_Running_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L61" scadeType="uint16" targetName="_L61_Running_SM1" targetType="kcg_uint16"/>
           <NodeInlining instName="1" scadeName="MovingCycle">
             <Input inCtx="true" scadeName="Start" scadeType="int32" targetName="Start_MovingCycle_1" targetType="kcg_int32"/>
             <Input inCtx="true" scadeName="Finish" scadeType="int32" targetName="Finish_MovingCycle_1" targetType="kcg_int32"/>
@@ -258,6 +265,9 @@
           <Local clockVal="SSM_st_Sitting_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L8" scadeType="int32" targetName="_L8_Sitting_SM1" targetType="kcg_int32"/>
           <Local clockVal="SSM_st_Sitting_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L10" scadeType="T_String_02" targetName="_L10_Sitting_SM1" targetType="T_String_02"/>
           <Local clockVal="SSM_st_Sitting_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L12" scadeType="T_String_02" targetName="_L12_Sitting_SM1" targetType="T_String_02"/>
+          <Local clockVal="SSM_st_Sitting_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L13" scadeType="bool" targetName="_L13_Sitting_SM1" targetType="kcg_bool"/>
+          <Local clockVal="SSM_st_Sitting_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L14" scadeType="bool" targetName="_L14_Sitting_SM1" targetType="kcg_bool"/>
+          <Local clockVal="SSM_st_Sitting_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L15" scadeType="bool" targetName="_L15_Sitting_SM1" targetType="kcg_bool"/>
           <NodeInlining instName="1" scadeName="Transition">
             <Input inCtx="true" scadeName="InMagnitude" scadeType="int32" targetName="InMagnitude_Transition_1" targetType="kcg_int32"/>
             <Input inCtx="true" scadeName="InStartImage" scadeType="int32" targetName="InStartImage_Transition_1" targetType="kcg_int32"/>
@@ -327,6 +337,9 @@
           <Local clockVal="SSM_st_raising_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L1" scadeType="int32" targetName="_L1_raising_SM1" targetType="kcg_int32"/>
           <Local clockVal="SSM_st_raising_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L12" scadeType="T_String_02" targetName="_L12_raising_SM1" targetType="T_String_02"/>
           <Local clockVal="SSM_st_raising_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L13" scadeType="T_String_02" targetName="_L13_raising_SM1" targetType="T_String_02"/>
+          <Local clockVal="SSM_st_raising_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L14" scadeType="bool" targetName="_L14_raising_SM1" targetType="kcg_bool"/>
+          <Local clockVal="SSM_st_raising_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L15" scadeType="bool" targetName="_L15_raising_SM1" targetType="kcg_bool"/>
+          <Local clockVal="SSM_st_raising_SM1" clockVar="SM1_state_act" inCtx="true" scadeName="_L16" scadeType="bool" targetName="_L16_raising_SM1" targetType="kcg_bool"/>
           <NodeInlining instName="2" scadeName="Transition">
             <Input inCtx="true" scadeName="InMagnitude" scadeType="int32" targetName="InMagnitude_Transition_2" targetType="kcg_int32"/>
             <Input inCtx="true" scadeName="InStartImage" scadeType="int32" targetName="InStartImage_Transition_2" targetType="kcg_int32"/>

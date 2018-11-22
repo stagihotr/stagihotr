@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
-** Generation date: 2018-11-20T22:01:17
+** Generation date: 2018-11-21T23:06:27
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -746,7 +746,16 @@ void Main(inC_Main *inC, outC_Main *outC)
       break;
     case SSM_st_Sitting_SM1 :
       outC->_L2_Sitting_SM1 = outC->Out_Done_Transition_1;
-      _30_varDoneSitting_partial = outC->_L2_Sitting_SM1;
+      outC->_L15_Sitting_SM1 = kcg_true;
+      outC->_L14_Sitting_SM1 = inC->ConfirmSit;
+      /* SM1:Sitting:_L13= */
+      if (outC->_L14_Sitting_SM1) {
+        outC->_L13_Sitting_SM1 = outC->_L15_Sitting_SM1;
+      }
+      else {
+        outC->_L13_Sitting_SM1 = outC->_L2_Sitting_SM1;
+      }
+      _30_varDoneSitting_partial = outC->_L13_Sitting_SM1;
       outC->varDoneSitting = _30_varDoneSitting_partial;
       break;
     case SSM_st_Runned_SM1 :
@@ -843,8 +852,18 @@ void Main(inC_Main *inC, outC_Main *outC)
       outC->_L38_Running_SM1 = outC->Count_MovingCycle_1;
       outC->_L44_Running_SM1 = /* SM1:Running:_L44= */(kcg_uint16)
           outC->_L38_Running_SM1;
+      outC->_L61_Running_SM1 = /* SM1:Running:_L61= */(kcg_uint16)
+          outC->_L39_Running_SM1;
+      outC->_L56_Running_SM1 = inC->ConfirmWalk;
+      /* SM1:Running:_L60= */
+      if (outC->_L56_Running_SM1) {
+        outC->_L60_Running_SM1 = outC->_L61_Running_SM1;
+      }
+      else {
+        outC->_L60_Running_SM1 = outC->_L44_Running_SM1;
+      }
       outC->_L42_Running_SM1.Emit2DF = outC->_L43_Running_SM1;
-      outC->_L42_Running_SM1.Reference = outC->_L44_Running_SM1;
+      outC->_L42_Running_SM1.Reference = outC->_L60_Running_SM1;
       kcg_copy_T_ImageReference(&_9_ImageReference_partial, &outC->_L42_Running_SM1);
       kcg_copy_T_ImageReference(&outC->ImageReference, &_9_ImageReference_partial);
       break;
@@ -869,7 +888,16 @@ void Main(inC_Main *inC, outC_Main *outC)
       _48_varDoneWaiting_partial = last_varDoneWaiting;
       _47_varDoneRunning_partial = last_varDoneRunning;
       outC->_L4_raising_SM1 = outC->Out_Done_Transition_2;
-      _51_varDoneRising_partial = outC->_L4_raising_SM1;
+      outC->_L16_raising_SM1 = kcg_true;
+      outC->_L14_raising_SM1 = inC->ConfirmRaise;
+      /* SM1:raising:_L15= */
+      if (outC->_L14_raising_SM1) {
+        outC->_L15_raising_SM1 = outC->_L16_raising_SM1;
+      }
+      else {
+        outC->_L15_raising_SM1 = outC->_L4_raising_SM1;
+      }
+      _51_varDoneRising_partial = outC->_L15_raising_SM1;
       tr_1_guard_raising_SM1 = _51_varDoneRising_partial;
       if (tr_1_guard_raising_SM1) {
         _56_SM1_fired_partial = SSM_TR_raising_Waiting_1_raising_SM1;
@@ -1009,7 +1037,15 @@ void Main(inC_Main *inC, outC_Main *outC)
       outC->_L21_Running_SM1 = outC->Count_Counter_2_int32;
       outC->_L15_Running_SM1 = outC->Steps;
       outC->_L26_Running_SM1 = outC->_L15_Running_SM1 <= outC->_L21_Running_SM1;
-      _7_varDoneRunning_partial = outC->_L26_Running_SM1;
+      outC->_L59_Running_SM1 = kcg_true;
+      /* SM1:Running:_L57= */
+      if (outC->_L56_Running_SM1) {
+        outC->_L57_Running_SM1 = outC->_L59_Running_SM1;
+      }
+      else {
+        outC->_L57_Running_SM1 = outC->_L26_Running_SM1;
+      }
+      _7_varDoneRunning_partial = outC->_L57_Running_SM1;
       tr_1_guard_Running_SM1 = _7_varDoneRunning_partial;
       if (tr_1_guard_Running_SM1) {
         _16_SM1_fired_partial = SSM_TR_Running_Runned_1_Running_SM1;
@@ -1265,6 +1301,9 @@ void Main_init(outC_Main *outC)
   for (idx15 = 0; idx15 < 2; idx15++) {
     outC->_L13_raising_SM1[idx15] = ' ';
   }
+  outC->_L14_raising_SM1 = kcg_true;
+  outC->_L15_raising_SM1 = kcg_true;
+  outC->_L16_raising_SM1 = kcg_true;
   for (idx16 = 0; idx16 < 2; idx16++) {
     outC->_L26_sat_SM1[idx16] = ' ';
   }
@@ -1283,6 +1322,9 @@ void Main_init(outC_Main *outC)
   for (idx19 = 0; idx19 < 2; idx19++) {
     outC->_L12_Sitting_SM1[idx19] = ' ';
   }
+  outC->_L13_Sitting_SM1 = kcg_true;
+  outC->_L14_Sitting_SM1 = kcg_true;
+  outC->_L15_Sitting_SM1 = kcg_true;
   outC->_L5_Runned_SM1 = kcg_lit_int32(0);
   outC->_L3_Runned_SM1 = kcg_lit_int32(0);
   outC->_L2_Runned_SM1 = kcg_true;
@@ -1323,6 +1365,11 @@ void Main_init(outC_Main *outC)
   }
   outC->_L5_Running_SM1 = kcg_lit_int32(0);
   outC->_L55_Running_SM1 = kcg_true;
+  outC->_L56_Running_SM1 = kcg_true;
+  outC->_L57_Running_SM1 = kcg_true;
+  outC->_L59_Running_SM1 = kcg_true;
+  outC->_L60_Running_SM1 = kcg_lit_uint16(0);
+  outC->_L61_Running_SM1 = kcg_lit_uint16(0);
   outC->_L6_Waiting_SM1 = kcg_true;
   outC->_L12_Waiting_SM1 = kcg_lit_int32(0);
   outC->_L13_Waiting_SM1.Emit2DF = kcg_true;
@@ -1681,6 +1728,6 @@ void Main_reset(outC_Main *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Main.c
-** Generation date: 2018-11-20T22:01:17
+** Generation date: 2018-11-21T23:06:27
 *************************************************************$ */
 

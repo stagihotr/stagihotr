@@ -1,9 +1,5 @@
-*** Post-namespace Warning (WAR_508): Unused flow
-  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\3352\Main.scade, line 962, character 0
-  at path Main/walkStop/
- The input variable walkStop is never used
 *** Type Warning (WAR_151): Internal state expected
-  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\3352\Main.scade, line 5355, character 0
+  at file C:\Users\fkfouri\AppData\Local\Temp\ScadeChecker\1208\Main.scade, line 5622, character 0
   at path DisplayView/
  Node DisplayView has no internal state
  (it should probably be declared as a function)

@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/config.txt
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T23:28:09
 *************************************************************$ */
 #ifndef _KCG_IMPORTED_FUNCTIONS_H_
 #define _KCG_IMPORTED_FUNCTIONS_H_
@@ -42,6 +42,6 @@ extern kcg_int32 convert2Int(/* Send/ */ T_String_02 *Send);
 #endif /* _KCG_IMPORTED_FUNCTIONS_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_imported_functions.h
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T23:28:09
 *************************************************************$ */
 

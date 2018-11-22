@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/Simulation/config.txt
-** Generation date: 2018-11-20T22:01:17
+** Generation date: 2018-11-21T23:06:27
 *************************************************************$ */
 #ifndef _Main_H_
 #define _Main_H_
@@ -11,13 +11,15 @@
 /* ========================  input structure  ====================== */
 typedef struct {
   kcg_bool /* walkStart/ */ walkStart;
-  kcg_bool /* walkStop/ */ walkStop;
   T_String_01 /* walkSteps/ */ walkSteps;
   T_String_01 /* walkMagnitude/ */ walkMagnitude;
   kcg_bool /* sitStart/ */ sitStart;
   kcg_bool /* raiseStart/ */ raiseStart;
   kcg_bool /* StepsNotification/ */ StepsNotification;
   kcg_bool /* MagnitudeNotification/ */ MagnitudeNotification;
+  kcg_bool /* ConfirmWalk/ */ ConfirmWalk;
+  kcg_bool /* ConfirmSit/ */ ConfirmSit;
+  kcg_bool /* ConfirmRaise/ */ ConfirmRaise;
 } inC_Main;
 
 /* =====================  no output structure  ====================== */
@@ -235,6 +237,11 @@ typedef struct {
   T_ImageReference /* SM1:Waiting:_L13/ */ _L13_Waiting_SM1;
   kcg_int32 /* SM1:Waiting:_L12/ */ _L12_Waiting_SM1;
   kcg_bool /* SM1:Waiting:_L6/ */ _L6_Waiting_SM1;
+  kcg_uint16 /* SM1:Running:_L61/ */ _L61_Running_SM1;
+  kcg_uint16 /* SM1:Running:_L60/ */ _L60_Running_SM1;
+  kcg_bool /* SM1:Running:_L59/ */ _L59_Running_SM1;
+  kcg_bool /* SM1:Running:_L57/ */ _L57_Running_SM1;
+  kcg_bool /* SM1:Running:_L56/ */ _L56_Running_SM1;
   kcg_bool /* SM1:Running:_L55/ */ _L55_Running_SM1;
   kcg_int32 /* SM1:Running:_L5/ */ _L5_Running_SM1;
   T_String_02 /* SM1:Running:_L54/ */ _L54_Running_SM1;
@@ -266,6 +273,9 @@ typedef struct {
   kcg_bool /* SM1:Runned:_L2/ */ _L2_Runned_SM1;
   kcg_int32 /* SM1:Runned:_L3/ */ _L3_Runned_SM1;
   kcg_int32 /* SM1:Runned:_L5/ */ _L5_Runned_SM1;
+  kcg_bool /* SM1:Sitting:_L15/ */ _L15_Sitting_SM1;
+  kcg_bool /* SM1:Sitting:_L14/ */ _L14_Sitting_SM1;
+  kcg_bool /* SM1:Sitting:_L13/ */ _L13_Sitting_SM1;
   T_String_02 /* SM1:Sitting:_L12/ */ _L12_Sitting_SM1;
   T_String_02 /* SM1:Sitting:_L10/ */ _L10_Sitting_SM1;
   kcg_int32 /* SM1:Sitting:_L8/ */ _L8_Sitting_SM1;
@@ -275,6 +285,9 @@ typedef struct {
   kcg_bool /* SM1:Sitting:_L2/ */ _L2_Sitting_SM1;
   T_String_02 /* SM1:sat:_L27/ */ _L27_sat_SM1;
   T_String_02 /* SM1:sat:_L26/ */ _L26_sat_SM1;
+  kcg_bool /* SM1:raising:_L16/ */ _L16_raising_SM1;
+  kcg_bool /* SM1:raising:_L15/ */ _L15_raising_SM1;
+  kcg_bool /* SM1:raising:_L14/ */ _L14_raising_SM1;
   T_String_02 /* SM1:raising:_L13/ */ _L13_raising_SM1;
   T_String_02 /* SM1:raising:_L12/ */ _L12_raising_SM1;
   kcg_int32 /* SM1:raising:_L1/ */ _L1_raising_SM1;
@@ -352,6 +365,6 @@ extern void Main_init(outC_Main *outC);
 #endif /* _Main_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Main.h
-** Generation date: 2018-11-20T22:01:17
+** Generation date: 2018-11-21T23:06:27
 *************************************************************$ */
 

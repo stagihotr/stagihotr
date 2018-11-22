@@ -52,6 +52,7 @@
             this.button7 = new System.Windows.Forms.Button();
             this.textBox5 = new System.Windows.Forms.TextBox();
             this.button8 = new System.Windows.Forms.Button();
+            this.button9 = new System.Windows.Forms.Button();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bindingSource1)).BeginInit();
@@ -240,11 +241,11 @@
             // 
             this.textBox4.BackColor = System.Drawing.SystemColors.WindowText;
             this.textBox4.ForeColor = System.Drawing.Color.White;
-            this.textBox4.Location = new System.Drawing.Point(412, 45);
+            this.textBox4.Location = new System.Drawing.Point(412, 82);
             this.textBox4.Multiline = true;
             this.textBox4.Name = "textBox4";
             this.textBox4.ReadOnly = true;
-            this.textBox4.Size = new System.Drawing.Size(385, 499);
+            this.textBox4.Size = new System.Drawing.Size(385, 462);
             this.textBox4.TabIndex = 7;
             // 
             // label4
@@ -288,11 +289,22 @@
             this.button8.UseVisualStyleBackColor = true;
             this.button8.Click += new System.EventHandler(this.button8_Click);
             // 
+            // button9
+            // 
+            this.button9.Location = new System.Drawing.Point(412, 53);
+            this.button9.Name = "button9";
+            this.button9.Size = new System.Drawing.Size(385, 23);
+            this.button9.TabIndex = 11;
+            this.button9.Text = "Envia Comando Kafka";
+            this.button9.UseVisualStyleBackColor = true;
+            this.button9.Click += new System.EventHandler(this.button9_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(802, 553);
+            this.Controls.Add(this.button9);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.textBox5);
             this.Controls.Add(this.button7);
@@ -339,6 +351,7 @@
         private System.Windows.Forms.Button button7;
         private System.Windows.Forms.TextBox textBox5;
         private System.Windows.Forms.Button button8;
+        private System.Windows.Forms.Button button9;
     }
 }
 

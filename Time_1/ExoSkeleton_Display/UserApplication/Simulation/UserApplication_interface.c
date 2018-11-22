@@ -14,8 +14,6 @@ outC_Main outputs_ctx;
 static void _SCSIM_RestoreInterface(void) {
     init_kcg_bool(&inputs_ctx.walkStart);
     init_kcg_bool(&inputs_ctx_execute.walkStart);
-    init_kcg_bool(&inputs_ctx.walkStop);
-    init_kcg_bool(&inputs_ctx_execute.walkStop);
     init_T_String_01(&inputs_ctx.walkSteps);
     init_T_String_01(&inputs_ctx_execute.walkSteps);
     init_T_String_01(&inputs_ctx.walkMagnitude);
@@ -28,19 +26,27 @@ static void _SCSIM_RestoreInterface(void) {
     init_kcg_bool(&inputs_ctx_execute.StepsNotification);
     init_kcg_bool(&inputs_ctx.MagnitudeNotification);
     init_kcg_bool(&inputs_ctx_execute.MagnitudeNotification);
+    init_kcg_bool(&inputs_ctx.ConfirmWalk);
+    init_kcg_bool(&inputs_ctx_execute.ConfirmWalk);
+    init_kcg_bool(&inputs_ctx.ConfirmSit);
+    init_kcg_bool(&inputs_ctx_execute.ConfirmSit);
+    init_kcg_bool(&inputs_ctx.ConfirmRaise);
+    init_kcg_bool(&inputs_ctx_execute.ConfirmRaise);
     memset((void*)&outputs_ctx, 0, sizeof(outputs_ctx));
 }
 
 static void _SCSIM_ExecuteInterface(void) {
     pSimulator->m_pfnAcquireValueMutex(pSimulator);
     inputs_ctx_execute.walkStart = inputs_ctx.walkStart;
-    inputs_ctx_execute.walkStop = inputs_ctx.walkStop;
     kcg_copy_T_String_01(&inputs_ctx_execute.walkSteps, &inputs_ctx.walkSteps);
     kcg_copy_T_String_01(&inputs_ctx_execute.walkMagnitude, &inputs_ctx.walkMagnitude);
     inputs_ctx_execute.sitStart = inputs_ctx.sitStart;
     inputs_ctx_execute.raiseStart = inputs_ctx.raiseStart;
     inputs_ctx_execute.StepsNotification = inputs_ctx.StepsNotification;
     inputs_ctx_execute.MagnitudeNotification = inputs_ctx.MagnitudeNotification;
+    inputs_ctx_execute.ConfirmWalk = inputs_ctx.ConfirmWalk;
+    inputs_ctx_execute.ConfirmSit = inputs_ctx.ConfirmSit;
+    inputs_ctx_execute.ConfirmRaise = inputs_ctx.ConfirmRaise;
     pSimulator->m_pfnReleaseValueMutex(pSimulator);
 }
 
@@ -50,7 +56,7 @@ extern "C" {
 
 const int  rt_version = Srtv62;
 
-const char* _SCSIM_CheckSum = "17e5b38dc9121f4d4eaf8d0d79ad1db3";
+const char* _SCSIM_CheckSum = "3a47f940727b4fc55bd134cef7e34ef0";
 const char* _SCSIM_SmuTypesCheckSum = "1d4140d2de3b3e910e8a148dd1cf7a1a";
 
 /* simulation */

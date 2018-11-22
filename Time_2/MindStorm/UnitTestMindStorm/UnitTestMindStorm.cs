@@ -132,7 +132,7 @@ namespace UnitTestMindStorm
             //testando o método enviaGraylog com parâmetros válidos
             Form1 _form1Test = new Form1();
 
-            _form1Test.enviaGraylog(10,12,40,50);
+            //_form1Test.enviaGraylog(10,12,40,50);
         }
     }
 }
