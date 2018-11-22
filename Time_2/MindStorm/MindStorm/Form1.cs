@@ -24,11 +24,11 @@ namespace MindStorm
         KafkaOptions options;
         BrokerRouter router;
         KafkaNet.Producer client;
+        bool bloquear;
+        Consumer consumer;
 
         public Form1()
         {
-
-
             InitializeComponent();
             foreach (var item in SerialPort.GetPortNames())
             {
@@ -36,23 +36,43 @@ namespace MindStorm
             }
             comboBox2.SelectedIndex = 0;
 
-
-            /* options = new KafkaOptions(new Uri("http://stampsnet.hashtagsource.com:9092"));
+            bloquear = true;
+            options = new KafkaOptions(new Uri("http://35.202.217.21:9092"));
+            //options = new KafkaOptions(new Uri("http://192.168.1.30:9092"));
             router = new BrokerRouter(options);
             client = new KafkaNet.Producer(router);
-            var consumer = new Consumer(new ConsumerOptions("US83a", router));
-            foreach (var message in consumer.Consume())
-            {
-                Console.WriteLine("Response: P{0},O{1} : {2}",
-                    message.Meta.PartitionId, message.Meta.Offset, message.Value);
-                    message.Meta.PartitionId, message.Meta.Offset, message.Value);
-            }*/
+            consumer = new Consumer(new ConsumerOptions("Teste", router));
+            Thread _lekafka = new Thread(leKafka);
+            _lekafka.Start();
         }
 
-        public void enviaGraylog(int _c1, int _c2, int _c3, int _c4)
+        public void leKafka()
+        {            
+            foreach (var message in consumer.Consume())
+            {
+                var _offset = consumer.GetOffsetPosition();
+                this.Invoke(new MethodInvoker(() =>
+                {
+                    if (message.Meta.Offset >= (_offset[0].Offset - 1))
+                    {
+                        if (!bloquear)
+                        {
+                            textBox4.AppendText(DateTime.Now.ToString("h:mm:ss ") + " RECEBEU: " +
+                             System.Text.Encoding.Default.GetString(message.Value) + Environment.NewLine);
+                        }
+                        else
+                        {
+                            bloquear = false;
+                        }
+                    }
+                }));
+            }
+        }
+
+        private void button9_Click(object sender, EventArgs e)
         {
-            string s = @"{""version"":""1.1"",""host"":""ArduinoUS83a"",""short_message"":""sensor de presenca 83a""," + @"""_corredor1"":" + _c1.ToString() + "," + @"""_corredor2"":" + _c2.ToString() + "," + @"""_corredor3"":" + _c3.ToString() + "," + @"""_corredor4"":" + _c4.ToString() + "}";
-            client.SendMessageAsync("US83a", new[] { new KafkaNet.Protocol.Message(s) });
+            textBox4.AppendText(DateTime.Now.ToString("h:mm:ss ") + " ENVIANDO TESTE" + Environment.NewLine);
+            client.SendMessageAsync("Teste", new[] { new KafkaNet.Protocol.Message("TESTE") });
         }
 
         public void log(string text)
@@ -175,7 +195,9 @@ namespace MindStorm
                 _brick.DirectCommand.TurnMotorAtSpeedForTimeAsync(OutputPort.All, 70, 90, false);
                 Thread.Sleep(100);
             }
-           
+
         }
+
+
     }
 }
