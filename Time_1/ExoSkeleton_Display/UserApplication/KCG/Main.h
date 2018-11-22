@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/config.txt
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T22:34:45
 *************************************************************$ */
 #ifndef _Main_H_
 #define _Main_H_
@@ -11,7 +11,6 @@
 /* ========================  input structure  ====================== */
 typedef struct {
   kcg_bool /* _L89/, walkStart/ */ walkStart;
-  kcg_bool /* walkStop/ */ walkStop;
   T_String_01 /* @10/ScalarNumber/, @10/_L2/, _L15/, walkSteps/ */ walkSteps;
   T_String_01 /* @11/ScalarNumber/,
      @11/_L2/,
@@ -120,6 +119,6 @@ extern void Main_init(outC_Main *outC);
 #endif /* _Main_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Main.h
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T22:34:45
 *************************************************************$ */
 

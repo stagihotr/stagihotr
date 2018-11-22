@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/config.txt
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T22:34:45
 *************************************************************$ */
 
 #include "kcg_consts.h"
@@ -321,7 +321,6 @@ void Main(inC_Main *inC, outC_Main *outC)
     outC->_L5_Read_InputNumber_5 = /* @10/_L6=(convert2Int#1)/ */
       convert2Int(&tmp7);
   }
-  outC->EnablePbSit = !outC->EnablePbRaise;
   kcg_copy_T_String_06(&outC->Protocolo[0], (T_String_06 *) &P_HEADER);
   kcg_copy_T_String_06(&outC->Protocolo[6], (T_String_06 *) &P_TOPIC);
   kcg_copy_T_String_06(&outC->Protocolo[12], (T_String_06 *) &P_FROM);
@@ -337,6 +336,7 @@ void Main(inC_Main *inC, outC_Main *outC)
   kcg_copy_T_String_76(&outC->Out_Protocol_OutProtocol.value, &outC->Protocolo);
   outC->Comando[9] = _END_STRING[0];
   kcg_copy_T_String_10(&outC->Out_Protocol_OutCMD.value, &outC->Comando);
+  outC->EnablePbSit = !outC->EnablePbRaise;
   /* _L98= */
   if (outC->init2) {
     outC->init2 = kcg_false;
@@ -441,6 +441,6 @@ void Main_reset(outC_Main *outC)
 
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Main.c
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T22:34:45
 *************************************************************$ */
 

@@ -62,7 +62,6 @@
     <NamedType refType="S_ToLabel_10" scadeName="S_ToLabel_10" targetName="S_ToLabel_10"/>
     <RootNode headerFile="Main.h" scadeName="Main" targetCycleFct="Main" targetInitFct="Main_reset" targetInitializationFct="Main_init">
       <Input inCtx="true" scadeName="walkStart" scadeType="bool" targetName="walkStart" targetType="kcg_bool"/>
-      <Input inCtx="true" scadeName="walkStop" scadeType="bool" targetName="walkStop" targetType="kcg_bool"/>
       <Input inCtx="true" scadeName="walkSteps" scadeType="T_String_01" targetName="walkSteps" targetType="T_String_01"/>
       <Input inCtx="true" scadeName="walkMagnitude" scadeType="T_String_01" targetName="walkMagnitude" targetType="T_String_01"/>
       <Input inCtx="true" scadeName="sitStart" scadeType="bool" targetName="sitStart" targetType="kcg_bool"/>
@@ -204,11 +203,6 @@
         </FbyOp>
         <NodeInstance instName="1" refName="convert2Int" scadeName="convert2Int"/>
       </NodeInlining>
-      <NodeInlining instName="1" scadeName="DisplayView">
-        <Input inCtx="true" scadeName="isSitting" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>
-        <Output inCtx="true" scadeName="EnablePbSit" scadeType="bool" targetName="EnablePbSit" targetType="kcg_bool"/>
-        <Output inCtx="true" scadeName="EnablePbRaise" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>
-      </NodeInlining>
       <NodeInlining instName="1" scadeName="Protocol">
         <Output inCtx="true" scadeName="OutProtocol" scadeType="S_ToLabel_76" targetName="Out_Protocol_OutProtocol" targetType="S_ToLabel_76"/>
         <Output inCtx="true" scadeName="OutMd5" scadeType="S_ToLabel_33" targetName="Out_Protocol_OutMD5" targetType="S_ToLabel_33"/>
@@ -223,6 +217,11 @@
         <Init inCtx="true" targetName="init2" targetType="kcg_bool"/>
         <Memory inCtx="true" targetName="Comando" targetType="T_String_10"/>
       </FbyOp>
+      <NodeInlining instName="1" scadeName="DisplayView">
+        <Input inCtx="true" scadeName="isSitting" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="EnablePbSit" scadeType="bool" targetName="EnablePbSit" targetType="kcg_bool"/>
+        <Output inCtx="true" scadeName="EnablePbRaise" scadeType="bool" targetName="EnablePbRaise" targetType="kcg_bool"/>
+      </NodeInlining>
       <Memory inCtx="true" targetName="OutImageReference" targetType="T_ImageReference"/>
       <Memory inCtx="true" targetName="EnablePbRaise" targetType="kcg_bool"/>
       <Memory inCtx="true" targetName="Comando" targetType="T_String_10"/>
@@ -255,7 +254,6 @@
       <Input scadeName="Send" scadeType="T_String_02" targetName="Send" targetType="T_String_02"/>
       <Output scadeName="Value" scadeType="int32" targetName="Value" targetType="kcg_int32"/>
     </NoExpNode>
-    <ExpNode scadeName="DisplayView"/>
     <ExpNode scadeName="Protocol"/>
     <NoExpNode headerFile="kcg_imported_functions.h" imported="true" scadeName="checkMd5" targetCycleFct="checkMd5">
       <Input scadeName="Send" scadeType="T_String_43" targetName="Send" targetType="T_String_43"/>
@@ -269,6 +267,7 @@
       <Input scadeName="Send" scadeType="int32" targetName="Send" targetType="kcg_int32"/>
       <Output scadeName="Output" scadeType="T_String_03" targetName="Output" targetType="T_String_03"/>
     </NoExpNode>
+    <ExpNode scadeName="DisplayView"/>
     <Package scadeName="pwlinear">
       <ExpNode scadeName="Counter"/>
     </Package>

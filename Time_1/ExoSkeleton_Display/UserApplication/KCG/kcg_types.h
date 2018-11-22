@@ -1,6 +1,6 @@
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** Command: kcg66.exe -config E:/Projetos/stagiho-tr/Time_1/ExoSkeleton_Display/UserApplication/KCG/config.txt
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T22:34:45
 *************************************************************$ */
 #ifndef _KCG_TYPES_H_
 #define _KCG_TYPES_H_
@@ -418,6 +418,6 @@ extern kcg_bool kcg_comp_T_String_06(T_String_06 *kcg_c1, T_String_06 *kcg_c2);
 #endif /* _KCG_TYPES_H_ */
 /* $********** SCADE Suite KCG 32-bit 6.6 (build i19) ***********
 ** kcg_types.h
-** Generation date: 2018-11-17T12:07:22
+** Generation date: 2018-11-21T22:34:45
 *************************************************************$ */
 
