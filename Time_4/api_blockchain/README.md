@@ -22,7 +22,6 @@ npm start
 
 
 ### CADASTRAR PACIENTES
----
 
 ```sh
 POST - https://ts04stagihotr.herokuapp.com/pacientes
@@ -51,7 +50,6 @@ POST - https://ts04stagihotr.herokuapp.com/pacientes
 ***
 
 ### CADASTRAR MOVIMENTOS
----
 
 ```sh
 https://ts04stagihotr.herokuapp.com/movimentos
