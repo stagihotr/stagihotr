@@ -1,7 +1,7 @@
 @echo off
-:: @set addressRef=C:/Users/Lewis Ferreira/Desktop/SCADE19.2/SCADE/
+@set addressRef=C:/Users/Lewis Ferreira/Desktop/SCADE19.2
 
-@set addressRef=E:/SCADE/Suite
+::@set addressRef=E:/SCADE/Suite
 ::echo  %addressRef%
 @SET PATH=%addressRef%/SCADE A661/bin;%PATH%
 

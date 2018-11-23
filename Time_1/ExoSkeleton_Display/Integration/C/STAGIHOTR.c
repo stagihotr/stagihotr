@@ -108,12 +108,27 @@ void executeCustomLogic() {
     /* You can use ua_outputs (which is updated before this function is called) to feed you controller */
     char outputProt[76];
     char btn[2];
-    char status[3];
+    char status[4];
+    int bytes_received;
 
-    sprintf(btn, "%d", ua_outputs.changed);
-    sprintf(outputProt, "%s", ua_outputs.Protocolo);
+    sprintf(btn, "%d", ua_outputs.changed); /* Captura mudanca no valor protocolo */
+    /* TODO: Verificar se a mudanca do protocolo foi o aperto de um botao ou mudanca de parametro */
+    sprintf(outputProt, "%s", ua_outputs.Protocolo); /* Captura estado atual do protocolo */
 
-    if(strcmp(btn,"1\0") == 0){
+    if(strcmp(btn,"1\0") == 0){ /* Caso tenha ocorrido a mudanca (acao de um botao), envia o protocolo para o servidor */
         send(DF_output_socket, outputProt, sizeof(outputProt), MSG_DONTWAIT);
+    }
+
+    /* A Flag "MSG_DONTWAIT" deixa a funcao recv "non-blocking", ou seja, nao espera a chegada obrigatoria de bytes */
+    bytes_received = recv(DF_output_socket, status, sizeof(status), MSG_DONTWAIT); /* Recebe mensagem do servidor*/
+    if(bytes_received > 0) { /* Verifica a chegada de bytes pela porta de comunicacao */
+        printf("bytes received: %d - data: %s\n", bytes_received, status);
+        if(strcmp(status, "001\0") == 0){ /* Caso seja o caso de confirmacao de acao terminada */
+            ua_inputs.ConfirmWalk = (kcg_bool) 1;   /* Seta input do modelo para TRUE */
+            memset(status, 0, sizeof(status));  /* Reseta valor do Status recebido do servidor */
+        }
+        bytes_received = 0;
+    } else {
+        ua_inputs.ConfirmWalk = (kcg_bool) 0;   /* Reseta input do modelo para que ele volte ao estado inicial */
     }
 }

@@ -1,0 +1,6 @@
+Exception: STATUS_ACCESS_VIOLATION at eip=57463130
+eax=00000023 ebx=0063CC2C ecx=00000053 edx=00000030 esi=0063CC50 edi=00000048
+ebp=304F5845 esp=0063ABD0 program=C:\Users\Lewis Ferreira\Desktop\BACKUP_PC\Mestrado ITA\CE-235 - Sistemas Embarcados em Tempo Real\Git\stagihotr\Time_1\ExoSkeleton_Display\Integration\STAGIHOTR.exe, pid 8368, thread main
+cs=0023 ds=002B es=002B fs=0053 gs=002B ss=002B
+Stack trace:
+Frame     Function  Args
