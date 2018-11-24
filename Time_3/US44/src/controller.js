@@ -46,7 +46,7 @@ exports.go = (listen) => {
 
       //pega quem enviou e direciona a mensagem para o local correto
       switch(command.getSender()) {
-        case "CDS000": //STGHTR0TS1INCDS000EXO000LF50450RN1542443892ece6a945b2e7062b7e4c935078f3b89e  request from cds to exo
+        case "PNL001": //STGHTR0TS1INCDS000EXO000LF50450RN1542443892ece6a945b2e7062b7e4c935078f3b89e  request from cds to exo
 
           //permite enviar mensagem para o Exo se o semaphore estiver RELEASE
           //grava o comando enviado no semaphore para armazena-lo posteriormente na memoria
@@ -55,13 +55,14 @@ exports.go = (listen) => {
           if(semaphore.getStatus() == semaphore.RELEASE) {
             semaphore.setCommad(command.getCommand());
             producer.send("TS2IN", command.getType());
+	    producer.send("TS3MEM", command.getCommand());
             semaphore.setStatus(semaphore.WAIT);
           } else {
             producer.send("TS1OUT", "BLOCKED");            
           }
 
           break;
-        case "EXO000": //STGHTRTS2OUTEXO000CDS000OK50450RN1542443892eae4c95522aefa84c7f530902723e797 response from exo to cds
+        case "EXO001": //STGHTRTS2OUTEXO000CDS000OK50450RN1542443892eae4c95522aefa84c7f530902723e797 response from exo to cds
 
           //se o resultado do comando enviado pelo Exo for OK o comando  
           //guardado no semaphore deve ser armazenado na memoria 

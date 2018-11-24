@@ -5,6 +5,11 @@ screen -dmS memoryModule
 sleep 1
 screen -S memoryModule -X stuff 'node ./US43/memory-start.js'$'\015'
 sleep 3
+echo 'Starting Memory Collector'
+screen -dmS memoryCollector
+sleep 1
+screen -S memoryCollector -X stuff 'node ./US43/listenTS3MEM.js'$'\015'
+sleep 2
 echo 'Starting Collector Module'
 screen -dmS collectorModule
 sleep 1
